@@ -10,7 +10,7 @@ import Foundation
 struct LocalizedText {
     
     enum LocalizeTags: String {
-        case messageReadme = "message-readme"
+        case messageReadme
     }
     
     static func with(tagName: LocalizeTags) -> String {

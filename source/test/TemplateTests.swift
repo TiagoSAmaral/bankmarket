@@ -16,6 +16,7 @@ class TemplateTests: XCTestCase {
 
     func testCheckReadmeMessage() {
         let expectedString = "Verifique o arquivo Readme! \n Português Brasil"
-        XCTAssert(LocalizedText.with(tagName: .messageReadme) == expectedString, "Expect equals")
+        let foundString = LocalizedText.with(tagName: LocalizedText.LocalizeTags.messageReadme)
+        XCTAssertEqual(foundString, expectedString, "Expect equals")
     }
 }

@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6414E923E4C210009C7A9E /* TemplateTests.swift */; };
+		CFBB297B2A3CC15400DA0561 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6AF23DA308A00EB6D4D /* MainScreenView.swift */; };
+		CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6D923DA443200EB6D4D /* LocalizedText.swift */; };
+		CFBB297D2A3CC26200DA0561 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6AF23DA308A00EB6D4D /* MainScreenView.swift */; };
+		CFBB297E2A3CC26C00DA0561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6AC23DA308900EB6D4D /* AppDelegate.swift */; };
 		CFD3A6B723DA308A00EB6D4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6AC23DA308900EB6D4D /* AppDelegate.swift */; };
-		CFD3A6B923DA308A00EB6D4D /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6AF23DA308A00EB6D4D /* MainScreenView.swift */; };
 		CFD3A6BB23DA308A00EB6D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A6B423DA308A00EB6D4D /* Assets.xcassets */; };
 		CFD3A6D723DA41FE00EB6D4D /* Localizable-pt-BR.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A6CF23DA3F9700EB6D4D /* Localizable-pt-BR.strings */; };
 		CFD3A6DA23DA443200EB6D4D /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6D923DA443200EB6D4D /* LocalizedText.swift */; };
@@ -28,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		CF24569923E4C55B00A1968D /* BaseProjectTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BaseProjectTarget-Info.plist"; sourceTree = "<group>"; };
+		CF2EC3DD2A3CC072003E06EC /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		CF6414DF23E4C1CF009C7A9E /* BaseProjectTargetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseProjectTargetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6414E923E4C210009C7A9E /* TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
 		CF9601AE23DA2A1E00916EF1 /* BaseProjectTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProjectTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +65,7 @@
 		CF9601A523DA2A1E00916EF1 = {
 			isa = PBXGroup;
 			children = (
+				CF2EC3DD2A3CC072003E06EC /* TestPlan.xctestplan */,
 				CFD3A6A323DA302E00EB6D4D /* source */,
 				CF9601AF23DA2A1E00916EF1 /* Products */,
 			);
@@ -184,7 +189,6 @@
 				CF9601AB23DA2A1E00916EF1 /* Frameworks */,
 				CF9601AC23DA2A1E00916EF1 /* Resources */,
 				CFD3A6BF23DA3DC600EB6D4D /* Swiftlint */,
-				CF6414C923E4BB4E009C7A9E /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -207,7 +211,6 @@
 				TargetAttributes = {
 					CF6414DE23E4C1CF009C7A9E = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = CF9601AD23DA2A1E00916EF1;
 					};
 					CF9601AD23DA2A1E00916EF1 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -255,26 +258,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CF6414C923E4BB4E009C7A9E /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
-		};
 		CFD3A6BF23DA3DC600EB6D4D /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,7 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -300,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBB297E2A3CC26C00DA0561 /* AppDelegate.swift in Sources */,
+				CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */,
 				CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */,
+				CFBB297B2A3CC15400DA0561 /* MainScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD3A6B723DA308A00EB6D4D /* AppDelegate.swift in Sources */,
-				CFD3A6B923DA308A00EB6D4D /* MainScreenView.swift in Sources */,
+				CFBB297D2A3CC26200DA0561 /* MainScreenView.swift in Sources */,
 				CFD3A6DA23DA443200EB6D4D /* LocalizedText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,10 +325,9 @@
 		CF6414E723E4C1CF009C7A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/source/test/BaseProjectTarget-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,17 +337,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseProjectTarget.app/BaseProjectTarget";
 			};
 			name = Debug;
 		};
 		CF6414E823E4C1CF009C7A9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/source/test/BaseProjectTarget-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +355,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseProjectTarget.app/BaseProjectTarget";
 			};
 			name = Release;
 		};
@@ -427,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -482,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -498,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/source/app/supportfiles/plists/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/source/app/supportfiles/plists/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
