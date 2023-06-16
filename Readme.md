@@ -19,7 +19,7 @@ Sobre o projeto: <br>
 
 Ferramentas de Gestão e Qualidade de Código<br>
 - Fastlane
-- Slather
+- Xcov
 - Jazzy
 - Swiftlint
 
@@ -73,9 +73,9 @@ No Xcode atualize as dependencias usando o Swift Package Manager
 
 ---
 
-## Ferramentas
+## Ferramentas de Gestão e CD/CI
 
-### Fastlane
+### [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/)
 
 Usado para automatizar tarefas como execucao de testes unitários, assinatura projetos e envio para Loja e Testflight.
 
@@ -92,14 +92,14 @@ No projeto, já possi alguns lanes básicos configurados. Para usa-los, execute 
 
 Ver mais no link: [Fastlane](https://fastlane.tools)
 
-### Jazzy
+### [Jazzy](https://github.com/realm/jazzy)
 
 Ferramenta para documentação de código
 
 Ver mais no link: [Realm/jazzy](https://github.com/realm/jazzy)
 
-### Slather
+### [Xcov](https://github.com/fastlane-community/xcov)
 
 Ferramenta para exibir de forma mais amigável informações de cobertura de código do projeto.
 
-Ver mais no link: [Slather](https://github.com/SlatherOrg/slather)
+Ver mais no link: [Xcov](https://github.com/fastlane-community/xcov)
