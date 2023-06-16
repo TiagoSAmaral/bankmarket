@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ios-base-project
+//  hearthstonecardviewer
 //
 //  Created on 23/01/20.
 //

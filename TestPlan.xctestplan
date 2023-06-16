@@ -12,7 +12,7 @@
     "codeCoverage" : {
       "targets" : [
         {
-          "containerPath" : "container:ios-base-project.xcodeproj",
+          "containerPath" : "container:hearthstonecardviewer.xcodeproj",
           "identifier" : "CF9601AD23DA2A1E00916EF1",
           "name" : "BaseProjectTarget"
         }
@@ -23,7 +23,7 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:ios-base-project.xcodeproj",
+        "containerPath" : "container:hearthstonecardviewer.xcodeproj",
         "identifier" : "CF6414DE23E4C1CF009C7A9E",
         "name" : "BaseProjectTargetTests"
       }

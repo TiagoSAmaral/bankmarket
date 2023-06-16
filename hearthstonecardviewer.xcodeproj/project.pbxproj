@@ -195,7 +195,7 @@
 			dependencies = (
 			);
 			name = BaseProjectTarget;
-			productName = "ios-base-project";
+			productName = "hearthstonecardviewer";
 			productReference = CF9601AE23DA2A1E00916EF1 /* BaseProjectTarget.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -207,7 +207,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = developer_organization_name;
+				ORGANIZATIONNAME = developerios;
 				TargetAttributes = {
 					CF6414DE23E4C1CF009C7A9E = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -217,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CF9601A923DA2A1E00916EF1 /* Build configuration list for PBXProject "ios-base-project" */;
+			buildConfigurationList = CF9601A923DA2A1E00916EF1 /* Build configuration list for PBXProject "hearthstonecardviewer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -333,7 +333,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.domain-developer.BaseProjectTargetTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.outlook.tiago.BaseProjectTargetTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,7 +351,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.domain-developer.BaseProjectTargetTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.outlook.tiago.BaseProjectTargetTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.domain-developer.ios-base-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.outlook.tiago.hearthstonecardviewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -503,7 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.domain-developer.ios-base-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.outlook.tiago.hearthstonecardviewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -522,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF9601A923DA2A1E00916EF1 /* Build configuration list for PBXProject "ios-base-project" */ = {
+		CF9601A923DA2A1E00916EF1 /* Build configuration list for PBXProject "hearthstonecardviewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF9601C023DA2A2200916EF1 /* Debug */,
