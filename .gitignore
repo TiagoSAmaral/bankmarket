@@ -80,6 +80,8 @@ DerivedData/
 !default.perspectivev3
 */xcuserdata/
 *.xcuserdatad/
+*/KeysAcessor.swift
+
 
 ## Other
 *.moved-aside
