@@ -1,10 +1,31 @@
-# iOS Base Project
+# Heart of Stones Viewer
 
-Este projeto serve de base para criação de novos projetos para iOS (iPhone/iPad/AppleWatch).
+Simples aplicação que lista cartas do jogo Heart Of Stone e permite vizualizar alguns detalhes ao seleciona-la.
 
-Após clonar o repositório, deve-se alterar a URL de origin do seu repositório local.
+O projeto consome a api da Blizzard, é necessário  registrar-se e criar um `Client app` para gerar o `ClientID` e o `ClientSecret`.
 
-Ver:  [git set-url remote](https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-emset-urlem).
+Para mais informações siga o link: [Blizzard Develop Access](https://develop.battle.net/access/clients/fd740fac011c405d8463225681bb6e86)
+
+## <b> <span style="color:red"> LEIA AQUI! </span> </b>
+Por questões de segurança as chaves da API NÃO ESTÃO no projeto. 
+Para excutar o projeto, será necessário criar uma classe ou struct que conforma com a interface `KeyAdvisor`, e através dela, passar as chaves pelas propriedades. 
+
+O arquivo está sendo ignorado pelo .gitignore, e criado um novo no caminho: <br>
+
+`source/app/supportfiles/secret/KeysAcessor.swift`
+
+A implementação concreta que usei no projeto, pode ser copiada abaixo: 
+
+``` swift 
+struct KeysAcessor: KeyAdvisor {
+    var publicKeyApi: String {
+        "publicApiKey aqui!"
+    }
+    var privateKeyApi: String {
+        "privateApiKey aqui!"
+    }
+}
+```
 
 ---
 
