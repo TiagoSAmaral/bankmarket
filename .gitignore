@@ -80,7 +80,7 @@ DerivedData/
 !default.perspectivev3
 */xcuserdata/
 *.xcuserdatad/
-*/KeysAcessor.swift
+*/source/app/supportfiles/secrect/KeysAcessor.swift
 
 
 ## Other
