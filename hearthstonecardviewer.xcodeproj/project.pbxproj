@@ -3,13 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6414E923E4C210009C7A9E /* TemplateTests.swift */; };
+		CF93BD092A3F6E9E0060C410 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD082A3F6E9E0060C410 /* SnapshotTesting */; };
+		CF93BD0C2A3F71E80060C410 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD0B2A3F71E80060C410 /* Kingfisher */; };
+		CF93BD0F2A3F720A0060C410 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD0E2A3F720A0060C410 /* Alamofire */; };
+		CF93BD122A3F72240060C410 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD112A3F72240060C410 /* Kingfisher */; };
+		CF93BD142A3F72240060C410 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD132A3F72240060C410 /* Alamofire */; };
+		CF93BD1B2A3F72300060C410 /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2F12A3EBD7300CAA054 /* GenericCell.swift */; };
+		CF93BD1C2A3F72300060C410 /* CardVisible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2E22A3EBC1A00CAA054 /* CardVisible.swift */; };
+		CF93BD1D2A3F72300060C410 /* Visible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A92A3E920800CAA054 /* Visible.swift */; };
+		CF93BD1E2A3F72300060C410 /* KeyAdvisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2CB2A3EACFD00CAA054 /* KeyAdvisor.swift */; };
+		CF93BD1F2A3F72300060C410 /* TableViewUpdateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2DD2A3EBB6C00CAA054 /* TableViewUpdateEvent.swift */; };
+		CF93BD202A3F72300060C410 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A52A3E91ED00CAA054 /* Model.swift */; };
+		CF93BD212A3F72300060C410 /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2D92A3EB90A00CAA054 /* NetworkWorker.swift */; };
+		CF93BD222A3F72300060C410 /* Selectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A72A3E91FD00CAA054 /* Selectable.swift */; };
+		CF93BD232A3F72300060C410 /* ListItemModelVisible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2FA2A3EC9ED00CAA054 /* ListItemModelVisible.swift */; };
+		CF93BD242A3F72330060C410 /* NetworkConactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2D62A3EB7C000CAA054 /* NetworkConactable.swift */; };
+		CF93BD252A3F72330060C410 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2DB2A3EB93B00CAA054 /* NetworkError.swift */; };
+		CF93BD262A3F72370060C410 /* LayoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2F62A3EC1C000CAA054 /* LayoutCardView.swift */; };
+		CF93BD272A3F72370060C410 /* ResponseListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2FC2A3ECB5F00CAA054 /* ResponseListItem.swift */; };
+		CF93BD282A3F72370060C410 /* MetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */; };
+		CF93BD292A3F72370060C410 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
+		CF93BD2A2A3F72370060C410 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
+		CF93BD2B2A3F72470060C410 /* MosaicBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2F42A3EBE4200CAA054 /* MosaicBaseView.swift */; };
+		CF93BD2C2A3F72470060C410 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2EF2A3EBCF800CAA054 /* GenericTableViewCell.swift */; };
+		CF93BD2D2A3F72470060C410 /* CardSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2F82A3EC5B700CAA054 /* CardSelectable.swift */; };
+		CF93BD2E2A3F725C0060C410 /* ClassIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2EC2A3EBCC700CAA054 /* ClassIdentifier.swift */; };
+		CF93BD2F2A3F72630060C410 /* HtmlAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2E92A3EBC9900CAA054 /* HtmlAttributedString.swift */; };
+		CF93BD302A3F72650060C410 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2E62A3EBC6B00CAA054 /* Constraints.swift */; };
 		CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6D923DA443200EB6D4D /* LocalizedText.swift */; };
-		CFBB297E2A3CC26C00DA0561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6AC23DA308900EB6D4D /* AppDelegate.swift */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
 		CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */; };
@@ -49,9 +75,6 @@
 		CFBED2C42A3E923F00CAA054 /* CardDetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A32A3E91D800CAA054 /* CardDetailItemView.swift */; };
 		CFBED2C52A3E924200CAA054 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED29F2A3E91C000CAA054 /* NavigationController.swift */; };
 		CFBED2C62A3E924200CAA054 /* TableViewAutomaticPaginate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED29D2A3E91B400CAA054 /* TableViewAutomaticPaginate.swift */; };
-		CFBED2C72A3E924600CAA054 /* Visible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A92A3E920800CAA054 /* Visible.swift */; };
-		CFBED2C82A3E924600CAA054 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A52A3E91ED00CAA054 /* Model.swift */; };
-		CFBED2C92A3E924600CAA054 /* Selectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A72A3E91FD00CAA054 /* Selectable.swift */; };
 		CFBED2CC2A3EACFD00CAA054 /* KeyAdvisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2CB2A3EACFD00CAA054 /* KeyAdvisor.swift */; };
 		CFBED2CF2A3EAFA200CAA054 /* ListItemSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2CE2A3EAFA200CAA054 /* ListItemSceneFactory.swift */; };
 		CFBED2D12A3EB0AA00CAA054 /* ListItemRequestParamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2D02A3EB0AA00CAA054 /* ListItemRequestParamsModel.swift */; };
@@ -93,9 +116,9 @@
 /* Begin PBXFileReference section */
 		CF24569923E4C55B00A1968D /* BaseProjectTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BaseProjectTarget-Info.plist"; sourceTree = "<group>"; };
 		CF2EC3DD2A3CC072003E06EC /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
-		CF6414DF23E4C1CF009C7A9E /* BaseProjectTargetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseProjectTargetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6414DF23E4C1CF009C7A9E /* HeartOfStoneViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartOfStoneViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6414E923E4C210009C7A9E /* TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
-		CF9601AE23DA2A1E00916EF1 /* BaseProjectTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProjectTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9601AE23DA2A1E00916EF1 /* HeartOfStoneViewerTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartOfStoneViewerTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
@@ -152,6 +175,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93BD142A3F72240060C410 /* Alamofire in Frameworks */,
+				CF93BD122A3F72240060C410 /* Kingfisher in Frameworks */,
+				CF93BD092A3F6E9E0060C410 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,26 +185,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93BD0C2A3F71E80060C410 /* Kingfisher in Frameworks */,
+				CF93BD0F2A3F720A0060C410 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF93BD102A3F72240060C410 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF9601A523DA2A1E00916EF1 = {
 			isa = PBXGroup;
 			children = (
 				CF2EC3DD2A3CC072003E06EC /* TestPlan.xctestplan */,
 				CFD3A6A323DA302E00EB6D4D /* source */,
 				CF9601AF23DA2A1E00916EF1 /* Products */,
+				CF93BD102A3F72240060C410 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		CF9601AF23DA2A1E00916EF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF9601AE23DA2A1E00916EF1 /* BaseProjectTarget.app */,
-				CF6414DF23E4C1CF009C7A9E /* BaseProjectTargetTests.xctest */,
+				CF9601AE23DA2A1E00916EF1 /* HeartOfStoneViewerTarget.app */,
+				CF6414DF23E4C1CF009C7A9E /* HeartOfStoneViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,7 +260,6 @@
 			children = (
 				CFBED2E42A3EBC4100CAA054 /* Extensions */,
 				CFBED2DF2A3EBB9000CAA054 /* Factorys */,
-				CFBED2CD2A3EAECD00CAA054 /* SceneIgnit */,
 				CFBED2CA2A3E926800CAA054 /* Workers */,
 				CFBED2992A3E911000CAA054 /* Components */,
 				CFBB29862A3D310B00DA0561 /* Interfaces */,
@@ -314,13 +349,6 @@
 				CFBED2D82A3EB8F400CAA054 /* Network */,
 			);
 			path = Workers;
-			sourceTree = "<group>";
-		};
-		CFBED2CD2A3EAECD00CAA054 /* SceneIgnit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SceneIgnit;
 			sourceTree = "<group>";
 		};
 		CFBED2D82A3EB8F400CAA054 /* Network */ = {
@@ -468,9 +496,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF6414DE23E4C1CF009C7A9E /* BaseProjectTargetTests */ = {
+		CF6414DE23E4C1CF009C7A9E /* HeartOfStoneViewerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF6414E623E4C1CF009C7A9E /* Build configuration list for PBXNativeTarget "BaseProjectTargetTests" */;
+			buildConfigurationList = CF6414E623E4C1CF009C7A9E /* Build configuration list for PBXNativeTarget "HeartOfStoneViewerTests" */;
 			buildPhases = (
 				CF6414DB23E4C1CF009C7A9E /* Sources */,
 				CF6414DC23E4C1CF009C7A9E /* Frameworks */,
@@ -481,14 +509,19 @@
 			dependencies = (
 				CF6414E523E4C1CF009C7A9E /* PBXTargetDependency */,
 			);
-			name = BaseProjectTargetTests;
+			name = HeartOfStoneViewerTests;
+			packageProductDependencies = (
+				CF93BD082A3F6E9E0060C410 /* SnapshotTesting */,
+				CF93BD112A3F72240060C410 /* Kingfisher */,
+				CF93BD132A3F72240060C410 /* Alamofire */,
+			);
 			productName = BaseProjectTargetTests;
-			productReference = CF6414DF23E4C1CF009C7A9E /* BaseProjectTargetTests.xctest */;
+			productReference = CF6414DF23E4C1CF009C7A9E /* HeartOfStoneViewerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CF9601AD23DA2A1E00916EF1 /* BaseProjectTarget */ = {
+		CF9601AD23DA2A1E00916EF1 /* HeartOfStoneViewerTarget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF9601C223DA2A2200916EF1 /* Build configuration list for PBXNativeTarget "BaseProjectTarget" */;
+			buildConfigurationList = CF9601C223DA2A2200916EF1 /* Build configuration list for PBXNativeTarget "HeartOfStoneViewerTarget" */;
 			buildPhases = (
 				CF9601AA23DA2A1E00916EF1 /* Sources */,
 				CF9601AB23DA2A1E00916EF1 /* Frameworks */,
@@ -499,9 +532,13 @@
 			);
 			dependencies = (
 			);
-			name = BaseProjectTarget;
+			name = HeartOfStoneViewerTarget;
+			packageProductDependencies = (
+				CF93BD0B2A3F71E80060C410 /* Kingfisher */,
+				CF93BD0E2A3F720A0060C410 /* Alamofire */,
+			);
 			productName = hearthstonecardviewer;
-			productReference = CF9601AE23DA2A1E00916EF1 /* BaseProjectTarget.app */;
+			productReference = CF9601AE23DA2A1E00916EF1 /* HeartOfStoneViewerTarget.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -532,12 +569,17 @@
 				"pt-BR",
 			);
 			mainGroup = CF9601A523DA2A1E00916EF1;
+			packageReferences = (
+				CF93BD072A3F6E9E0060C410 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				CF93BD0A2A3F71E80060C410 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CF93BD0D2A3F720A0060C410 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CF9601AF23DA2A1E00916EF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF9601AD23DA2A1E00916EF1 /* BaseProjectTarget */,
-				CF6414DE23E4C1CF009C7A9E /* BaseProjectTargetTests */,
+				CF9601AD23DA2A1E00916EF1 /* HeartOfStoneViewerTarget */,
+				CF6414DE23E4C1CF009C7A9E /* HeartOfStoneViewerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -588,29 +630,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93BD1C2A3F72300060C410 /* CardVisible.swift in Sources */,
 				CFBED2C12A3E923C00CAA054 /* ListItemView.swift in Sources */,
+				CF93BD262A3F72370060C410 /* LayoutCardView.swift in Sources */,
+				CF93BD242A3F72330060C410 /* NetworkConactable.swift in Sources */,
 				CFBED2C62A3E924200CAA054 /* TableViewAutomaticPaginate.swift in Sources */,
-				CFBB297E2A3CC26C00DA0561 /* AppDelegate.swift in Sources */,
+				CF93BD1D2A3F72300060C410 /* Visible.swift in Sources */,
+				CF93BD252A3F72330060C410 /* NetworkError.swift in Sources */,
+				CF93BD2F2A3F72630060C410 /* HtmlAttributedString.swift in Sources */,
 				CFBED2BE2A3E923C00CAA054 /* ListItemViewModel.swift in Sources */,
+				CF93BD1F2A3F72300060C410 /* TableViewUpdateEvent.swift in Sources */,
+				CF93BD2D2A3F72470060C410 /* CardSelectable.swift in Sources */,
 				CFBED2B72A3E923900CAA054 /* DetailItemInteractor.swift in Sources */,
 				CFBED2BB2A3E923900CAA054 /* DetailItemView.swift in Sources */,
 				CFBED2C22A3E923C00CAA054 /* ListItemPresenter.swift in Sources */,
+				CF93BD232A3F72300060C410 /* ListItemModelVisible.swift in Sources */,
 				CFBED2BF2A3E923C00CAA054 /* ListItemInteractor.swift in Sources */,
+				CF93BD282A3F72370060C410 /* MetadataItem.swift in Sources */,
+				CF93BD2E2A3F725C0060C410 /* ClassIdentifier.swift in Sources */,
 				CFBED2C32A3E923F00CAA054 /* CardListItemView.swift in Sources */,
+				CF93BD272A3F72370060C410 /* ResponseListItem.swift in Sources */,
 				CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */,
+				CF93BD302A3F72650060C410 /* Constraints.swift in Sources */,
 				CFBED2C02A3E923C00CAA054 /* ListItemController.swift in Sources */,
 				CFBED3022A3ED3C700CAA054 /* KeysAcessor.swift in Sources */,
 				CFBED2BD2A3E923C00CAA054 /* ListItemRouter.swift in Sources */,
+				CF93BD1B2A3F72300060C410 /* GenericCell.swift in Sources */,
 				CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */,
 				CFBED2C52A3E924200CAA054 /* NavigationController.swift in Sources */,
-				CFBED2C92A3E924600CAA054 /* Selectable.swift in Sources */,
+				CF93BD292A3F72370060C410 /* Item.swift in Sources */,
+				CF93BD202A3F72300060C410 /* Model.swift in Sources */,
 				CFBED2BC2A3E923900CAA054 /* DetailItemController.swift in Sources */,
+				CF93BD2B2A3F72470060C410 /* MosaicBaseView.swift in Sources */,
 				CFBED2BA2A3E923900CAA054 /* DetailItemRouter.swift in Sources */,
+				CF93BD1E2A3F72300060C410 /* KeyAdvisor.swift in Sources */,
+				CF93BD2C2A3F72470060C410 /* GenericTableViewCell.swift in Sources */,
+				CF93BD212A3F72300060C410 /* NetworkWorker.swift in Sources */,
 				CFBED2C42A3E923F00CAA054 /* CardDetailItemView.swift in Sources */,
 				CFBED2B92A3E923900CAA054 /* DetailItemViewModel.swift in Sources */,
 				CFBED2B82A3E923900CAA054 /* DetailItemPresenter.swift in Sources */,
-				CFBED2C82A3E924600CAA054 /* Model.swift in Sources */,
-				CFBED2C72A3E924600CAA054 /* Visible.swift in Sources */,
+				CF93BD2A2A3F72370060C410 /* Metadata.swift in Sources */,
+				CF93BD222A3F72300060C410 /* Selectable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +731,7 @@
 /* Begin PBXTargetDependency section */
 		CF6414E523E4C1CF009C7A9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CF9601AD23DA2A1E00916EF1 /* BaseProjectTarget */;
+			target = CF9601AD23DA2A1E00916EF1 /* HeartOfStoneViewerTarget */;
 			targetProxy = CF6414E423E4C1CF009C7A9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -701,8 +761,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outlook.tiago.BaseProjectTargetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -719,8 +782,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outlook.tiago.BaseProjectTargetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -853,8 +919,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outlook.tiago.hearthstonecardviewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -871,15 +940,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outlook.tiago.hearthstonecardviewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF6414E623E4C1CF009C7A9E /* Build configuration list for PBXNativeTarget "BaseProjectTargetTests" */ = {
+		CF6414E623E4C1CF009C7A9E /* Build configuration list for PBXNativeTarget "HeartOfStoneViewerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF6414E723E4C1CF009C7A9E /* Debug */,
@@ -897,7 +969,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF9601C223DA2A2200916EF1 /* Build configuration list for PBXNativeTarget "BaseProjectTarget" */ = {
+		CF9601C223DA2A2200916EF1 /* Build configuration list for PBXNativeTarget "HeartOfStoneViewerTarget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF9601C323DA2A2200916EF1 /* Debug */,
@@ -907,6 +979,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF93BD072A3F6E9E0060C410 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		CF93BD0A2A3F71E80060C410 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.0.0;
+			};
+		};
+		CF93BD0D2A3F720A0060C410 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF93BD082A3F6E9E0060C410 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF93BD072A3F6E9E0060C410 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		CF93BD0B2A3F71E80060C410 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF93BD0A2A3F71E80060C410 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		CF93BD0E2A3F720A0060C410 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF93BD0D2A3F720A0060C410 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CF93BD112A3F72240060C410 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF93BD0A2A3F71E80060C410 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		CF93BD132A3F72240060C410 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF93BD0D2A3F720A0060C410 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF9601A623DA2A1E00916EF1 /* Project object */;
 }
