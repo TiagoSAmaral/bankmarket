@@ -9,5 +9,6 @@
 import Foundation
 
 protocol NetworkWorker {
-    func request<T: Decodable>(with data: ApiParams, resultType: T.Type, handler: ResponseHandler<T>?)
+    func request<T: Decodable>(with data: ApiParams, resultType: T.Type, handler: ResponseHandler<T>?) where T: Decodable
+    func requestMultipart<T>(with data: ApiParams, resultType: T.Type, handler: ResponseHandler<T>?) where T: Decodable
 }
