@@ -15,8 +15,12 @@ enum ListItemSceneFactory {
         let presenter = ListItemPresenter()
         let router = ListItemRouter()
         let interactor = ListItemInteractor()
-        let view = ListItemView()
-        
+        let viewMosaic = MosaicBaseView()
+        let listTableView = TableViewAutomaticPaginate(controller: controller,
+                                                       isPullToRefreshEnable: true,
+                                                       isPaginateEnable: true)
+        listTableView.cardFactory = CardConstructor()
+        viewMosaic.insertNew(view: listTableView)
         let workerNetwork = NetworkConactable()
         let workerSecurity = Security()
         workerSecurity.workerNetwork = NetworkConactable()
@@ -34,7 +38,8 @@ enum ListItemSceneFactory {
         
         controller.interactor = interactor
         controller.router = router
-        controller.view = view
+        controller.listView = listTableView
+        controller.view = viewMosaic.baseView
         
         return controller
     }
