@@ -9,6 +9,7 @@
 import Foundation
 
 final class ListItemViewModel: Model, ListItemModelVisible {
+    var actionOnTap: ((Model?) -> Void)?
     var layoutView: CardLayoutView?
     var imageUrlPath: String?
     var title: String?
