@@ -10,6 +10,7 @@ import UIKit
 
 protocol ListDisplayLogic: AnyObject where Self: UIViewController {
     func display(viewModel: [ListItemModelVisible])
+    func display(message: String?)
 }
 
 final class ListItemController: UIViewController, ListDisplayLogic {
@@ -17,7 +18,13 @@ final class ListItemController: UIViewController, ListDisplayLogic {
     var interactor: ListItemInteractorBusinessLogic?
     var router: ListItemRoutingLogic?
     
-    func display(viewModel: [ListItemModelVisible]) {}
+    func display(viewModel: [ListItemModelVisible]) {
+        
+    }
+    
+    func display(message: String?) {
+        
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
