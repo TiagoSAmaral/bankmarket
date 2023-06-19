@@ -33,6 +33,7 @@ final class ListItemController: UIViewController, ListDisplayLogic, ControllerDe
         super.viewDidAppear(animated)
         
         interactor?.fetchItems()
+        (navigationController as? NavigationControllerDecorable)?.defineNavigationBarTitleViewWith(imageName: "navigationBarLogo")
     }
     
     lazy var goToDetail: ((Model?) -> Void)? = { [weak self] item in
