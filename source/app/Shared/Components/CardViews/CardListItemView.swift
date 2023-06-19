@@ -37,7 +37,7 @@ final class CardListItemView: CardSelectable {
     lazy var titleLabel: UILabel = {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 22, weight: .heavy)
-        label.textColor = .yellow
+        label.textColor = ColorAssets.titleColor
         return label
     }()
 
@@ -50,8 +50,11 @@ final class CardListItemView: CardSelectable {
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-        label.textColor = .white
+        label.textColor = ColorAssets.descriptionColor
         label.numberOfLines = .zero
+        label.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        label.layer.cornerRadius = cornerRadius
+        label.clipsToBounds = true
         return label
     }()
 

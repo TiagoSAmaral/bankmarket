@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6414E923E4C210009C7A9E /* TemplateTests.swift */; };
+		CF886B962A40FD420027EEFA /* ColorsAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B952A40FD420027EEFA /* ColorsAsset.swift */; };
+		CF886B992A40FE080027EEFA /* ColorAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B982A40FE080027EEFA /* ColorAssets.swift */; };
 		CF93BD092A3F6E9E0060C410 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD082A3F6E9E0060C410 /* SnapshotTesting */; };
 		CF93BD0C2A3F71E80060C410 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD0B2A3F71E80060C410 /* Kingfisher */; };
 		CF93BD0F2A3F720A0060C410 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD0E2A3F720A0060C410 /* Alamofire */; };
@@ -123,6 +125,8 @@
 		CF2EC3DD2A3CC072003E06EC /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		CF6414DF23E4C1CF009C7A9E /* HeartOfStoneViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartOfStoneViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6414E923E4C210009C7A9E /* TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
+		CF886B952A40FD420027EEFA /* ColorsAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsAsset.swift; sourceTree = "<group>"; };
+		CF886B982A40FE080027EEFA /* ColorAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAssets.swift; sourceTree = "<group>"; };
 		CF93BD322A3F76E90060C410 /* SecurityApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityApi.swift; sourceTree = "<group>"; };
 		CF93BD352A3FBE370060C410 /* UrlPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPathBuilder.swift; sourceTree = "<group>"; };
 		CF93BD372A3FBE4E0060C410 /* WorkerURLPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerURLPathBuilder.swift; sourceTree = "<group>"; };
@@ -202,6 +206,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF886B972A40FDFD0027EEFA /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				CF886B982A40FE080027EEFA /* ColorAssets.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		CF93BD102A3F72240060C410 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +297,7 @@
 		CFBED2882A3E8E0A00CAA054 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CF886B972A40FDFD0027EEFA /* Colors */,
 				CFBED2E42A3EBC4100CAA054 /* Extensions */,
 				CFBED2DF2A3EBB9000CAA054 /* Factorys */,
 				CFBED2CA2A3E926800CAA054 /* Workers */,
@@ -500,6 +513,7 @@
 			children = (
 				CFD3A6B423DA308A00EB6D4D /* Assets.xcassets */,
 				CFD3A6DB23DA462000EB6D4D /* Launch Screen.storyboard */,
+				CF886B952A40FD420027EEFA /* ColorsAsset.swift */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -744,6 +758,7 @@
 				CFBED2EA2A3EBC9900CAA054 /* HtmlAttributedString.swift in Sources */,
 				CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */,
 				CFBED2862A3E1A2900CAA054 /* KeysAcessor.swift in Sources */,
+				CF886B962A40FD420027EEFA /* ColorsAsset.swift in Sources */,
 				CFBED2D12A3EB0AA00CAA054 /* ListItemRequestParamsModel.swift in Sources */,
 				CFBED2AA2A3E920800CAA054 /* Visible.swift in Sources */,
 				CFBED2972A3E90F500CAA054 /* ListItemViewModel.swift in Sources */,
@@ -755,6 +770,7 @@
 				CFBED2B22A3E923400CAA054 /* DetailItemRouter.swift in Sources */,
 				CFBED2E32A3EBC1A00CAA054 /* CardVisible.swift in Sources */,
 				CFBED2A42A3E91D800CAA054 /* CardDetailItemView.swift in Sources */,
+				CF886B992A40FE080027EEFA /* ColorAssets.swift in Sources */,
 				CFBED2ED2A3EBCC700CAA054 /* ClassIdentifier.swift in Sources */,
 				CFBED2B12A3E923400CAA054 /* DetailItemInteractor.swift in Sources */,
 			);
