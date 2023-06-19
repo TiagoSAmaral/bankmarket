@@ -10,6 +10,7 @@ import Foundation
 
 protocol ListItemPresentationLogic {
     func presentList(with response: [Item]?)
+    func message(string: String?)
 }
 
 final class ListItemPresenter: ListItemPresentationLogic {
@@ -21,5 +22,9 @@ final class ListItemPresenter: ListItemPresentationLogic {
         // Make a viewModel here. Use Adapter.
         // Parse Item to ListItemModelVisible model.
         controller?.display(viewModel: [ListItemModelVisible]())
+    }
+    
+    func message(string: String?) {
+        
     }
 }
