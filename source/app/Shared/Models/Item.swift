@@ -13,6 +13,7 @@ struct Item: Decodable {
     let slug: String?
 
     let image: String?
+    let cropImage: String?
     let name: String?
     let flavorText: String?
     let text: String?   // property text conatins HTML tags. Must be handled with NSAttributedString
