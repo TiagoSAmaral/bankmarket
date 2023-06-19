@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ListItemModelVisible: Visible where Self: Model {
+protocol ListItemModelVisible: Visible, Selectable where Self: Model {
     var imageUrlPath: String? { get }
     var title: String? { get }
     var flavorDescription: String? { get }
