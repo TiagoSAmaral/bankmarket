@@ -35,6 +35,13 @@
 		CF93BD2E2A3F725C0060C410 /* ClassIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2EC2A3EBCC700CAA054 /* ClassIdentifier.swift */; };
 		CF93BD2F2A3F72630060C410 /* HtmlAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2E92A3EBC9900CAA054 /* HtmlAttributedString.swift */; };
 		CF93BD302A3F72650060C410 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2E62A3EBC6B00CAA054 /* Constraints.swift */; };
+		CF93BD332A3F76E90060C410 /* SecurityApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD322A3F76E90060C410 /* SecurityApi.swift */; };
+		CF93BD362A3FBE370060C410 /* UrlPathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD352A3FBE370060C410 /* UrlPathBuilder.swift */; };
+		CF93BD382A3FBE4E0060C410 /* WorkerURLPathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD372A3FBE4E0060C410 /* WorkerURLPathBuilder.swift */; };
+		CF93BD3A2A3FCDD20060C410 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD392A3FCDD20060C410 /* KeychainAccess.swift */; };
+		CF93BD3B2A3FCDD60060C410 /* SecurityApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD322A3F76E90060C410 /* SecurityApi.swift */; };
+		CF93BD3C2A3FCDD60060C410 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD392A3FCDD20060C410 /* KeychainAccess.swift */; };
+		CF93BD3E2A3FF7830060C410 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD3D2A3FF7830060C410 /* Empty.swift */; };
 		CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6D923DA443200EB6D4D /* LocalizedText.swift */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
@@ -118,6 +125,11 @@
 		CF2EC3DD2A3CC072003E06EC /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		CF6414DF23E4C1CF009C7A9E /* HeartOfStoneViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartOfStoneViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6414E923E4C210009C7A9E /* TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
+		CF93BD322A3F76E90060C410 /* SecurityApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityApi.swift; sourceTree = "<group>"; };
+		CF93BD352A3FBE370060C410 /* UrlPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPathBuilder.swift; sourceTree = "<group>"; };
+		CF93BD372A3FBE4E0060C410 /* WorkerURLPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerURLPathBuilder.swift; sourceTree = "<group>"; };
+		CF93BD392A3FCDD20060C410 /* KeychainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
+		CF93BD3D2A3FF7830060C410 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		CF9601AE23DA2A1E00916EF1 /* HeartOfStoneViewerTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartOfStoneViewerTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
@@ -200,6 +212,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CF93BD312A3F76D70060C410 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				CF93BD322A3F76E90060C410 /* SecurityApi.swift */,
+				CF93BD392A3FCDD20060C410 /* KeychainAccess.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		CF93BD342A3FBE0C0060C410 /* URLPathBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				CF93BD352A3FBE370060C410 /* UrlPathBuilder.swift */,
+			);
+			path = URLPathBuilder;
+			sourceTree = "<group>";
+		};
 		CF9601A523DA2A1E00916EF1 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +272,7 @@
 				CFBED2A72A3E91FD00CAA054 /* Selectable.swift */,
 				CFBED2DD2A3EBB6C00CAA054 /* TableViewUpdateEvent.swift */,
 				CFBED2A92A3E920800CAA054 /* Visible.swift */,
+				CF93BD372A3FBE4E0060C410 /* WorkerURLPathBuilder.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -346,6 +376,8 @@
 		CFBED2CA2A3E926800CAA054 /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				CF93BD342A3FBE0C0060C410 /* URLPathBuilder */,
+				CF93BD312A3F76D70060C410 /* Security */,
 				CFBED2D82A3EB8F400CAA054 /* Network */,
 			);
 			path = Workers;
@@ -390,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				CFBED2E92A3EBC9900CAA054 /* HtmlAttributedString.swift */,
+				CF93BD3D2A3FF7830060C410 /* Empty.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -639,6 +672,7 @@
 				CF93BD252A3F72330060C410 /* NetworkError.swift in Sources */,
 				CF93BD2F2A3F72630060C410 /* HtmlAttributedString.swift in Sources */,
 				CFBED2BE2A3E923C00CAA054 /* ListItemViewModel.swift in Sources */,
+				CF93BD3C2A3FCDD60060C410 /* KeychainAccess.swift in Sources */,
 				CF93BD1F2A3F72300060C410 /* TableViewUpdateEvent.swift in Sources */,
 				CF93BD2D2A3F72470060C410 /* CardSelectable.swift in Sources */,
 				CFBED2B72A3E923900CAA054 /* DetailItemInteractor.swift in Sources */,
@@ -654,6 +688,7 @@
 				CF93BD302A3F72650060C410 /* Constraints.swift in Sources */,
 				CFBED2C02A3E923C00CAA054 /* ListItemController.swift in Sources */,
 				CFBED3022A3ED3C700CAA054 /* KeysAcessor.swift in Sources */,
+				CF93BD3B2A3FCDD60060C410 /* SecurityApi.swift in Sources */,
 				CFBED2BD2A3E923C00CAA054 /* ListItemRouter.swift in Sources */,
 				CF93BD1B2A3F72300060C410 /* GenericCell.swift in Sources */,
 				CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */,
@@ -678,19 +713,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93BD3A2A3FCDD20060C410 /* KeychainAccess.swift in Sources */,
 				CFBED2952A3E90D900CAA054 /* ListItemRouter.swift in Sources */,
 				CFBED2FD2A3ECB5F00CAA054 /* ResponseListItem.swift in Sources */,
 				CFBED2D72A3EB7C000CAA054 /* NetworkConactable.swift in Sources */,
 				CFBED2F22A3EBD7300CAA054 /* GenericCell.swift in Sources */,
 				CFBED2B32A3E923400CAA054 /* DetailItemPresenter.swift in Sources */,
+				CF93BD382A3FBE4E0060C410 /* WorkerURLPathBuilder.swift in Sources */,
 				CFBED2E12A3EBBA100CAA054 /* CardFactory.swift in Sources */,
 				CFBED2B62A3E923400CAA054 /* DetailItemViewModel.swift in Sources */,
+				CF93BD362A3FBE370060C410 /* UrlPathBuilder.swift in Sources */,
 				CFBED2912A3E90BC00CAA054 /* ListItemPresenter.swift in Sources */,
 				CFBED2CC2A3EACFD00CAA054 /* KeyAdvisor.swift in Sources */,
 				CFBED2A22A3E91CE00CAA054 /* CardListItemView.swift in Sources */,
 				CFBED2B52A3E923400CAA054 /* DetailItemView.swift in Sources */,
 				CFBED2DC2A3EB93B00CAA054 /* NetworkError.swift in Sources */,
 				CFBED2FB2A3EC9ED00CAA054 /* ListItemModelVisible.swift in Sources */,
+				CF93BD332A3F76E90060C410 /* SecurityApi.swift in Sources */,
+				CF93BD3E2A3FF7830060C410 /* Empty.swift in Sources */,
 				CFBED2F72A3EC1C000CAA054 /* LayoutCardView.swift in Sources */,
 				CFBB29812A3D308800DA0561 /* Item.swift in Sources */,
 				CFBED2F52A3EBE4200CAA054 /* MosaicBaseView.swift in Sources */,
@@ -994,7 +1034,7 @@
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = exactVersion;
-				version = 7.0.0;
+				version = 7.6.2;
 			};
 		};
 		CF93BD0D2A3F720A0060C410 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
