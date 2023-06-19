@@ -12,7 +12,7 @@ class MosaicBaseView {
     
     lazy var baseView: UIView = {
         var view = UIView()
-        view.backgroundColor = .systemBackground // ColorAsset.cardBackgroundColor
+        view.backgroundColor = .clear
         return view
     }()
     
