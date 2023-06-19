@@ -9,7 +9,20 @@
 import UIKit
 
 class GenericTableViewCell: UITableViewCell, GenericCell {
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        backgroundColor = .clear
+        contentView.backgroundColor = .clear
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        backgroundColor = .clear
+        contentView.backgroundColor = .clear
+    }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         customPrepareForReuse()
