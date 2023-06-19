@@ -48,7 +48,6 @@
 		CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */; };
 		CFBED2862A3E1A2900CAA054 /* KeysAcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2842A3E1A2900CAA054 /* KeysAcessor.swift */; };
 		CFBED28D2A3E90A800CAA054 /* ListItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED28C2A3E90A800CAA054 /* ListItemController.swift */; };
-		CFBED28F2A3E90B100CAA054 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED28E2A3E90B100CAA054 /* ListItemView.swift */; };
 		CFBED2912A3E90BC00CAA054 /* ListItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2902A3E90BC00CAA054 /* ListItemPresenter.swift */; };
 		CFBED2932A3E90C800CAA054 /* ListItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2922A3E90C800CAA054 /* ListItemInteractor.swift */; };
 		CFBED2952A3E90D900CAA054 /* ListItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2942A3E90D900CAA054 /* ListItemRouter.swift */; };
@@ -76,7 +75,6 @@
 		CFBED2BE2A3E923C00CAA054 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2962A3E90F500CAA054 /* ListItemViewModel.swift */; };
 		CFBED2BF2A3E923C00CAA054 /* ListItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2922A3E90C800CAA054 /* ListItemInteractor.swift */; };
 		CFBED2C02A3E923C00CAA054 /* ListItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED28C2A3E90A800CAA054 /* ListItemController.swift */; };
-		CFBED2C12A3E923C00CAA054 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED28E2A3E90B100CAA054 /* ListItemView.swift */; };
 		CFBED2C22A3E923C00CAA054 /* ListItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2902A3E90BC00CAA054 /* ListItemPresenter.swift */; };
 		CFBED2C32A3E923F00CAA054 /* CardListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A12A3E91CE00CAA054 /* CardListItemView.swift */; };
 		CFBED2C42A3E923F00CAA054 /* CardDetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2A32A3E91D800CAA054 /* CardDetailItemView.swift */; };
@@ -136,7 +134,6 @@
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
 		CFBED2842A3E1A2900CAA054 /* KeysAcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysAcessor.swift; sourceTree = "<group>"; };
 		CFBED28C2A3E90A800CAA054 /* ListItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemController.swift; sourceTree = "<group>"; };
-		CFBED28E2A3E90B100CAA054 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		CFBED2902A3E90BC00CAA054 /* ListItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemPresenter.swift; sourceTree = "<group>"; };
 		CFBED2922A3E90C800CAA054 /* ListItemInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemInteractor.swift; sourceTree = "<group>"; };
 		CFBED2942A3E90D900CAA054 /* ListItemRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemRouter.swift; sourceTree = "<group>"; };
@@ -316,7 +313,6 @@
 				CFBED2D02A3EB0AA00CAA054 /* ListItemRequestParamsModel.swift */,
 				CFBED2942A3E90D900CAA054 /* ListItemRouter.swift */,
 				CFBED2CE2A3EAFA200CAA054 /* ListItemSceneFactory.swift */,
-				CFBED28E2A3E90B100CAA054 /* ListItemView.swift */,
 				CFBED2962A3E90F500CAA054 /* ListItemViewModel.swift */,
 			);
 			path = ListItemScene;
@@ -664,7 +660,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF93BD1C2A3F72300060C410 /* CardVisible.swift in Sources */,
-				CFBED2C12A3E923C00CAA054 /* ListItemView.swift in Sources */,
 				CF93BD262A3F72370060C410 /* LayoutCardView.swift in Sources */,
 				CF93BD242A3F72330060C410 /* NetworkConactable.swift in Sources */,
 				CFBED2C62A3E924200CAA054 /* TableViewAutomaticPaginate.swift in Sources */,
@@ -762,7 +757,6 @@
 				CFBED2A42A3E91D800CAA054 /* CardDetailItemView.swift in Sources */,
 				CFBED2ED2A3EBCC700CAA054 /* ClassIdentifier.swift in Sources */,
 				CFBED2B12A3E923400CAA054 /* DetailItemInteractor.swift in Sources */,
-				CFBED28F2A3E90B100CAA054 /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
