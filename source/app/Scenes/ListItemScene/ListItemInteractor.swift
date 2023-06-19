@@ -9,8 +9,8 @@
 import Foundation
 
 protocol ListItemInteractorBusinessLogic {
-    
     func fetchItems()
+    func fetchNextPage()
 }
 
 final class ListItemInteractor: ListItemInteractorBusinessLogic {
@@ -52,6 +52,10 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
                 self?.presenter?.message(string: "Não foi possível realizar a requisição.")
             }
         }
+    }
+    
+    func fetchNextPage() {
+        
     }
     
     func requestItems(with token: String?, page: Int?) {
