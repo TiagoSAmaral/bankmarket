@@ -13,19 +13,20 @@ protocol ControllerDelegate: AnyObject {
     func numberOfRow(at section: Int) -> Int
     func pullToRefreshEvent()
     func nextPageEvent()
-    func getModel(at indexPath: IndexPath) -> Model
+    func getModel(at indexPath: IndexPath) -> Model?
 }
 
 class TableViewAutomaticPaginate: UITableView, UITableViewDelegate, UITableViewDataSource, TableViewUpdateEvent {
 
-    weak var controller: ControllerDelegate?
+    private weak var controller: ControllerDelegate?
     var cardFactory: CardFactory?
     private var isPullToRefreshEnable = false
     private var isPaginateEnable = false
     private var propagateEvent: (() -> Void)?
     
-    init(isPullToRefreshEnable: Bool = false, isPaginateEnable: Bool = false) {
+    init(controller: ControllerDelegate?, isPullToRefreshEnable: Bool = false, isPaginateEnable: Bool = false) {
         super.init(frame: .zero, style: .plain)
+        self.controller = controller
         self.isPullToRefreshEnable = isPullToRefreshEnable
         self.isPaginateEnable = isPaginateEnable
         defaultSetup()
@@ -48,6 +49,7 @@ class TableViewAutomaticPaginate: UITableView, UITableViewDelegate, UITableViewD
         separatorInset = .zero
         allowsSelection = false
         rowHeight = UITableView.automaticDimension
+        backgroundColor = .clear
         registerEventScrollDidEnd()
         registerTableViewCell()
         makePullToRefresh()
