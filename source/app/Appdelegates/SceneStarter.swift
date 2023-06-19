@@ -20,8 +20,9 @@ final class SceneStarter {
             fatalError("File: \(#file) \n \(#function) \n Error Description: Is not possible render scenes. Need a UIViewController valid instance.")
         }
         
-        let rootController = makeNavigation()
-        rootController.viewControllers = [controller]
+        let navigation = makeNavigation()
+        navigation.viewControllers = [controller]
+        window.rootViewController = navigation
         window.makeKeyAndVisible()
     }
     
