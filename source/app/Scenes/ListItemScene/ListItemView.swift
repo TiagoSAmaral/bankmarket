@@ -12,7 +12,16 @@ protocol ListItemVisible where Self: UIView {
     
 }
 
-final class ListItemView: UIView {
+final class ListItemView: UIView, ListItemVisible {
     
     var tableView: TableViewUpdateEvent?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = .systemBackground
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 }
