@@ -55,6 +55,7 @@ class URLPathBuilder: WorkerURLPathBuilder {
     
     func makeUrlMetadata(with locale: String) -> URL? {
         contentBaseUrl?.path = contentHeartOfStoneMetadata
+        contentBaseUrl?.queryItems = []
         contentBaseUrl?.queryItems?.append(contentsOf: [
             URLQueryItem(name: "locale", value: locale)
         ])

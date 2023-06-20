@@ -20,6 +20,7 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
     var currentLocale: String = "pt_BR"
     var selectedItem: Model?
     var presenter: DetailItemPresentationLogic?
+    var metadata: Metadata?
     
     func fetchItem() {
         
@@ -59,8 +60,63 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
         }
         
         let apiParams = ApiParams(urlPath: urlPath, token: token, method: .get, params: nil)
-        workerNetwork?.request(with: apiParams, resultType: Metadata.self, handler: { result in
+        workerNetwork?.request(with: apiParams, resultType: Metadata.self) { [weak self] result in
+            switch result {
+            case .success(let metadata):
+                self?.metadata = metadata
+            case .failure(let error):
+                self?.presenter?.message(string: error.message)
+            }
             
+            DispatchQueue.main.async { [weak self] in
+                self?.bindMetadata()
+                self?.presenter?.presentItem(with: self?.selectedItem)
+            }
+        }
+    }
+    
+    func bindMetadata() {
+        bindSet()
+        bindType()
+        bindRarity()
+    }
+    
+    func bindSet() {
+        guard var selectedItem = selectedItem as? Item else {
+            return
+        }
+        metadata?.sets?.forEach({ metadataItem in
+            
+            if metadataItem.id == selectedItem.cardSetId {
+                selectedItem.cardSet = metadataItem
+            }
         })
+        self.selectedItem = selectedItem
+    }
+    
+    func bindType() {
+        guard var selectedItem = selectedItem as? Item else {
+            return
+        }
+        metadata?.types?.forEach({ metadataItem in
+            
+            if metadataItem.id == selectedItem.cardTypeId {
+                selectedItem.cardType = metadataItem
+            }
+        })
+        self.selectedItem = selectedItem
+    }
+    
+    func bindRarity() {
+        guard var selectedItem = selectedItem as? Item else {
+            return
+        }
+        metadata?.rarities?.forEach({ metadataItem in
+            
+            if metadataItem.id == selectedItem.rarityId {
+                selectedItem.rarity = metadataItem
+            }
+        })
+        self.selectedItem = selectedItem
     }
 }
