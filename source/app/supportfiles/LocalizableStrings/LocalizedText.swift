@@ -10,10 +10,18 @@ import Foundation
 struct LocalizedText {
     
     enum LocalizeTags: String {
-            case networkErrorNotDefined // = "networkErrorNotDefined"
-            case networkOffline // = "networkOffline"
-            case serverNotResponse // = "serverNotResponse"
+            case networkErrorNotDefined
+            case networkOffline
+            case serverNotResponse
             case pullToRefreshText
+            case tokenIsRequired
+            case prBrLocalization
+            case nameText
+            case setText
+            case rarityText
+            case atackText
+            case costText
+            case healthText
         }
     
     static func with(tagName: LocalizeTags) -> String {

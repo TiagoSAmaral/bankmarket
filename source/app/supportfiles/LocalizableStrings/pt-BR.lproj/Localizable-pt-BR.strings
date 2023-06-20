@@ -2,3 +2,11 @@
 "networkOffline" = "Verifique sua conexão com a internet";
 "serverNotResponse" = "Entre em contato com suporte.";
 "pullToRefreshText" = "Atualizando...";
+"tokenIsRequired" = "Necessário um token de autorização. Veja o Readme do projeto para mais informações";
+"prBrLocalization" = "pt_BR";
+"nameText" = "Nome";
+"setText" = "Conjunto";
+"rarityText" = "Raridade";
+"atackText" = "Ataque";
+"costText" = "Mana";
+"healthText" = "Saúde";
