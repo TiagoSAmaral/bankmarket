@@ -10,7 +10,7 @@ import Foundation
 
 protocol DetailItemPresentationLogic {
     func presentItem(with item: Model?)
-    func message(string: String?)
+    func message(text: String?)
 }
 
 final class DetailItemPresenter: DetailItemPresentationLogic {
@@ -19,12 +19,14 @@ final class DetailItemPresenter: DetailItemPresentationLogic {
     
     func presentItem(with item: Model?) {
         guard var item = item as? Visible else {
-            controller?.display(message: "")
+            controller?.display(message: LocalizedText.with(tagName: .networkErrorNotDefined))
             return
         }
         item.layoutView = .cardDetailItemView
         controller?.display(viewModel: item)
     }
 
-    func message(string: String?) {}
+    func message(text: String?) {
+        controller?.display(message: text)
+    }
 }

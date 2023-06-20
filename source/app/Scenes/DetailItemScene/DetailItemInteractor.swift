@@ -34,7 +34,7 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
             case .success(let token):
                 authToken = token
             case .failure(let error):
-                self?.presenter?.message(string: error.message)
+                self?.presenter?.message(text: error.message)
             }
             
             requestGroup.leave()
@@ -48,12 +48,12 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
     func requestMetadata(with token: String?) {
         
         guard let token = token else {
-            presenter?.message(string: "")
+            presenter?.message(text: LocalizedText.with(tagName: .tokenIsRequired))
             return
         }
         
-        guard let urlPath = workerApiPathBuilder?.makeUrlMetadata(with: "pt_BR") else {
-            presenter?.message(string: "")
+        guard let urlPath = workerApiPathBuilder?.makeUrlMetadata(with: LocalizedText.with(tagName: .prBrLocalization)) else {
+            presenter?.message(text: LocalizedText.with(tagName: .networkErrorNotDefined))
             return
         }
         
@@ -63,7 +63,7 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
             case .success(let metadata):
                 self?.metadata = metadata
             case .failure(let error):
-                self?.presenter?.message(string: error.message)
+                self?.presenter?.message(text: error.message)
             }
             
             DispatchQueue.main.async { [weak self] in

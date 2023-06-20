@@ -13,7 +13,11 @@ protocol ListDisplayLogic: AnyObject where Self: UIViewController {
     func display(message: String?)
 }
 
-final class ListItemController: UIViewController, ListDisplayLogic, TableViewAutomaticPaginateDelegate, LoadingManagers {
+final class ListItemController: UIViewController,
+                                ListDisplayLogic,
+                                TableViewAutomaticPaginateDelegate,
+                                LoadingManagers,
+                                AlertPresetable {
     
     var interactor: ListItemInteractorBusinessLogic?
     var router: ListItemRoutingLogic?
@@ -27,8 +31,8 @@ final class ListItemController: UIViewController, ListDisplayLogic, TableViewAut
     }
     
     func display(message: String?) {
-        stopLoading() {
-            // Show Alert
+        stopLoading() { [weak self] in
+            self?.presentAlert(with: nil, and: message, handler: nil)
         }
     }
     
@@ -51,7 +55,7 @@ final class ListItemController: UIViewController, ListDisplayLogic, TableViewAut
             self?.router?.goToDetail(with: item)
         }
     }
-    
+
 //  MARK: TableViewAutomaticPaginateDelegate Methods
     func numberOfSections() -> Int {
         1
@@ -68,13 +72,12 @@ final class ListItemController: UIViewController, ListDisplayLogic, TableViewAut
     func nextPageEvent() {
         interactor?.fetchNextPage()
     }
-    
+
     func getModel(at indexPath: IndexPath) -> Model?  {
         guard var item = items?[indexPath.row] as? Selectable else {
             return nil
         }
         item.actionOnTap = goToDetail
-        
         return item
     }
 }

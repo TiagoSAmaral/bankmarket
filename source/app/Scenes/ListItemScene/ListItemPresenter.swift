@@ -10,7 +10,7 @@ import Foundation
 
 protocol ListItemPresentationLogic {
     func presentList(with items: [Model]?)
-    func message(string: String?)
+    func message(text: String?)
 }
 
 final class ListItemPresenter: ListItemPresentationLogic {
@@ -33,7 +33,7 @@ final class ListItemPresenter: ListItemPresentationLogic {
         return items
     }
     
-    func message(string: String?) {
-        
+    func message(text: String?) {
+        controller?.display(message: text)
     }
 }

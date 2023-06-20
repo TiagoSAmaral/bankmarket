@@ -13,7 +13,11 @@ protocol DetailDisplayLogic: AnyObject where Self: UIViewController {
     func display(message: String?)
 }
 
-final class DetailItemController: UIViewController, DetailDisplayLogic, TableViewAutomaticPaginateDelegate, LoadingManagers {
+final class DetailItemController: UIViewController,
+                                  DetailDisplayLogic,
+                                  TableViewAutomaticPaginateDelegate,
+                                  LoadingManagers,
+                                  AlertPresetable {
 
     var interactor: DetailItemInteractorBusinessLogic?
     var listView: TableViewUpdateEvent?
@@ -27,7 +31,6 @@ final class DetailItemController: UIViewController, DetailDisplayLogic, TableVie
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         fetchItem()
-        
     }
     
     func fetchItem() {
@@ -44,8 +47,10 @@ final class DetailItemController: UIViewController, DetailDisplayLogic, TableVie
     }
     
     func display(message: String?) {
-        stopLoading() {
-            
+        stopLoading() { [weak self] in
+            self?.presentAlert(with: nil, and: message) {[weak self] _ in
+                self?.navigationController?.popViewController(animated: true)
+            }
         }
     }
     

@@ -19,7 +19,7 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
     var workerNetwork: NetworkWorker?
     var workerSecurity: SecurityWorker?
     var workerApiPathBuilder: WorkerURLPathBuilder?
-    var currentLocale: String = "pt_BR"
+    var currentLocale: String = LocalizedText.with(tagName: .prBrLocalization)
     var metadata: Metadata?
     
     var lastResponse: ResponseList?
@@ -35,14 +35,10 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
         workerSecurity?.getUserToken(handler: { [weak self] result in
             switch result {
             case .success(let token):
-                if let token = token {
-                    authToken = token
-                } else {
-                    self?.presenter?.message(string: "Não foi possível realizar a requisição.")
-                }
+                authToken = token
                 requestGroup.leave()
             case .failure(let error):
-                self?.presenter?.message(string: error.message)
+                self?.presenter?.message(text: error.message)
                 requestGroup.leave()
             }
         })
@@ -51,7 +47,7 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
             if let authToken = authToken {
                 self?.requestItems(with: authToken, page: 1)
             } else {
-                self?.presenter?.message(string: "Não foi possível realizar a requisição.")
+                self?.presenter?.message(text: LocalizedText.with(tagName: .tokenIsRequired))
             }
         }
     }
@@ -61,13 +57,12 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
             switch result {
             case .success(let token):
                 if let token = token {
-                    
                     self?.requestItems(with: token, page: self?.nextPage())
                 } else {
-                    self?.presenter?.message(string: "Não foi possível realizar a requisição.")
+                    self?.presenter?.message(text: LocalizedText.with(tagName: .tokenIsRequired))
                 }
             case .failure(let error):
-                self?.presenter?.message(string: error.message)
+                self?.presenter?.message(text: error.message)
             }
         })
     }
@@ -91,7 +86,7 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
                     
                     self?.presenter?.presentList(with: self?.items)
                 case .failure(let error):
-                    self?.presenter?.message(string: error.message)
+                    self?.presenter?.message(text: error.message)
                 }
             })
         }
