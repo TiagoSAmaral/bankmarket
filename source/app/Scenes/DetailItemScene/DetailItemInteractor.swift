@@ -17,7 +17,7 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
     var workerNetwork: NetworkWorker?
     var workerSecurity: SecurityWorker?
     var workerApiPathBuilder: WorkerURLPathBuilder?
-    var currentLocale: String = "pt_BR"
+    var currentLocale: String = LocalizedText.with(tagName: .localizationApi)
     var selectedItem: Model?
     var presenter: DetailItemPresentationLogic?
     var metadata: Metadata?
@@ -52,7 +52,7 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
             return
         }
         
-        guard let urlPath = workerApiPathBuilder?.makeUrlMetadata(with: LocalizedText.with(tagName: .prBrLocalization)) else {
+        guard let urlPath = workerApiPathBuilder?.makeUrlMetadata(with: currentLocale) else {
             presenter?.message(text: LocalizedText.with(tagName: .networkErrorNotDefined))
             return
         }

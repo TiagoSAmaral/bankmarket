@@ -15,7 +15,7 @@ struct LocalizedText {
             case serverNotResponse
             case pullToRefreshText
             case tokenIsRequired
-            case prBrLocalization
+            case localizationApi
             case nameText
             case setText
             case rarityText
@@ -25,6 +25,9 @@ struct LocalizedText {
         }
     
     static func with(tagName: LocalizeTags) -> String {
-        return Bundle.main.localizedString(forKey: tagName.rawValue, value: nil, table: "Localizable-pt-BR")
+        
+        
+        
+        return NSLocalizedString(tagName.rawValue, comment: "") // Bundle.main.localizedString(forKey: tagName.rawValue, value: nil, table: "Localizable-pt-BR")
     }
 }

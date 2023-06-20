@@ -19,7 +19,7 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
     var workerNetwork: NetworkWorker?
     var workerSecurity: SecurityWorker?
     var workerApiPathBuilder: WorkerURLPathBuilder?
-    var currentLocale: String = LocalizedText.with(tagName: .prBrLocalization)
+    var currentLocale: String = LocalizedText.with(tagName: .localizationApi)
     var metadata: Metadata?
     
     var lastResponse: ResponseList?

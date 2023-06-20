@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  hearthstonecardviewer
+
+  Created by Tiago Amaral on 20/06/23.
+  Copyright © 2023 developerios. All rights reserved.
+*/
+
+"networkErrorNotDefined" = "Somethin is wrong, please try again. In case this error persist, contact the support.";
+"networkOffline" = "Check your internet connection.";
+"serverNotResponse" = "Contact the support.";
+"pullToRefreshText" = "Updating...";
+"tokenIsRequired" = "A authorization token is required. See the Readme of project for more information.";
+"localizationApi" = "en_US";
+"nameText" = "Name";
+"setText" = "Set";
+"rarityText" = "Rarity";
+"atackText" = "Atack";
+"costText" = "Mana";
+"healthText" = "Health";
