@@ -8,8 +8,9 @@
 
 import UIKit
 
-struct Item: Decodable {
-    let id: Int?
+struct Item: Decodable, Visible, Selectable {
+
+    let identifier: Int?
     let slug: String?
 
     let image: String?
@@ -28,4 +29,24 @@ struct Item: Decodable {
     var cardSet: MetadataItem?
     var cardType: MetadataItem?
     var rarity: MetadataItem?
+    
+    var layoutView: CardLayoutView?
+    var actionOnTap: ((Model?) -> Void)?
+    
+    enum CodingKeys: String, CodingKey {
+        case identifier = "id"
+        
+        case slug,
+        image,
+        cropImage,
+        name,
+        flavorText,
+        text,
+        cardSetId,
+        cardTypeId,
+        rarityId,
+        attack,
+        manaCost,
+        health
+    }
 }
