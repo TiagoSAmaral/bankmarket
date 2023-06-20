@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6414E923E4C210009C7A9E /* TemplateTests.swift */; };
 		CF886B992A40FE080027EEFA /* ColorAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B982A40FE080027EEFA /* ColorAssets.swift */; };
+		CF886B9C2A4113E70027EEFA /* LHF Uncial Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF886B9B2A4113E70027EEFA /* LHF Uncial Caps.ttf */; };
+		CF886B9D2A4113E70027EEFA /* LHF Uncial Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF886B9B2A4113E70027EEFA /* LHF Uncial Caps.ttf */; };
+		CF886B9F2A4117880027EEFA /* FontPallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B9E2A4117880027EEFA /* FontPallet.swift */; };
+		CF886BA02A4117880027EEFA /* FontPallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B9E2A4117880027EEFA /* FontPallet.swift */; };
 		CF93BD092A3F6E9E0060C410 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD082A3F6E9E0060C410 /* SnapshotTesting */; };
 		CF93BD0C2A3F71E80060C410 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD0B2A3F71E80060C410 /* Kingfisher */; };
 		CF93BD0F2A3F720A0060C410 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD0E2A3F720A0060C410 /* Alamofire */; };
@@ -125,6 +129,8 @@
 		CF6414DF23E4C1CF009C7A9E /* HeartOfStoneViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartOfStoneViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6414E923E4C210009C7A9E /* TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
 		CF886B982A40FE080027EEFA /* ColorAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAssets.swift; sourceTree = "<group>"; };
+		CF886B9B2A4113E70027EEFA /* LHF Uncial Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LHF Uncial Caps.ttf"; sourceTree = "<group>"; };
+		CF886B9E2A4117880027EEFA /* FontPallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPallet.swift; sourceTree = "<group>"; };
 		CF93BD322A3F76E90060C410 /* SecurityApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityApi.swift; sourceTree = "<group>"; };
 		CF93BD352A3FBE370060C410 /* UrlPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPathBuilder.swift; sourceTree = "<group>"; };
 		CF93BD372A3FBE4E0060C410 /* WorkerURLPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerURLPathBuilder.swift; sourceTree = "<group>"; };
@@ -210,6 +216,15 @@
 				CF886B982A40FE080027EEFA /* ColorAssets.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		CF886B9A2A4113DB0027EEFA /* font */ = {
+			isa = PBXGroup;
+			children = (
+				CF886B9B2A4113E70027EEFA /* LHF Uncial Caps.ttf */,
+				CF886B9E2A4117880027EEFA /* FontPallet.swift */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 		CF93BD102A3F72240060C410 /* Frameworks */ = {
@@ -490,6 +505,7 @@
 		CFD3A6B023DA308A00EB6D4D /* supportfiles */ = {
 			isa = PBXGroup;
 			children = (
+				CF886B9A2A4113DB0027EEFA /* font */,
 				CFBED2832A3E1A2900CAA054 /* secret */,
 				CFD3A6C523DA3F1F00EB6D4D /* LocalizableStrings */,
 				CFD3A6B123DA308A00EB6D4D /* plists */,
@@ -629,6 +645,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF886B9D2A4113E70027EEFA /* LHF Uncial Caps.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +653,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF886B9C2A4113E70027EEFA /* LHF Uncial Caps.ttf in Resources */,
 				CFD3A6D723DA41FE00EB6D4D /* Localizable-pt-BR.strings in Resources */,
 				CFD3A6DC23DA462000EB6D4D /* Launch Screen.storyboard in Resources */,
 				CFD3A6BB23DA308A00EB6D4D /* Assets.xcassets in Resources */,
@@ -687,6 +705,7 @@
 				CF93BD232A3F72300060C410 /* ListItemModelVisible.swift in Sources */,
 				CFBED2BF2A3E923C00CAA054 /* ListItemInteractor.swift in Sources */,
 				CF93BD282A3F72370060C410 /* MetadataItem.swift in Sources */,
+				CF886BA02A4117880027EEFA /* FontPallet.swift in Sources */,
 				CF93BD2E2A3F725C0060C410 /* ClassIdentifier.swift in Sources */,
 				CFBED2C32A3E923F00CAA054 /* CardListItemView.swift in Sources */,
 				CF93BD272A3F72370060C410 /* ResponseListItem.swift in Sources */,
@@ -730,6 +749,7 @@
 				CFBED2B62A3E923400CAA054 /* DetailItemViewModel.swift in Sources */,
 				CF93BD362A3FBE370060C410 /* UrlPathBuilder.swift in Sources */,
 				CFBED2912A3E90BC00CAA054 /* ListItemPresenter.swift in Sources */,
+				CF886B9F2A4117880027EEFA /* FontPallet.swift in Sources */,
 				CFBED2CC2A3EACFD00CAA054 /* KeyAdvisor.swift in Sources */,
 				CFBED2A22A3E91CE00CAA054 /* CardListItemView.swift in Sources */,
 				CFBED2B52A3E923400CAA054 /* DetailItemView.swift in Sources */,

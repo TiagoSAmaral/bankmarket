@@ -22,6 +22,7 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
     var currentLocale: String = "pt_BR"
     
     var lastResponse: ResponseList?
+    var items: [Item]?
     
     func fetchItems() {
         
@@ -47,7 +48,7 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
         
         requestGroup.notify(queue: DispatchQueue.main) { [weak self] in
             if let authToken = authToken {
-                self?.requestItems(with: authToken, page: self?.nextPage())
+                self?.requestItems(with: authToken, page: 1)
             } else {
                 self?.presenter?.message(string: "Não foi possível realizar a requisição.")
             }
@@ -55,7 +56,19 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
     }
     
     func fetchNextPage() {
-        
+        workerSecurity?.getUserToken(handler: { [weak self] result in
+            switch result {
+            case .success(let token):
+                if let token = token {
+                    
+                    self?.requestItems(with: token, page: self?.nextPage())
+                } else {
+                    self?.presenter?.message(string: "Não foi possível realizar a requisição.")
+                }
+            case .failure(let error):
+                self?.presenter?.message(string: error.message)
+            }
+        })
     }
     
     func requestItems(with token: String?, page: Int?) {
@@ -68,7 +81,14 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
                 switch response {
                 case .success(let responseList):
                     self?.lastResponse = responseList
-                    self?.presenter?.presentList(with: responseList.cards)
+                    
+                    if responseList.page == 1 {
+                        self?.items = responseList.cards
+                    } else if let cards = responseList.cards {
+                        self?.items?.append(contentsOf: cards)
+                    }
+                    
+                    self?.presenter?.presentList(with: self?.items)
                 case .failure(let error):
                     self?.presenter?.message(string: error.message)
                 }

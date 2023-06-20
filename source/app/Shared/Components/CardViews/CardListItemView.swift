@@ -22,7 +22,7 @@ final class CardListItemView: CardSelectable {
 
     lazy var imageViewBackground: UIImageView = {
        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         imageView.layer.cornerRadius = cornerRadius
         imageView.clipsToBounds =  true
         return imageView
@@ -36,7 +36,7 @@ final class CardListItemView: CardSelectable {
 
     lazy var titleLabel: UILabel = {
        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 22, weight: .heavy)
+        label.font = FontPallet.mainFont?.withSize(22)
         label.textColor = ColorAssets.titleColor
         return label
     }()
@@ -49,7 +49,7 @@ final class CardListItemView: CardSelectable {
     
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+        label.font = FontPallet.mainFont
         label.textColor = ColorAssets.descriptionColor
         label.numberOfLines = .zero
         label.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)

@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>LHF Uncial Caps.ttf</string>
+	</array>
 	<key>AUTH_BASE_URL</key>
 	<string>https://oauth.battle.net</string>
 	<key>CONTENT_BASE_URL</key>
