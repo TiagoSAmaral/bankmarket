@@ -1,5 +1,5 @@
 //
-//  Metadata.swift
+//  MetadataItem.swift
 //  BaseProjectTarget
 //
 //  Created by Tiago Amaral on 16/06/23.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-struct Metadata: Decodable {
-    
-    let sets: [MetadataItem]?
-    let types: [MetadataItem]?
-    let rarities: [MetadataItem]?
+struct MetadataItem: Decodable {
+    let id: Int?
+    let name: String?
 }
