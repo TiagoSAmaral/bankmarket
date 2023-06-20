@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+protocol DetailItemPresentationLogic {
+    func presentItem(with item: Model?)
+    func message(string: String?)
+}
+
+final class DetailItemPresenter: DetailItemPresentationLogic {
+    
+    weak var controller: DetailDisplayLogic?
+    
+    func presentItem(with item: Model?) {
+        guard var item = item as? Visible else {
+            controller?.display(message: "")
+            return
+        }
+        item.layoutView = .cardDetailItemView
+        controller?.display(viewModel: item)
+    }
+
+    func message(string: String?) {}
+}
