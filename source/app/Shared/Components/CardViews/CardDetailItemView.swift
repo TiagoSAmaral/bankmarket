@@ -59,7 +59,7 @@ final class CardDetailItemView: CardSelectable {
         vStackView.addArrangedSubview(makeLabel(with: "Ataque: \(visibleModel.attack ?? .zero)"))
         vStackView.addArrangedSubview(makeLabel(with: "Custo: \(visibleModel.manaCost ?? .zero)"))
         vStackView.addArrangedSubview(makeLabel(with: "Saúde: \(visibleModel.health ?? .zero)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(visibleModel.flavorText ?? .empty)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(visibleModel.flavorText?.htmlToString ?? .empty)"))
     }
     
     func makeLabel(with text: String) -> UIView {
