@@ -20,6 +20,7 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
     var workerSecurity: SecurityWorker?
     var workerApiPathBuilder: WorkerURLPathBuilder?
     var currentLocale: String = "pt_BR"
+    var metadata: Metadata?
     
     var lastResponse: ResponseList?
     var items: [Item]?

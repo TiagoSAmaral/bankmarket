@@ -21,7 +21,8 @@ final class ListItemRouter: NSObject, ListItemRoutingLogic {
     }
     
     func goToDetail(with data: Model) {
-        
-//        navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+        if let controller = DetailItemSceneFactory.makeScene(with: data) {
+            navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }

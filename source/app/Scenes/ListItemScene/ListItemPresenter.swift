@@ -9,35 +9,28 @@
 import Foundation
 
 protocol ListItemPresentationLogic {
-    func presentList(with items: [Item]?)
+    func presentList(with items: [Model]?)
     func message(string: String?)
 }
 
 final class ListItemPresenter: ListItemPresentationLogic {
-    
+
     weak var controller: ListDisplayLogic?
     
-    func presentList(with items: [Item]?) {
+    func presentList(with items: [Model]?) {
         
-        // Make a viewModel here. Use Adapter.
-        // Parse Item to ListItemModelVisible model.
         controller?.display(viewModel: parseToListItemModelVisible(from: items))
     }
     
-    func parseToListItemModelVisible(from items: [Item]?) -> [ListItemModelVisible] {
+    func parseToListItemModelVisible(from items: [Model]?) -> [Model]? {
         
-        var visibleItems = [ListItemModelVisible]()
-        
-        items?.forEach({ item in
-            let visibleitem = ListItemViewModel()
-            visibleitem.title = item.name
-            visibleitem.layoutView = .cardListItemView
-            visibleitem.imageUrlPath = item.cropImage
-            visibleitem.flavorDescription = item.flavorText
-            visibleItems.append(visibleitem)
-        })
-        
-        return visibleItems
+        guard var items = items as? [Visible] else {
+            return nil
+        }
+        for index in items.indices {
+            items[index].layoutView = .cardListItemView
+        }
+        return items
     }
     
     func message(string: String?) {

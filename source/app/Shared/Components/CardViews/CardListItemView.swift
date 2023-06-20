@@ -66,11 +66,11 @@ final class CardListItemView: CardSelectable {
     }
     
     func populateViewElements() {
-        let visibleModel = model as? ListItemModelVisible
+        let visibleModel = model as? Item
         
-        titleLabel.text = visibleModel?.title
-        descriptionLabel.text = visibleModel?.flavorDescription
-        if let imageUrl = visibleModel?.imageUrlPath {
+        titleLabel.text = visibleModel?.name
+        descriptionLabel.text = visibleModel?.flavorText
+        if let imageUrl = visibleModel?.cropImage {
             imageViewBackground.kf.setImage(with: URL(string: imageUrl))
         }
     }

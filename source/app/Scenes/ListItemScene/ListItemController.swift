@@ -9,18 +9,18 @@
 import UIKit
 
 protocol ListDisplayLogic: AnyObject where Self: UIViewController {
-    func display(viewModel: [ListItemModelVisible])
+    func display(viewModel: [Model]?)
     func display(message: String?)
 }
 
-final class ListItemController: UIViewController, ListDisplayLogic, ControllerDelegate {
+final class ListItemController: UIViewController, ListDisplayLogic, TableViewAutomaticPaginateDelegate {
     
     var interactor: ListItemInteractorBusinessLogic?
     var router: ListItemRoutingLogic?
     var listView: TableViewUpdateEvent?
     var items: [Model]?
     
-    func display(viewModel: [ListItemModelVisible]) {
+    func display(viewModel: [Model]?) {
         items = viewModel
         listView?.reloadView()
     }
@@ -37,13 +37,13 @@ final class ListItemController: UIViewController, ListDisplayLogic, ControllerDe
     }
     
     lazy var goToDetail: ((Model?) -> Void)? = { [weak self] item in
-        if let item = item {
+        if var item = item as? Selectable {
+            item.actionOnTap = nil
             self?.router?.goToDetail(with: item)
         }
     }
     
-//  MARK: ControllerDelegate Methods
-    
+//  MARK: TableViewAutomaticPaginateDelegate Methods
     func numberOfSections() -> Int {
         1
     }
