@@ -55,6 +55,10 @@
 		CFB8E3412A41FBB70051026D /* LoadingPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E33F2A41FBB70051026D /* LoadingPresentable.swift */; };
 		CFB8E3442A41FC030051026D /* LoadindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3432A41FC030051026D /* LoadindingView.swift */; };
 		CFB8E3452A41FC030051026D /* LoadindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3432A41FC030051026D /* LoadindingView.swift */; };
+		CFB8E3482A41FE430051026D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3472A41FE430051026D /* AlertView.swift */; };
+		CFB8E3492A41FE430051026D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3472A41FE430051026D /* AlertView.swift */; };
+		CFB8E34B2A41FE840051026D /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E34A2A41FE840051026D /* AlertPresentable.swift */; };
+		CFB8E34C2A41FE840051026D /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E34A2A41FE840051026D /* AlertPresentable.swift */; };
 		CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6D923DA443200EB6D4D /* LocalizedText.swift */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
@@ -141,6 +145,8 @@
 		CFB8E33C2A41FBA20051026D /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
 		CFB8E33F2A41FBB70051026D /* LoadingPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPresentable.swift; sourceTree = "<group>"; };
 		CFB8E3432A41FC030051026D /* LoadindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadindingView.swift; sourceTree = "<group>"; };
+		CFB8E3472A41FE430051026D /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		CFB8E34A2A41FE840051026D /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
@@ -277,6 +283,14 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
+		CFB8E3462A41FE390051026D /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8E3472A41FE430051026D /* AlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		CFBB297F2A3D306900DA0561 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,18 +306,19 @@
 		CFBB29862A3D310B00DA0561 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				CFB8E34A2A41FE840051026D /* AlertPresentable.swift */,
 				CFBED2E22A3EBC1A00CAA054 /* CardVisible.swift */,
 				CFBED2F12A3EBD7300CAA054 /* GenericCell.swift */,
 				CFBED2CB2A3EACFD00CAA054 /* KeyAdvisor.swift */,
+				CFB8E33C2A41FBA20051026D /* LoadingManager.swift */,
+				CFB8E33F2A41FBB70051026D /* LoadingPresentable.swift */,
 				CFBED2A52A3E91ED00CAA054 /* Model.swift */,
 				CFBED2D92A3EB90A00CAA054 /* NetworkWorker.swift */,
 				CFBED2A72A3E91FD00CAA054 /* Selectable.swift */,
+				CF886BA42A41526A0027EEFA /* TableViewAutomaticPaginateDelegate.swift */,
 				CFBED2DD2A3EBB6C00CAA054 /* TableViewUpdateEvent.swift */,
 				CFBED2A92A3E920800CAA054 /* Visible.swift */,
 				CF93BD372A3FBE4E0060C410 /* WorkerURLPathBuilder.swift */,
-				CF886BA42A41526A0027EEFA /* TableViewAutomaticPaginateDelegate.swift */,
-				CFB8E33C2A41FBA20051026D /* LoadingManager.swift */,
-				CFB8E33F2A41FBB70051026D /* LoadingPresentable.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -366,6 +381,7 @@
 		CFBED2992A3E911000CAA054 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CFB8E3462A41FE390051026D /* AlertView */,
 				CFB8E3422A41FBE50051026D /* LoadingView */,
 				CFBED29C2A3E912E00CAA054 /* CardViews */,
 				CFBED2EE2A3EBCEA00CAA054 /* GenericTableViewCell */,
@@ -697,6 +713,7 @@
 			files = (
 				CFB8E33E2A41FBA20051026D /* LoadingManager.swift in Sources */,
 				CF93BD1C2A3F72300060C410 /* CardVisible.swift in Sources */,
+				CFB8E34C2A41FE840051026D /* AlertPresentable.swift in Sources */,
 				CF93BD262A3F72370060C410 /* LayoutCardView.swift in Sources */,
 				CF93BD242A3F72330060C410 /* NetworkConactable.swift in Sources */,
 				CFBED2C62A3E924200CAA054 /* TableViewAutomaticPaginate.swift in Sources */,
@@ -719,6 +736,7 @@
 				CF93BD272A3F72370060C410 /* ResponseListItem.swift in Sources */,
 				CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */,
 				CF93BD302A3F72650060C410 /* Constraints.swift in Sources */,
+				CFB8E3492A41FE430051026D /* AlertView.swift in Sources */,
 				CFBED2C02A3E923C00CAA054 /* ListItemController.swift in Sources */,
 				CFBED3022A3ED3C700CAA054 /* KeysAcessor.swift in Sources */,
 				CF93BD3B2A3FCDD60060C410 /* SecurityApi.swift in Sources */,
@@ -760,11 +778,13 @@
 				CF886B9F2A4117880027EEFA /* FontPallet.swift in Sources */,
 				CFBED2CC2A3EACFD00CAA054 /* KeyAdvisor.swift in Sources */,
 				CFBED2A22A3E91CE00CAA054 /* CardListItemView.swift in Sources */,
+				CFB8E34B2A41FE840051026D /* AlertPresentable.swift in Sources */,
 				CFBED2DC2A3EB93B00CAA054 /* NetworkError.swift in Sources */,
 				CF93BD332A3F76E90060C410 /* SecurityApi.swift in Sources */,
 				CF93BD3E2A3FF7830060C410 /* Empty.swift in Sources */,
 				CFBED2F72A3EC1C000CAA054 /* LayoutCardView.swift in Sources */,
 				CFBB29812A3D308800DA0561 /* Item.swift in Sources */,
+				CFB8E3482A41FE430051026D /* AlertView.swift in Sources */,
 				CFBED2F52A3EBE4200CAA054 /* MosaicBaseView.swift in Sources */,
 				CFBED29E2A3E91B400CAA054 /* TableViewAutomaticPaginate.swift in Sources */,
 				CFD3A6B723DA308A00EB6D4D /* AppDelegate.swift in Sources */,
