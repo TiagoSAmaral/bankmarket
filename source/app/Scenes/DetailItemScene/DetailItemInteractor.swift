@@ -43,8 +43,6 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
         requestGroup.notify(queue: DispatchQueue.main) { [weak self] in
             self?.requestMetadata(with: authToken)
         }
-        
-//        presenter?.presentItem(with: selectedItem)
     }
     
     func requestMetadata(with token: String?) {
