@@ -42,16 +42,13 @@ final class NetworkConactable: NetworkWorker {
         resolve(request: dataRequest, resultType: resultType.self, handler: handler)
     }
     
-    #warning("Remove debugPrint")
     func resolve<T>(request: DataRequest, resultType: T.Type, handler: ResponseHandler<T>?) where T: Decodable {
         
         request.responseDecodable(of: resultType.self) { response in
             switch response.result {
             case .success(let data):
-                debugPrint(data)
                 handler?(.success(data))
             case .failure(let error):
-                debugPrint(error)
                 handler?(.failure(NetworkError.makeError(with: error.responseCode, description: error.errorDescription)))
             }
         }
