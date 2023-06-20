@@ -12,7 +12,9 @@ protocol NavigationControllerDecorable {
     func defineNavigationBarTitleViewWith(imageName: String)
 }
 
-class NavigationController: UINavigationController, NavigationControllerDecorable {
+class NavigationController: UINavigationController, NavigationControllerDecorable, LoadingPresentable {
+    
+    var loadingController: LoadingViewController?
     
     init() {
         super.init(nibName: nil, bundle: nil)

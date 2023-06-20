@@ -49,6 +49,12 @@
 		CF93BD3B2A3FCDD60060C410 /* SecurityApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD322A3F76E90060C410 /* SecurityApi.swift */; };
 		CF93BD3C2A3FCDD60060C410 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD392A3FCDD20060C410 /* KeychainAccess.swift */; };
 		CF93BD3E2A3FF7830060C410 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD3D2A3FF7830060C410 /* Empty.swift */; };
+		CFB8E33D2A41FBA20051026D /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E33C2A41FBA20051026D /* LoadingManager.swift */; };
+		CFB8E33E2A41FBA20051026D /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E33C2A41FBA20051026D /* LoadingManager.swift */; };
+		CFB8E3402A41FBB70051026D /* LoadingPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E33F2A41FBB70051026D /* LoadingPresentable.swift */; };
+		CFB8E3412A41FBB70051026D /* LoadingPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E33F2A41FBB70051026D /* LoadingPresentable.swift */; };
+		CFB8E3442A41FC030051026D /* LoadindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3432A41FC030051026D /* LoadindingView.swift */; };
+		CFB8E3452A41FC030051026D /* LoadindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3432A41FC030051026D /* LoadindingView.swift */; };
 		CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6D923DA443200EB6D4D /* LocalizedText.swift */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
@@ -132,6 +138,9 @@
 		CF93BD392A3FCDD20060C410 /* KeychainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
 		CF93BD3D2A3FF7830060C410 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		CF9601AE23DA2A1E00916EF1 /* HeartOfStoneViewerTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartOfStoneViewerTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB8E33C2A41FBA20051026D /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
+		CFB8E33F2A41FBB70051026D /* LoadingPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPresentable.swift; sourceTree = "<group>"; };
+		CFB8E3432A41FC030051026D /* LoadindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadindingView.swift; sourceTree = "<group>"; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
@@ -260,6 +269,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CFB8E3422A41FBE50051026D /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8E3432A41FC030051026D /* LoadindingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 		CFBB297F2A3D306900DA0561 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +302,8 @@
 				CFBED2A92A3E920800CAA054 /* Visible.swift */,
 				CF93BD372A3FBE4E0060C410 /* WorkerURLPathBuilder.swift */,
 				CF886BA42A41526A0027EEFA /* TableViewAutomaticPaginateDelegate.swift */,
+				CFB8E33C2A41FBA20051026D /* LoadingManager.swift */,
+				CFB8E33F2A41FBB70051026D /* LoadingPresentable.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -347,6 +366,7 @@
 		CFBED2992A3E911000CAA054 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CFB8E3422A41FBE50051026D /* LoadingView */,
 				CFBED29C2A3E912E00CAA054 /* CardViews */,
 				CFBED2EE2A3EBCEA00CAA054 /* GenericTableViewCell */,
 				CFBED2F32A3EBE3100CAA054 /* MosaicBaseView */,
@@ -675,6 +695,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB8E33E2A41FBA20051026D /* LoadingManager.swift in Sources */,
 				CF93BD1C2A3F72300060C410 /* CardVisible.swift in Sources */,
 				CF93BD262A3F72370060C410 /* LayoutCardView.swift in Sources */,
 				CF93BD242A3F72330060C410 /* NetworkConactable.swift in Sources */,
@@ -685,6 +706,7 @@
 				CF93BD3C2A3FCDD60060C410 /* KeychainAccess.swift in Sources */,
 				CF93BD1F2A3F72300060C410 /* TableViewUpdateEvent.swift in Sources */,
 				CF93BD2D2A3F72470060C410 /* CardSelectable.swift in Sources */,
+				CFB8E3452A41FC030051026D /* LoadindingView.swift in Sources */,
 				CFBED2B72A3E923900CAA054 /* DetailItemInteractor.swift in Sources */,
 				CFBED2C22A3E923C00CAA054 /* ListItemPresenter.swift in Sources */,
 				CFBED2BF2A3E923C00CAA054 /* ListItemInteractor.swift in Sources */,
@@ -692,6 +714,7 @@
 				CF886BA02A4117880027EEFA /* FontPallet.swift in Sources */,
 				CF93BD2E2A3F725C0060C410 /* ClassIdentifier.swift in Sources */,
 				CFBED2C32A3E923F00CAA054 /* CardListItemView.swift in Sources */,
+				CFB8E3412A41FBB70051026D /* LoadingPresentable.swift in Sources */,
 				CF886BA62A41526A0027EEFA /* TableViewAutomaticPaginateDelegate.swift in Sources */,
 				CF93BD272A3F72370060C410 /* ResponseListItem.swift in Sources */,
 				CFBB297C2A3CC15F00DA0561 /* LocalizedText.swift in Sources */,
@@ -725,6 +748,8 @@
 				CF886BA52A41526A0027EEFA /* TableViewAutomaticPaginateDelegate.swift in Sources */,
 				CFBED2952A3E90D900CAA054 /* ListItemRouter.swift in Sources */,
 				CFBED2FD2A3ECB5F00CAA054 /* ResponseListItem.swift in Sources */,
+				CFB8E3402A41FBB70051026D /* LoadingPresentable.swift in Sources */,
+				CFB8E3442A41FC030051026D /* LoadindingView.swift in Sources */,
 				CFBED2D72A3EB7C000CAA054 /* NetworkConactable.swift in Sources */,
 				CFBED2F22A3EBD7300CAA054 /* GenericCell.swift in Sources */,
 				CFBED2B32A3E923400CAA054 /* DetailItemPresenter.swift in Sources */,
@@ -751,6 +776,7 @@
 				CFD3A6DA23DA443200EB6D4D /* LocalizedText.swift in Sources */,
 				CFBED2E72A3EBC6B00CAA054 /* Constraints.swift in Sources */,
 				CFBED2F02A3EBCF800CAA054 /* GenericTableViewCell.swift in Sources */,
+				CFB8E33D2A41FBA20051026D /* LoadingManager.swift in Sources */,
 				CFBED2DE2A3EBB6C00CAA054 /* TableViewUpdateEvent.swift in Sources */,
 				CFBED2DA2A3EB90A00CAA054 /* NetworkWorker.swift in Sources */,
 				CFBED2EA2A3EBC9900CAA054 /* HtmlAttributedString.swift in Sources */,

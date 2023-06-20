@@ -13,7 +13,7 @@ protocol ListDisplayLogic: AnyObject where Self: UIViewController {
     func display(message: String?)
 }
 
-final class ListItemController: UIViewController, ListDisplayLogic, TableViewAutomaticPaginateDelegate {
+final class ListItemController: UIViewController, ListDisplayLogic, TableViewAutomaticPaginateDelegate, LoadingManagers {
     
     var interactor: ListItemInteractorBusinessLogic?
     var router: ListItemRoutingLogic?
@@ -21,19 +21,28 @@ final class ListItemController: UIViewController, ListDisplayLogic, TableViewAut
     var items: [Model]?
     
     func display(viewModel: [Model]?) {
+        stopLoading(onFinish: nil)
         items = viewModel
         listView?.reloadView()
     }
     
     func display(message: String?) {
-        
+        stopLoading() {
+            // Show Alert
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        interactor?.fetchItems()
-        (navigationController as? NavigationControllerDecorable)?.defineNavigationBarTitleViewWith(imageName: "navigationBarLogo")
+        fetchFirstPage()
+    }
+    
+    func fetchFirstPage() {
+        if items == nil {
+            startLoading()
+            interactor?.fetchItems()
+            (navigationController as? NavigationControllerDecorable)?.defineNavigationBarTitleViewWith(imageName: "navigationBarLogo")
+        }
     }
     
     lazy var goToDetail: ((Model?) -> Void)? = { [weak self] item in

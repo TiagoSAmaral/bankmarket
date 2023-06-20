@@ -13,7 +13,7 @@ protocol DetailDisplayLogic: AnyObject where Self: UIViewController {
     func display(message: String?)
 }
 
-final class DetailItemController: UIViewController, DetailDisplayLogic, TableViewAutomaticPaginateDelegate {
+final class DetailItemController: UIViewController, DetailDisplayLogic, TableViewAutomaticPaginateDelegate, LoadingManagers {
 
     var interactor: DetailItemInteractorBusinessLogic?
     var listView: TableViewUpdateEvent?
@@ -26,17 +26,27 @@ final class DetailItemController: UIViewController, DetailDisplayLogic, TableVie
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        fetchItem()
         
-        interactor?.fetchItem()
+    }
+    
+    func fetchItem() {
+        if item == nil {
+            startLoading()
+            interactor?.fetchItem()
+        }
     }
     
     func display(viewModel: Model?) {
+        stopLoading(onFinish: nil)
         item = viewModel
         listView?.reloadView()
     }
     
     func display(message: String?) {
-        
+        stopLoading() {
+            
+        }
     }
     
 //  MARK: - TableViewAutomaticPaginateDelegate methods
