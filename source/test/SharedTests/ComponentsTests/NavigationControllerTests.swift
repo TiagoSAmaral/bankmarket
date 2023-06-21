@@ -20,4 +20,5 @@ final class NavigationControllerTests: XCTestCase {
         navigation.viewControllers = [fakeViewController]
         assertSnapshot(matching: navigation, as: .image, record: isRecording)
     }
+    
 }

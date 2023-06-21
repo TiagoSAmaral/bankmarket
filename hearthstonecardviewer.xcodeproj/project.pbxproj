@@ -86,6 +86,7 @@
 		CFB8E3B42A423A200051026D /* metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3B22A423A200051026D /* metadata.json */; };
 		CFB8E3B82A429AB10051026D /* TableViewAutomaticPaginateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */; };
 		CFB8E3BA2A42AE9D0051026D /* NavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */; };
+		CFB8E3BC2A42B13A0051026D /* MosaicBaseViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
 		CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */; };
@@ -176,6 +177,7 @@
 		CFB8E3B22A423A200051026D /* metadata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = metadata.json; sourceTree = "<group>"; };
 		CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutomaticPaginateTests.swift; sourceTree = "<group>"; };
 		CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTests.swift; sourceTree = "<group>"; };
+		CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicBaseViewTests.swift; sourceTree = "<group>"; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 			children = (
 				CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */,
 				CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */,
+				CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */,
 			);
 			path = ComponentsTests;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				CF93BD1D2A3F72300060C410 /* Visible.swift in Sources */,
 				CF93BD252A3F72330060C410 /* NetworkError.swift in Sources */,
 				CF93BD2F2A3F72630060C410 /* HtmlAttributedString.swift in Sources */,
+				CFB8E3BC2A42B13A0051026D /* MosaicBaseViewTests.swift in Sources */,
 				CF93BD3C2A3FCDD60060C410 /* KeychainAccess.swift in Sources */,
 				CFB8E3B82A429AB10051026D /* TableViewAutomaticPaginateTests.swift in Sources */,
 				CF93BD1F2A3F72300060C410 /* TableViewUpdateEvent.swift in Sources */,
