@@ -8,26 +8,19 @@
 
 import UIKit
 
-
-
 class TableViewAutomaticPaginate: UITableView, UITableViewDelegate, UITableViewDataSource, TableViewUpdateEvent {
 
-    private weak var controller: TableViewAutomaticPaginateDelegate?
+    private(set) weak var controller: TableViewAutomaticPaginateDelegate?
     var cardFactory: CardFactory?
-    private var isPullToRefreshEnable = false
-    private var isPaginateEnable = false
-    private var propagateEvent: (() -> Void)?
+    private(set) var isPullToRefreshEnable = false
+    private(set) var isPaginateEnable = false
+    private(set) var propagateEvent: (() -> Void)?
     
     init(controller: TableViewAutomaticPaginateDelegate?, isPullToRefreshEnable: Bool = false, isPaginateEnable: Bool = false) {
         super.init(frame: .zero, style: .plain)
         self.controller = controller
         self.isPullToRefreshEnable = isPullToRefreshEnable
         self.isPaginateEnable = isPaginateEnable
-        defaultSetup()
-    }
-    
-    override init(frame: CGRect, style: UITableView.Style) {
-        super.init(frame: frame, style: style)
         defaultSetup()
     }
     
