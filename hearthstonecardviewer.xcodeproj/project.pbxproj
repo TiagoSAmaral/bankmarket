@@ -91,6 +91,7 @@
 		CFB8E3C02A42B5ED0051026D /* CardListItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */; };
 		CFB8E3C12A42B9660051026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A6B423DA308A00EB6D4D /* Assets.xcassets */; };
 		CFB8E3C42A42BB330051026D /* assertTests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3C22A42BB330051026D /* assertTests.xcassets */; };
+		CFB8E3C62A42BEE20051026D /* CardDetailItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3C52A42BEE20051026D /* CardDetailItemViewTests.swift */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
 		CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */; };
@@ -185,6 +186,7 @@
 		CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCellTests.swift; sourceTree = "<group>"; };
 		CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListItemViewTests.swift; sourceTree = "<group>"; };
 		CFB8E3C22A42BB330051026D /* assertTests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assertTests.xcassets; sourceTree = "<group>"; };
+		CFB8E3C52A42BEE20051026D /* CardDetailItemViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailItemViewTests.swift; sourceTree = "<group>"; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 				CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */,
 				CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */,
 				CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */,
+				CFB8E3C52A42BEE20051026D /* CardDetailItemViewTests.swift */,
 			);
 			path = ComponentsTests;
 			sourceTree = "<group>";
@@ -816,6 +819,7 @@
 				CF886BA02A4117880027EEFA /* FontPallet.swift in Sources */,
 				CFB8E35B2A4205970051026D /* ListItemRouter.swift in Sources */,
 				CF93BD2E2A3F725C0060C410 /* ClassIdentifier.swift in Sources */,
+				CFB8E3C62A42BEE20051026D /* CardDetailItemViewTests.swift in Sources */,
 				CFBED2C32A3E923F00CAA054 /* CardListItemView.swift in Sources */,
 				CFB8E3412A41FBB70051026D /* LoadingPresentable.swift in Sources */,
 				CF886BA62A41526A0027EEFA /* TableViewAutomaticPaginateDelegate.swift in Sources */,

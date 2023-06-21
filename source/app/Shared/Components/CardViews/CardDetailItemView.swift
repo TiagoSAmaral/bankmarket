@@ -20,6 +20,7 @@ final class CardDetailItemView: CardSelectable {
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.height(510)
         return imageView
     }()
     
@@ -43,7 +44,7 @@ final class CardDetailItemView: CardSelectable {
     func layoutImageView() {
 
         vStackView.addArrangedSubview(imageView)
-        imageView.height(510)
+//        imageView.height(510)
     }
     
     func defineTextDetailOfItem() {
