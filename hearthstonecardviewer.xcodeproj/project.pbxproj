@@ -88,6 +88,9 @@
 		CFB8E3BA2A42AE9D0051026D /* NavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */; };
 		CFB8E3BC2A42B13A0051026D /* MosaicBaseViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */; };
 		CFB8E3BE2A42B2AC0051026D /* GenericTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */; };
+		CFB8E3C02A42B5ED0051026D /* CardListItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */; };
+		CFB8E3C12A42B9660051026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A6B423DA308A00EB6D4D /* Assets.xcassets */; };
+		CFB8E3C42A42BB330051026D /* assertTests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3C22A42BB330051026D /* assertTests.xcassets */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
 		CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */; };
@@ -180,6 +183,8 @@
 		CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTests.swift; sourceTree = "<group>"; };
 		CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicBaseViewTests.swift; sourceTree = "<group>"; };
 		CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCellTests.swift; sourceTree = "<group>"; };
+		CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListItemViewTests.swift; sourceTree = "<group>"; };
+		CFB8E3C22A42BB330051026D /* assertTests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assertTests.xcassets; sourceTree = "<group>"; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
@@ -329,6 +334,7 @@
 				CFB8E3AC2A4239BA0051026D /* listItem.json */,
 				CFB8E3AF2A4239FA0051026D /* item.json */,
 				CFB8E3B22A423A200051026D /* metadata.json */,
+				CFB8E3C22A42BB330051026D /* assertTests.xcassets */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 				CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */,
 				CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */,
 				CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */,
+				CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */,
 			);
 			path = ComponentsTests;
 			sourceTree = "<group>";
@@ -732,9 +739,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB8E3B12A4239FA0051026D /* item.json in Resources */,
+				CFB8E3C42A42BB330051026D /* assertTests.xcassets in Resources */,
 				CFB8E3A42A420EE70051026D /* Localizable.strings in Resources */,
 				CF886B9D2A4113E70027EEFA /* LHF Uncial Caps.ttf in Resources */,
 				CFB8E3B42A423A200051026D /* metadata.json in Resources */,
+				CFB8E3C12A42B9660051026D /* Assets.xcassets in Resources */,
 				CFB8E3AE2A4239BA0051026D /* listItem.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -783,6 +792,7 @@
 			files = (
 				CFB8E39B2A420CB50051026D /* LocalizedText.swift in Sources */,
 				CFB8E3BA2A42AE9D0051026D /* NavigationControllerTests.swift in Sources */,
+				CFB8E3C02A42B5ED0051026D /* CardListItemViewTests.swift in Sources */,
 				CFB8E33E2A41FBA20051026D /* LoadingManager.swift in Sources */,
 				CF93BD1C2A3F72300060C410 /* CardVisible.swift in Sources */,
 				CFB8E3572A4205970051026D /* ListItemController.swift in Sources */,
@@ -1166,7 +1176,7 @@
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.0;
+				version = 1.11.0;
 			};
 		};
 		CF93BD0A2A3F71E80060C410 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
