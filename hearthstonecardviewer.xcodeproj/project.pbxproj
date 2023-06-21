@@ -87,6 +87,7 @@
 		CFB8E3B82A429AB10051026D /* TableViewAutomaticPaginateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */; };
 		CFB8E3BA2A42AE9D0051026D /* NavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */; };
 		CFB8E3BC2A42B13A0051026D /* MosaicBaseViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */; };
+		CFB8E3BE2A42B2AC0051026D /* GenericTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
 		CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */; };
@@ -178,6 +179,7 @@
 		CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutomaticPaginateTests.swift; sourceTree = "<group>"; };
 		CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTests.swift; sourceTree = "<group>"; };
 		CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicBaseViewTests.swift; sourceTree = "<group>"; };
+		CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCellTests.swift; sourceTree = "<group>"; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */,
 				CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */,
 				CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */,
+				CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */,
 			);
 			path = ComponentsTests;
 			sourceTree = "<group>";
@@ -807,6 +810,7 @@
 				CFB8E3412A41FBB70051026D /* LoadingPresentable.swift in Sources */,
 				CF886BA62A41526A0027EEFA /* TableViewAutomaticPaginateDelegate.swift in Sources */,
 				CF93BD272A3F72370060C410 /* ResponseListItem.swift in Sources */,
+				CFB8E3BE2A42B2AC0051026D /* GenericTableViewCellTests.swift in Sources */,
 				CFB8E3512A42057E0051026D /* CardFactory.swift in Sources */,
 				CF93BD302A3F72650060C410 /* Constraints.swift in Sources */,
 				CFB8E3592A4205970051026D /* ListItemPresenter.swift in Sources */,

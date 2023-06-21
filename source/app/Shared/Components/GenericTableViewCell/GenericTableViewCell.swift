@@ -12,15 +12,17 @@ class GenericTableViewCell: UITableViewCell, GenericCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        defineClearBackground()
+    }
+    
+    func defineClearBackground() {
         backgroundColor = .clear
         contentView.backgroundColor = .clear
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        backgroundColor = .clear
-        contentView.backgroundColor = .clear
+        defineClearBackground()
     }
     
     override func prepareForReuse() {
