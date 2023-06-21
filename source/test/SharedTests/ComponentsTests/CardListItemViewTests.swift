@@ -42,7 +42,7 @@ final class CardListItemViewTests: XCTestCase {
         
         let card = CardListItemView()
         card.load(model: model)
-        card.action?(model)
+        card.actionWhenTap()
         XCTAssertTrue(isChanged)
     }
 }
