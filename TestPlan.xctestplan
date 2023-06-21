@@ -18,6 +18,12 @@
         }
       ]
     },
+    "language" : "en",
+    "locationScenario" : {
+      "identifier" : "San Francisco, CA, USA",
+      "referenceType" : "built-in"
+    },
+    "region" : "US",
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [
@@ -25,7 +31,7 @@
       "target" : {
         "containerPath" : "container:hearthstonecardviewer.xcodeproj",
         "identifier" : "CF6414DE23E4C1CF009C7A9E",
-        "name" : "BaseProjectTargetTests"
+        "name" : "HeartOfStoneViewerTests"
       }
     }
   ],
