@@ -9,6 +9,7 @@ import XCTest
 
 class TemplateTests: XCTestCase {
     func testCheckReadmeMessage() {
-        XCTAssertEqual(LocalizedText.with(tagName: .nameText ), "Nome", "Expect equals")
+        let text = NSLocalizedString(LocalizedText.LocalizeTags.nameText.rawValue, bundle: Bundle(for: TemplateTests.self), comment: .empty)
+        XCTAssertEqual(text, "Name", "Expect equals")
     }
 }
