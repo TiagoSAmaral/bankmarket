@@ -1,0 +1,31 @@
+{
+    "id": 78086,
+    "collectible": 1,
+    "slug": "78086-the-countess",
+    "classId": 5,
+    "multiClassIds": [],
+    "cardTypeId": 4,
+    "cardSetId": 1691,
+    "rarityId": 5,
+    "artistName": "James Ryman",
+    "health": 7,
+    "attack": 7,
+    "manaCost": 7,
+    "name": "A Condessa",
+    "text": "<b>Grito de Guerra:</b> Se não houver cards Neutros no seu deck, adicione 3 Convites <b>Lendários</b> à sua mão.",
+    "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/ec1baddf0a10fccc1418b315cb6353fdeadfc70681c16c09ee22bf5846f0e6d2.png",
+    "imageGold": "",
+    "flavorText": "3 Convites Lendários, HAHAHA!",
+    "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/d5377e69ecb3ce492b9a3517f5857b2d98b33f669a2f45e9d490b5c70ef8eb83.png",
+    "parentId": 78086,
+    "childIds": [
+        79922
+    ],
+    "keywordIds": [
+        8
+    ],
+    "duels": {
+        "relevant": true,
+        "constructed": true
+    }
+}

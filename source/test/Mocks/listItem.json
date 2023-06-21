@@ -1,0 +1,1105 @@
+{
+    "cards": [
+        {
+            "id": 78086,
+            "collectible": 1,
+            "slug": "78086-the-countess",
+            "classId": 5,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1691,
+            "rarityId": 5,
+            "artistName": "James Ryman",
+            "health": 7,
+            "attack": 7,
+            "manaCost": 7,
+            "name": "A Condessa",
+            "text": "<b>Grito de Guerra:</b> Se não houver cards Neutros no seu deck, adicione 3 Convites <b>Lendários</b> à sua mão.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/ec1baddf0a10fccc1418b315cb6353fdeadfc70681c16c09ee22bf5846f0e6d2.png",
+            "imageGold": "",
+            "flavorText": "3 Convites Lendários, HAHAHA!",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/d5377e69ecb3ce492b9a3517f5857b2d98b33f669a2f45e9d490b5c70ef8eb83.png",
+            "parentId": 78086,
+            "childIds": [
+                79922
+            ],
+            "keywordIds": [
+                8
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 46454,
+            "collectible": 1,
+            "slug": "46454-the-darkness",
+            "classId": 12,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1004,
+            "rarityId": 5,
+            "artistName": "L. Lullabi & K. Turovec",
+            "health": 20,
+            "attack": 20,
+            "manaCost": 4,
+            "name": "A Escuridão",
+            "text": "Começa <b>Adormecido</b>. <b>Grito de Guerra:</b> Coloque 3 Velas no deck inimigo. Quando compradas, ela desperta.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/2d9857834507aa283e2806b9182187a9114996c475a11b2f7bc401b6d4cde9e9.png",
+            "imageGold": "",
+            "flavorText": "Eu prefiro acender uma vela do que ficar xingando a escuridão. Mas posso fazer os dois ao mesmo tempo.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/a5fb49d5eeff6ab34140cfa1c8052da6b038d3c66827f9d4ffbffe1e5d989742.jpg",
+            "parentId": 46454,
+            "childIds": [
+                46467,
+                48639
+            ],
+            "keywordIds": [
+                8
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 962,
+            "collectible": 1,
+            "slug": "962-the-beast",
+            "classId": 12,
+            "multiClassIds": [],
+            "minionTypeId": 20,
+            "cardTypeId": 4,
+            "cardSetId": 3,
+            "rarityId": 5,
+            "artistName": "Glenn Rane",
+            "health": 7,
+            "attack": 9,
+            "manaCost": 6,
+            "name": "A Fera",
+            "text": "<b>Último Suspiro:</b> Evoque um Pipo Boacuca 3/3 para o seu oponente.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/6f218943bef96db17b76e4c6b99e03bdd85f54081eeff9fe1adbd9afd476e156.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/7909a4ccf33b158a35ac9e08aa5ecd75ec177be0a0b601985ad61df9c85734ad.png",
+            "flavorText": "Ele vive na Montanha Rocha Negra. E come gnomos. É basicamente isso.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/2055cd46792f15571683f37224e6425a57ccce06d74ed70a40043532c51c47be.png",
+            "parentId": 962,
+            "childIds": [
+                1006
+            ],
+            "keywordIds": [
+                12
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 70033,
+            "collectible": 1,
+            "slug": "70033-the-beast",
+            "classId": 12,
+            "multiClassIds": [],
+            "minionTypeId": 20,
+            "cardTypeId": 4,
+            "cardSetId": 1646,
+            "rarityId": 5,
+            "artistName": "Glenn Rane",
+            "health": 7,
+            "attack": 9,
+            "manaCost": 6,
+            "name": "A Fera",
+            "text": "<b>Último Suspiro:</b> Evoque um Pipo Boacuca 3/3 para o seu oponente.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/a12ecc891bc05cc92aedd766c4eb71ace12132b6ee08d975a0089aee5604d42a.png",
+            "imageGold": "",
+            "flavorText": "Ele vive na Montanha Rocha Negra. E come gnomos. É basicamente isso.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/2055cd46792f15571683f37224e6425a57ccce06d74ed70a40043532c51c47be.png",
+            "parentId": 70033,
+            "childIds": [
+                1006
+            ],
+            "keywordIds": [
+                12
+            ],
+            "copyOfCardId": 962
+        },
+        {
+            "id": 50644,
+            "collectible": 1,
+            "slug": "50644-the-beast-within",
+            "classId": 3,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1129,
+            "rarityId": 4,
+            "artistName": "L. Lullabi & K. Turovec",
+            "manaCost": 1,
+            "name": "A Fera Interior",
+            "text": "Conceda +1/+1 a uma Fera aliada, depois ela atacará um lacaio inimigo aleatório.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/342936c774d07b8b71d4c19582314ed6e0805869294999739c4bc95b0c5241f5.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/53b191672bc0b33bec3b6d6399c0d1a94029beee9049dc50bb7713f084977655.png",
+            "flavorText": "Tentaram usar a fera exterior, mas a taxa de importação era muito cara.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/1bc56436d5e0b3555e9d95033ce7c7e1f7ad88f0ca9e7aad65f2a5ad22dd7add.png",
+            "parentId": 50644
+        },
+        {
+            "id": 76977,
+            "collectible": 1,
+            "slug": "76977-the-stonewright",
+            "classId": 8,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1691,
+            "rarityId": 5,
+            "artistName": "Sergey Tsvelykh",
+            "health": 4,
+            "attack": 5,
+            "manaCost": 4,
+            "name": "A Litorita",
+            "text": "<b>Grito de Guerra:</b> Pelo resto da partida, seus Totens têm +2 de Ataque.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/5942f5f43c775cc5e4576b652e94f3d50e3b093f040de79940a6e6baff5c1261.png",
+            "imageGold": "",
+            "flavorText": "Mais um talento da litogravura desperdiçado.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/60a159c3750a8d62aa2d9750af4339e3d14f8504d3b20fda705e40da4c1d9e65.png",
+            "parentId": 76977,
+            "keywordIds": [
+                8
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 77305,
+            "collectible": 1,
+            "slug": "77305-the-light-it-burns",
+            "classId": 6,
+            "multiClassIds": [],
+            "spellSchoolId": 5,
+            "cardTypeId": 5,
+            "cardSetId": 1691,
+            "rarityId": 1,
+            "artistName": "Grace Liu",
+            "manaCost": 1,
+            "name": "A Luz! Está Ardendo!",
+            "text": "Cause dano a um lacaio igual ao Ataque dele.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/c252a1e8aa911d2812de968d28a659a33698ee0a28b00c8b8ad61f178ff1c5a5.png",
+            "imageGold": "",
+            "flavorText": "Peraí, se você está aí, então quem está mexendo nas luzes?!",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/378775b520a973aae320b93e99afcbebe3b6497cb27fbb2e64b54442f9bfa3fd.png",
+            "parentId": 77305,
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 41368,
+            "collectible": 1,
+            "slug": "41368-the-marsh-queen",
+            "classId": 3,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 27,
+            "rarityId": 5,
+            "artistName": "A. J. Nazzaro",
+            "manaCost": 1,
+            "name": "A Rainha do Charco",
+            "text": "<b>Missão:</b> Jogue sete lacaios de Custo 1. <b>Recompensa:</b> Rainha Carnassis.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/18e2eaae14d36002d57b0094ecf59e4ad3da743374b852b4136f5a36cbcc9aaf.png",
+            "imageGold": "",
+            "flavorText": "Pergunta: o que mete mais medo, um dinossauro gigante e raivoso ou 15 dinossauros pequenos e cruéis? Resposta: AHHHHH! ME ACHARAAAAAMM!",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/c2ac8762fe1f3e6890c41151bd9ce3626e0b05e67ec85a5ebea675d9492f10af.jpg",
+            "parentId": 41368,
+            "childIds": [
+                41367,
+                42013
+            ],
+            "keywordIds": [
+                31
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 64900,
+            "collectible": 1,
+            "slug": "64900-the-demon-seed",
+            "classId": 9,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1578,
+            "rarityId": 5,
+            "artistName": "Slawomir Maniak",
+            "manaCost": 1,
+            "name": "A Semente Demoníaca",
+            "text": "<b>Série de Missões:</b> Receba 10 de dano nos seus turnos. <b>Recompensa:</b> <b>Roubar Vida</b>. Cause 3 de dano ao herói inimigo.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/e5e06a0946c523dfa31516e316641eb2de8960f90923d8329e8c4fcb6c65b018.png",
+            "imageGold": "",
+            "flavorText": "Pra funcionar, você só precisa dar um pouco de atenção… Ah, e sua alma também.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/aae925dc0f4150c5f6c5e64a53e715f59eb227ba75d0cb9ecb551accd1b8d697.png",
+            "parentId": 64900,
+            "childIds": [
+                64901,
+                65160,
+                67547
+            ],
+            "keywordIds": [
+                38,
+                96
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 55262,
+            "collectible": 1,
+            "slug": "55262-strength-in-numbers",
+            "classId": 2,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1347,
+            "rarityId": 1,
+            "artistName": "Luke Mancini",
+            "manaCost": 1,
+            "name": "A União Faz a Força",
+            "text": "<b>Tarefa:</b> Gaste 10 de mana em lacaios. <b>Recompensa:</b> Evoque um lacaio do seu deck.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/613eaf7820134920efb132576dfda1698694d50e16e6f32da864b241614b6f5b.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/96a0d34baf9d677142587947e7089673832b49a053011096e7d3f05fe59e1584.png",
+            "flavorText": "Um lacaio, dois lacaios... três lacaios!",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/669f60d2872d605b459bc98063cd1167caf3c677c33f577f185a0e11b2f07920.png",
+            "parentId": 55262,
+            "keywordIds": [
+                89
+            ]
+        },
+        {
+            "id": 53551,
+            "collectible": 1,
+            "slug": "53551-beeees",
+            "classId": 2,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1158,
+            "rarityId": 1,
+            "artistName": "Rafael Zanchetin",
+            "manaCost": 3,
+            "name": "ABEEELHAAAS!!!",
+            "text": "Escolha um lacaio. Evoque quatro Abelhas 1/1 para atacá-lo.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/a3ebaa905f5e87677fd88ebabe6d68adc361340b7b443c0b23ada1d1dc068da7.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/c6b9af283d07160c581745a37fc58746e7f0f5ef258bac75fcae9f1d90b5db10.png",
+            "flavorText": "Das que fazem MEEEEEL!!!",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/db9c73212b20b73bacc8f4c2d4ea3ab861f6e5b88416d74d02efbfe0f594474f.png",
+            "parentId": 53551,
+            "childIds": [
+                55329
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 41168,
+            "collectible": 1,
+            "slug": "41168-open-the-waygate",
+            "classId": 4,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 27,
+            "rarityId": 5,
+            "artistName": "Rafael Zanchetin",
+            "manaCost": 1,
+            "name": "Abertura do Pórtico",
+            "text": "<b>Missão:</b> Lance 8 feitiços que não estavam no seu deck antes. <b>Recompensa:</b> Distorção Temporal.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/617bf5b624dd1eb2dd10d1e902337eef933a05094826f9c729b2e01e85a8b72f.png",
+            "imageGold": "",
+            "flavorText": "Embora poderoso, o encantamento é simples. É só um passinho pra lá, um passinho pra cá.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/58b6a53ef2992b91e157de284c0a8de1d8d37bad64b04b473ed020ad0554e976.jpg",
+            "parentId": 41168,
+            "childIds": [
+                41167
+            ],
+            "keywordIds": [
+                31
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 57194,
+            "collectible": 1,
+            "slug": "57194-supreme-abyssal",
+            "classId": 12,
+            "multiClassIds": [],
+            "minionTypeId": 15,
+            "cardTypeId": 4,
+            "cardSetId": 1414,
+            "rarityId": 1,
+            "artistName": "Clint Langley",
+            "health": 12,
+            "attack": 12,
+            "manaCost": 8,
+            "name": "Abissal Supremo",
+            "text": "Não pode atacar heróis.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/6741418b4109e7d739fc3f8fe9b03b07f6535f235a3ce6dc985b26d92f134dc9.png",
+            "imageGold": "",
+            "flavorText": "Ainda assim você se sente atacado.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/4eab90173408c62297458032b557f5d98816aa2f02ddf9cf60e2641b251e9e59.png",
+            "parentId": 57194
+        },
+        {
+            "id": 48360,
+            "collectible": 1,
+            "slug": "48360-squashling",
+            "classId": 6,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1125,
+            "rarityId": 1,
+            "artistName": "Tyler Walpole",
+            "health": 1,
+            "attack": 2,
+            "manaCost": 2,
+            "name": "Aboborito",
+            "text": "<b>Eco</b> <b>Grito de Guerra:</b> Restaure 2 de Vida.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/9e9f071821db596d531638017b7624838adfff7af10afa2d1fbcd54fd6b0a812.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/5a9f2c299e8d466d16556d0a186755fc6a8c1d0275215ae493f5042c315122e7.png",
+            "flavorText": "O melô do aboborito é o sucesso do momento.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/b79b9e023345f1abc11424317858b0ad992062fa3ae8eb564636b6e8115c5e32.png",
+            "parentId": 48360,
+            "keywordIds": [
+                8,
+                52
+            ]
+        },
+        {
+            "id": 440,
+            "collectible": 1,
+            "slug": "440-abomination",
+            "classId": 12,
+            "multiClassIds": [],
+            "minionTypeId": 11,
+            "cardTypeId": 4,
+            "cardSetId": 3,
+            "rarityId": 3,
+            "artistName": "Alex Horley Orlandelli",
+            "health": 4,
+            "attack": 4,
+            "manaCost": 5,
+            "name": "Abominação",
+            "text": "<b>Provocar</b>. <b>Último Suspiro:</b> Cause 2 de dano a TODOS os personagens.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/3eeea3f5fca89743a2a6e846eaba1723145a0f56cac35bf338ec01d0f4fd2d4d.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/5f6a92813416241989dc7a5962253623c0996f4c3f2e557512b50f24dc7f9b87.png",
+            "flavorText": "Abominações adoram carne fresca e longas caminhadas pela praia.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/d3070696d8da42bb3fdcc3b54eeeafaa0448f4ad0a1b609d5fc478ddce728374.png",
+            "parentId": 440,
+            "keywordIds": [
+                1,
+                12
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 69846,
+            "collectible": 1,
+            "slug": "69846-abomination",
+            "classId": 12,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1646,
+            "rarityId": 3,
+            "artistName": "Alex Horley Orlandelli",
+            "health": 4,
+            "attack": 4,
+            "manaCost": 5,
+            "name": "Abominação",
+            "text": "<b>Provocar</b>. <b>Último Suspiro:</b> Cause 2 de dano a TODOS os personagens.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/cd4808d18d4bfdcff547a179ce6a09e366104ddd401bcfca6d916f3fc9346a0c.png",
+            "imageGold": "",
+            "flavorText": "Abominações adoram carne fresca e longas caminhadas pela praia.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/d3070696d8da42bb3fdcc3b54eeeafaa0448f4ad0a1b609d5fc478ddce728374.png",
+            "parentId": 69846,
+            "keywordIds": [
+                1,
+                12
+            ],
+            "copyOfCardId": 440
+        },
+        {
+            "id": 42782,
+            "collectible": 1,
+            "slug": "42782-ticking-abomination",
+            "classId": 12,
+            "multiClassIds": [],
+            "minionTypeId": 11,
+            "cardTypeId": 4,
+            "cardSetId": 1001,
+            "rarityId": 3,
+            "artistName": "Mike Sass",
+            "health": 6,
+            "attack": 5,
+            "manaCost": 4,
+            "name": "Abominação Bombástica",
+            "text": "<b>Último Suspiro:</b> Cause 5 de dano aos seus lacaios.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/7709dfaeebb971a48a4b195ea860ec0f31e00b384b40ec83c4be56e45ec10616.png",
+            "imageGold": "",
+            "flavorText": "O mais certo mesmo era chamar de \"A-bomba-em-ação\".",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/1ca7863aa23bc660a398741d1c125cf5687409c291e7f3b2abb9f1aad58e11f7.png",
+            "parentId": 42782,
+            "keywordIds": [
+                12
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 67757,
+            "collectible": 1,
+            "slug": "67757-hollow-abomination",
+            "classId": 9,
+            "multiClassIds": [],
+            "minionTypeId": 11,
+            "cardTypeId": 4,
+            "cardSetId": 1626,
+            "rarityId": 1,
+            "artistName": "Dave Allsop",
+            "health": 8,
+            "attack": 2,
+            "manaCost": 5,
+            "name": "Abominação Esvaziada",
+            "text": "<b>Grito de Guerra:</b> Cause 1 de dano a todos os lacaios inimigos. <b>Abate Honroso:</b> Receba o Ataque do lacaio.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/9f0f1212c0a2a8086b5d0b19577675e113d8806e7cb8228fd423dfe45e77dd00.png",
+            "imageGold": "",
+            "flavorText": "Criada sob a premissa de que todo vazio deve ser preenchido.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/48400b004cfc786b575e136026d962546f550cdbdb2915b4115aa610d16385c5.png",
+            "parentId": 67757,
+            "keywordIds": [
+                8,
+                100
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 46655,
+            "collectible": 1,
+            "slug": "46655-worgen-abomination",
+            "classId": 12,
+            "multiClassIds": [],
+            "minionTypeId": 11,
+            "cardTypeId": 4,
+            "cardSetId": 1125,
+            "rarityId": 4,
+            "artistName": "Dave Allsop",
+            "health": 6,
+            "attack": 6,
+            "manaCost": 7,
+            "name": "Abominação Worgen",
+            "text": "No final do seu turno, cause 2 de dano a todos os outros lacaios feridos.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/173c2295f1af9f6e937084c3f46c8e4dc58743ccfc7b1409eaa09d851d195974.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/06cd22fbc5f6103f41d8769df6d5cdffd470e8a7c63bfbc6ff53404585b8e5c8.png",
+            "flavorText": "Alguém quer fingir de morto de verdade?",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/dd38de71b3f2cb42d48fe507f6ad09750203410f27993b8d3642108703ae23d9.png",
+            "parentId": 46655
+        },
+        {
+            "id": 61683,
+            "collectible": 1,
+            "slug": "61683-open-the-cages",
+            "classId": 3,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1466,
+            "rarityId": 1,
+            "artistName": "Arthur Bozonnet",
+            "manaCost": 2,
+            "name": "Abram as Jaulas",
+            "text": "<b>Segredo:</b> Quando seu turno começar, se você controlar dois lacaios, evoque um Companheiro Animal.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/443b59023bd4e89899aec46136349899f520d6f14393418062168c40d6ec4a19.png",
+            "imageGold": "",
+            "flavorText": "\"Abras suas asas, solte suas feras... E você vai ter uma surpresa indigesta...\"",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/208139edecf3be56b4da909da18f7989acd0122172286bab79f2b0f6876b92ea.png",
+            "parentId": 61683,
+            "childIds": [
+                959,
+                226,
+                100
+            ],
+            "keywordIds": [
+                5
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 67207,
+            "collectible": 1,
+            "slug": "67207-pathmaker",
+            "classId": 2,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1626,
+            "rarityId": 3,
+            "artistName": "Mauricio Herrera",
+            "health": 4,
+            "attack": 3,
+            "manaCost": 3,
+            "name": "Abretrilhas",
+            "text": "<b>Grito de Guerra:</b> Lance a outra opção do último feitiço <b>Escolha Um</b> que você lançou. <b>Grito de Guerra:</b> .",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/14d09aa7a4d1130cbc71eba39fd6c600fa5f7c3f08ca9c4e688c21e3d20387cf.png",
+            "imageGold": "",
+            "flavorText": "Você nunca vai escolher o caminho errado se você trilhar seu próprio caminho.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/32fff06074a33fdf86bc1199c5afaae45e213ed253c429d2ddd983e6aed8b607.png",
+            "parentId": 67207,
+            "keywordIds": [
+                8
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 55288,
+            "collectible": 1,
+            "slug": "55288-clear-the-way",
+            "classId": 3,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1347,
+            "rarityId": 3,
+            "artistName": "Arthur Bozonnet",
+            "manaCost": 1,
+            "name": "Abrir Caminho",
+            "text": "<b>Tarefa:</b> Evoque 3 lacaios com <b>Rapidez</b>. <b>Recompensa:</b> Evoque um Grifo 4/4 com <b>Rapidez</b>.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/660b552c01ea220fe2d1a4e9f592373831f9474740eba120c2112e609001fb50.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/d354a348de1e6102d30c3bb4a5ecc8c73432641cbcfd30c386a79555a8e50b65.png",
+            "flavorText": "O mais aterrorizante são os guinchos dos grifos depois.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/b513f54766a216d0f294c630f496ad2ea574333bc4a6316ceb59b10cd1c2f94c.png",
+            "parentId": 55288,
+            "childIds": [
+                55821
+            ],
+            "keywordIds": [
+                53,
+                89
+            ]
+        },
+        {
+            "id": 84586,
+            "collectible": 1,
+            "slug": "84586-grave-digging",
+            "classId": 6,
+            "multiClassIds": [],
+            "spellSchoolId": 6,
+            "cardTypeId": 5,
+            "cardSetId": 1776,
+            "rarityId": 4,
+            "artistName": "Jason Kang",
+            "manaCost": 4,
+            "name": "Abrir Covas",
+            "text": "Compre 2 cards. Custa (1) se um Morto-Vivo aliado morreu após seu turno anterior.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/5d47724db56c2907bb12489c0e749505ad10317d176765215e8f834b2c080830.png",
+            "imageGold": "",
+            "flavorText": "A profissão de coveiro é bem parada, mas nunca tem um dia morto.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/fba9319c86c5c51d583e60c151436e0536dfd5fbc3ad9e50f90ed64dda7f9b2e.png",
+            "parentId": 84586,
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 53889,
+            "collectible": 1,
+            "slug": "53889-diseased-vulture",
+            "classId": 9,
+            "multiClassIds": [],
+            "minionTypeId": 20,
+            "multiTypeIds": [
+                11
+            ],
+            "cardTypeId": 4,
+            "cardSetId": 1158,
+            "rarityId": 4,
+            "artistName": "Dave Allsop",
+            "health": 5,
+            "attack": 3,
+            "manaCost": 4,
+            "name": "Abutre Doente",
+            "text": "Sempre que seu herói receber dano no seu turno, evoque um lacaio aleatório de custo 3.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/4d47b03336a0efcc09001057d1adb00f791d55aa1571a184fbee91f8374dffa4.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/37735e294bec10e53ce24f9b764d5bc6083586926863c84af20e18eac6e76ece.png",
+            "flavorText": "Cuidado pra não pegar toxoplasmose.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/069aa236adc5314f3e68ed73275478f629fd313ee52981ed1a204f668f637645.png",
+            "parentId": 53889,
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 38439,
+            "collectible": 1,
+            "slug": "38439-embrace-the-shadow",
+            "classId": 6,
+            "multiClassIds": [],
+            "spellSchoolId": 6,
+            "cardTypeId": 5,
+            "cardSetId": 21,
+            "rarityId": 4,
+            "artistName": "Rafael Zanchetin",
+            "manaCost": 2,
+            "name": "Aceite a Sombra",
+            "text": "Neste turno, seus efeitos de cura causam dano.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/d3df4444b759ce0084caf80c89a3584332aad99a1c61cbbff60356736822eccf.png",
+            "imageGold": "",
+            "flavorText": "Para quando sua Sacerdalma Auchenai pedir uma folga.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/e638ea91dfd1e73a17c6f4b525cbc1d07faec84420b4effdd021a127e2f9c08c.png",
+            "parentId": 38439,
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 40423,
+            "collectible": 1,
+            "slug": "40423-finders-keepers",
+            "classId": 8,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 25,
+            "rarityId": 4,
+            "artistName": "Ben Zhang",
+            "manaCost": 1,
+            "name": "Achado não é Roubado",
+            "text": "<b>Descubra</b> um card com <b>Sobrecarga</b>. <b>Sobrecarga:</b> (1)",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/4e531a5580635c3ae8fe949e28a20cda6080d2cec0fbe8fd509365d228b5e1c2.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/2c0e1e4246b86953d8f2733ac1da3c246cd172359d504008f374b7a094e02aa1.png",
+            "flavorText": "ARGOLA INFINITA!",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/b7c1ae7e0be4b80f36b5cfc5831ee01b105e724407adf6ede3cd4b0ae8a472fd.png",
+            "parentId": 40423,
+            "keywordIds": [
+                14,
+                21
+            ]
+        },
+        {
+            "id": 67241,
+            "collectible": 1,
+            "slug": "67241-spring-the-trap",
+            "classId": 3,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1626,
+            "rarityId": 4,
+            "artistName": "Jim Nelson",
+            "manaCost": 4,
+            "name": "Acionar Armadilha",
+            "text": "Cause 3 de dano a um lacaio e lance um <b>Segredo</b> do seu deck. <b>Abate Honroso:</b> Lance 2.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/1c4f9d4ef7ec92988fda74c500713fdd44cd3379674fa40f75582de4b0d18fd3.png",
+            "imageGold": "",
+            "flavorText": "Isso é que é começar com o pé esquerdo.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/ad782530345f893e7b41b0faf36ccf47c0a391212dea35518eff686d62c5f02b.png",
+            "parentId": 67241,
+            "keywordIds": [
+                5,
+                100
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 92222,
+            "collectible": 1,
+            "slug": "92222-altered-chord",
+            "classId": 8,
+            "multiClassIds": [],
+            "spellSchoolId": 4,
+            "cardTypeId": 5,
+            "cardSetId": 1809,
+            "rarityId": 3,
+            "artistName": "Juan Calle",
+            "manaCost": 5,
+            "name": "Acorde Alterado",
+            "text": "<b>Roubar Vida</b>. Cause 6 de dano a um lacaio. Custa (3) a menos se você estiver com <b>Sobrecarga</b>.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/afbcfdfa0720a92a9ed889b5ff949b0042f393aba1da2cc3f5035efeaca7c0de.png",
+            "imageGold": "",
+            "flavorText": "Muito menos problemático que um acordo alterado.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/d56af491623e26bddb925db8760a7f2a58cad3dbb27d78c4136a7206ec45682a.png",
+            "parentId": 92222,
+            "keywordIds": [
+                14,
+                38
+            ]
+        },
+        {
+            "id": 90366,
+            "collectible": 1,
+            "slug": "90366-shadow-chord-distort",
+            "classId": 6,
+            "multiClassIds": [],
+            "spellSchoolId": 6,
+            "cardTypeId": 5,
+            "cardSetId": 1809,
+            "rarityId": 3,
+            "artistName": "Jason Kang",
+            "manaCost": 3,
+            "name": "Acorde Sombrio: Distorção",
+            "text": "Conceda -5/-5 a um lacaio. Se ele tiver 0 de Ataque, destrua-o.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/0b80b0e16ad35214a561b587b15bf342efc23f6b633363a82e50ca116672da36.png",
+            "imageGold": "",
+            "flavorText": "Por alguma razão, usar distorção na sua música atrai centenas de lagartos para o local onde você está.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/17825d4c8bd65d3e471e059a667720b21c22672ed62d400c22919e168ce3cf42.png",
+            "parentId": 90366
+        },
+        {
+            "id": 91067,
+            "collectible": 1,
+            "slug": "91067-power-chord-synchronize",
+            "classId": 6,
+            "multiClassIds": [],
+            "spellSchoolId": 5,
+            "cardTypeId": 5,
+            "cardSetId": 1809,
+            "rarityId": 1,
+            "artistName": "Vika Yarova",
+            "manaCost": 2,
+            "name": "Acorde de Poder: Sincronizar",
+            "text": "Escolha um lacaio. Adicione uma cópia dele à sua mão. <b>Finale:</b> Conceda +1/+2 a ambos.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/1b205b664942824895891cb9d9c8baa68eb8417f84365e07bb80dec2721466bf.png",
+            "imageGold": "",
+            "flavorText": "Extremamente importante para quando o artista pede pro público acompanhar com palmas.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/734e88b5e8c592173d09fdc90dddcac3b5e572d16663ca20fb83f22d01c37786.png",
+            "parentId": 91067,
+            "keywordIds": [
+                255
+            ]
+        },
+        {
+            "id": 53882,
+            "collectible": 1,
+            "slug": "53882-sinister-deal",
+            "classId": 9,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1158,
+            "rarityId": 1,
+            "artistName": "Konstantin Turovec",
+            "manaCost": 1,
+            "name": "Acordo Sinistro",
+            "text": "<b>Descubra</b> um <b>Servo</b>.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/12d70c22456c6c476500e898a3714037e3c9b48bdafd67892599efe71a15f383.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/1474f5f61c1c760d0fff7e3b6d880e77999fc61d87071b60a5e7adf7f5eb45f7.png",
+            "flavorText": "\"O que tem no saco aí?\". \"Uma coisa... sinistra\". \"Negócio fechado.\"",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/22eb2c6a65db102a03ffab8c96fff03113c928aa0a74f1ae5e13b2e54a7dfc6a.png",
+            "parentId": 53882,
+            "childIds": [
+                52897,
+                52900,
+                53160,
+                53161,
+                53162,
+                53163,
+                55378,
+                60588
+            ],
+            "keywordIds": [
+                21,
+                71
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 84240,
+            "collectible": 1,
+            "slug": "84240-deal-with-a-devil",
+            "classId": 14,
+            "multiClassIds": [],
+            "spellSchoolId": 7,
+            "cardTypeId": 5,
+            "cardSetId": 1776,
+            "rarityId": 3,
+            "artistName": "Dez Bencosme",
+            "manaCost": 5,
+            "name": "Acordo com o Demônio",
+            "text": "Evoque dois Malévolos Vis 3/3 com <b>Roubar Vida</b>. Se não houver lacaios no seu deck, evoque outro.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/66d6446dd930b764209e60d92d87701bb5b2d68e891ecf18c23b4090835550dc.png",
+            "imageGold": "",
+            "flavorText": "Tá, três Malévolos Vis. É pegar ou largar.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/1af70786a9539d9f4d2fecd16694f88c3054acda56f82649682f819538daaf60.png",
+            "parentId": 84240,
+            "childIds": [
+                86611
+            ],
+            "keywordIds": [
+                38
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 61273,
+            "collectible": 1,
+            "slug": "61273-acrobatics",
+            "classId": 14,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1466,
+            "rarityId": 1,
+            "artistName": "James Ryman",
+            "manaCost": 3,
+            "name": "Acrobacia",
+            "text": "Compre 2 cards. Se você jogar ambos neste turno, compre mais 2.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/0b12a39159b9b4925ce37691cc0bcfcc512d9a1a3e5e74566160476fcd9b7526.png",
+            "imageGold": "",
+            "flavorText": "Ele voa pelos ares com leveza e racha.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/69f4a3c44e797c10712140a34942b52cbb70246ce7f8d39e59f1481f409bd025.png",
+            "parentId": 61273,
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 38961,
+            "collectible": 1,
+            "slug": "38961-polluted-hoarder",
+            "classId": 12,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 21,
+            "rarityId": 1,
+            "artistName": "Matt Dixon",
+            "health": 2,
+            "attack": 4,
+            "manaCost": 4,
+            "name": "Acumulador Poluído",
+            "text": "<b>Último Suspiro:</b> Compre um card.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/4fbfa7a1789878ec55bfd9f5b35008fba23a2467a0763c7696a414ae5b3eef55.png",
+            "imageGold": "",
+            "flavorText": "É melhor rolar \"ganância\", SENÃO ISSO PODE ACONTECER COM VOCÊ.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/0da136d0c484e18cf775f49a899e0ccd4054224eb8c4078c0b9d64747ee90383.jpg",
+            "parentId": 38961,
+            "keywordIds": [
+                12
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 61941,
+            "collectible": 1,
+            "slug": "61941-luckysoul-hoarder",
+            "classId": 12,
+            "multiClassIds": [
+                9,
+                14
+            ],
+            "cardTypeId": 4,
+            "cardSetId": 1466,
+            "rarityId": 3,
+            "artistName": "Matt Dixon",
+            "health": 4,
+            "attack": 3,
+            "manaCost": 3,
+            "name": "Acumulador Sortealma",
+            "text": "<b>Grito de Guerra:</b> Coloque 2 Fragmentos de Alma no seu deck. <b>Corromper:</b> Compre um card.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/12224b11d5aec6463f5e93769be2b3984f910a39b1e9ffeac249a596a0a7e17c.png",
+            "imageGold": "",
+            "flavorText": "Sempre traz vasilha, sacola, barril, baú, bandeja, travesseiro...",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/e09cc166338aa2b896ee2e3dae013ca35b0272bcddd2552ed8cf12bd97418051.png",
+            "parentId": 61941,
+            "childIds": [
+                61976,
+                59723
+            ],
+            "keywordIds": [
+                8,
+                91
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 251,
+            "collectible": 1,
+            "slug": "251-loot-hoarder",
+            "classId": 12,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 3,
+            "rarityId": 1,
+            "artistName": "Jim Nelson",
+            "health": 1,
+            "attack": 2,
+            "manaCost": 2,
+            "name": "Acumulador de Tesouros",
+            "text": "<b>Último Suspiro:</b> Compre um card.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/8ffc70a3b2c634d6642a09eaf1afd67af108515f146df4fc77ab04cc56934e33.png",
+            "imageGold": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/79a08d0095b8f04a6ce0243d4612e9d9545941a479eb645920cdeef21c5aec7d.png",
+            "flavorText": "Sempre jogue necessidade.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/1de2a36fef01dee0fd0ebc832917ec8eecbbb68d1bb1791eec15960aef755fdc.png",
+            "parentId": 251,
+            "keywordIds": [
+                12
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 69665,
+            "collectible": 1,
+            "slug": "69665-loot-hoarder",
+            "classId": 12,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1637,
+            "rarityId": 1,
+            "artistName": "Jim Nelson",
+            "health": 1,
+            "attack": 2,
+            "manaCost": 2,
+            "name": "Acumulador de Tesouros",
+            "text": "<b>Último Suspiro:</b> Compre um card.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/3607cc14278bb732c5b9f61834e91367a5be1071d9617c67ef532896b11383f5.png",
+            "imageGold": "",
+            "flavorText": "Sempre jogue necessidade.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/17d24da2fb29b41d500d97a70a5cf18a9578761c56d592f54058166508425357.png",
+            "parentId": 69665,
+            "keywordIds": [
+                12
+            ],
+            "copyOfCardId": 251,
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 69845,
+            "collectible": 1,
+            "slug": "69845-loot-hoarder",
+            "classId": 12,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1646,
+            "rarityId": 1,
+            "artistName": "Jim Nelson",
+            "health": 1,
+            "attack": 2,
+            "manaCost": 2,
+            "name": "Acumulador de Tesouros",
+            "text": "<b>Último Suspiro:</b> Compre um card.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/abc244dedf0dd98ece896884ea8a8cf47eca849d7938387dacd41f2af0ec5446.png",
+            "imageGold": "",
+            "flavorText": "Sempre jogue necessidade.",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/1de2a36fef01dee0fd0ebc832917ec8eecbbb68d1bb1791eec15960aef755fdc.png",
+            "parentId": 69845,
+            "keywordIds": [
+                12
+            ],
+            "copyOfCardId": 251
+        },
+        {
+            "id": 79559,
+            "collectible": 1,
+            "slug": "79559-stoneborn-accuser",
+            "classId": 12,
+            "multiClassIds": [],
+            "cardTypeId": 4,
+            "cardSetId": 1691,
+            "rarityId": 1,
+            "artistName": "Vladimir Kafanov",
+            "health": 5,
+            "attack": 5,
+            "manaCost": 5,
+            "name": "Acusador Litonato",
+            "text": "<b>Imbuir ( ):</b> Receba \"<b>Grito de Guerra:</b> Cause 5 de dano\".",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/6d14be6412614ff365ca7db8915bbc431dfd7716e14d655cf3048ebcb8a0b49c.png",
+            "imageGold": "",
+            "flavorText": "\"EU VI ELES FUGINDO, EU JURO!\"",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/0a503831ddd4a75d9b163f2e337f07da7831bef22c0e495dd62825fe50bb5d7f.png",
+            "parentId": 79559,
+            "childIds": [
+                79542,
+                79552,
+                79593,
+                79561,
+                62320,
+                537,
+                850,
+                764,
+                79545,
+                79554,
+                79595
+            ],
+            "keywordIds": [
+                8,
+                238
+            ],
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        },
+        {
+            "id": 79608,
+            "collectible": 1,
+            "slug": "79608-murder-accusation",
+            "classId": 7,
+            "multiClassIds": [],
+            "cardTypeId": 5,
+            "cardSetId": 1691,
+            "rarityId": 1,
+            "artistName": "Konstantin Turovec",
+            "manaCost": 2,
+            "name": "Acusação de Assassinato",
+            "text": "Escolha um lacaio. Destrua-o depois que outro lacaio inimigo morrer.",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/65e325a88e22267fbd0d3e56d280f94a281e27729e38d5668bcd35f0b3a2b419.png",
+            "imageGold": "",
+            "flavorText": "Palavras de um homem assassinado: \"E daí, vai fazer o quê? Me matar?\"",
+            "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/545d0ceb12c76b612bba6e70a31be7d428cd2d88b5728e915348544f08abeaa7.png",
+            "parentId": 79608,
+            "duels": {
+                "relevant": true,
+                "constructed": true
+            }
+        }
+    ],
+    "cardCount": 4729,
+    "pageCount": 119,
+    "page": 1
+}
