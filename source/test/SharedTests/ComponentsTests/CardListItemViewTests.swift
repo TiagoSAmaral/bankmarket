@@ -31,4 +31,18 @@ final class CardListItemViewTests: XCTestCase {
         
         assertSnapshot(matching: canvasView, as: .image, record: isRecording)
     }
+    
+    func testBindAction() {
+        var isChanged = false
+        let response = MockerContentProvider().listItem(type: ResponseList.self)
+        var model = response?.cards?.first
+        model?.actionOnTap = { model in
+            isChanged = !isChanged
+        }
+        
+        let card = CardListItemView()
+        card.load(model: model)
+        card.action?(model)
+        XCTAssertTrue(isChanged)
+    }
 }
