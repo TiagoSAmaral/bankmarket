@@ -1,1 +1,8 @@
 - AppDelegate.swift
+- Constraints.swift
+- MockerContentProvider.swift
+- AlertView.swift
+- LoadingPresentable.swift
+- LoadingManager.swift
+- KeysAcessor.swift
+- AlertPresentable.swift
