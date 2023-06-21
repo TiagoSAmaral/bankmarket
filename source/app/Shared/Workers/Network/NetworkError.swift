@@ -23,22 +23,22 @@ enum NetworkError: Error {
 
     static func makeError(with status: Int?, description: String? = nil) -> NetworkError {
         let messageNotDefinedError = LocalizedText.with(tagName: .networkErrorNotDefined)
-        guard let status = status else {
-            return .notDefined(text: messageNotDefinedError)
+//        guard let status = status else {
+//            return .notDefined(text: messageNotDefinedError)
+//        }
+        if let status = status {
+            if status == -1 {
+                return .offline(text: description ?? LocalizedText.with(tagName: .networkOffline))
+            }
+            
+            if 400 ... 499 ~= status {
+                return .badRequest(text: description ?? messageNotDefinedError)
+            }
+            
+            if status > 499 {
+                return .notDefined(text: description ?? LocalizedText.with(tagName: .serverNotResponse))
+            }
         }
-        
-        if status == -1 {
-            return .offline(text: description ?? LocalizedText.with(tagName: .networkOffline))
-        }
-        
-        if 400 ... 499 ~= status {
-            return .badRequest(text: description ?? messageNotDefinedError)
-        }
-        
-        if status > 499 {
-            return .notDefined(text: description ?? LocalizedText.with(tagName: .serverNotResponse))
-        }
-        
         return .notDefined(text: messageNotDefinedError)
     }
 }

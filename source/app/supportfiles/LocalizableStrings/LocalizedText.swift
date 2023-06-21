@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LocalizedText {
+final class LocalizedText {
     
     enum LocalizeTags: String {
             case networkErrorNotDefined
@@ -23,11 +23,11 @@ struct LocalizedText {
             case costText
             case healthText
         }
-    
     static func with(tagName: LocalizeTags) -> String {
-        
-        
-        
-        return NSLocalizedString(tagName.rawValue, comment: "") // Bundle.main.localizedString(forKey: tagName.rawValue, value: nil, table: "Localizable-pt-BR")
+        return NSLocalizedString(tagName.rawValue, bundle: Bundle(for: LocalizedText.self), comment: "")
+    }
+    
+    static func with<T: AnyObject>(tagName: LocalizeTags, bundleClass: T.Type) -> String {
+        return NSLocalizedString(tagName.rawValue, bundle: Bundle(for: bundleClass.self), comment: "") // Bundle.main.localizedString(forKey: tagName.rawValue, value: nil, table: "Localizable-pt-BR")
     }
 }

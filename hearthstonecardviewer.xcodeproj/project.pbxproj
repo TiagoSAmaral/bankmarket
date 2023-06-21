@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF5761292A42C4BE007721D2 /* NetworkErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5761282A42C4BE007721D2 /* NetworkErrorTests.swift */; };
 		CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6414E923E4C210009C7A9E /* TemplateTests.swift */; };
 		CF886B992A40FE080027EEFA /* ColorAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B982A40FE080027EEFA /* ColorAssets.swift */; };
 		CF886B9C2A4113E70027EEFA /* LHF Uncial Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF886B9B2A4113E70027EEFA /* LHF Uncial Caps.ttf */; };
@@ -156,6 +157,7 @@
 /* Begin PBXFileReference section */
 		CF24569923E4C55B00A1968D /* Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		CF2EC3DD2A3CC072003E06EC /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		CF5761282A42C4BE007721D2 /* NetworkErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorTests.swift; sourceTree = "<group>"; };
 		CF6414DF23E4C1CF009C7A9E /* HeartOfStoneViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartOfStoneViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6414E923E4C210009C7A9E /* TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
 		CF886B982A40FE080027EEFA /* ColorAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAssets.swift; sourceTree = "<group>"; };
@@ -255,6 +257,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF5761262A42C465007721D2 /* WorkerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF5761272A42C4A6007721D2 /* NetworkTests */,
+			);
+			path = WorkerTests;
+			sourceTree = "<group>";
+		};
+		CF5761272A42C4A6007721D2 /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF5761282A42C4BE007721D2 /* NetworkErrorTests.swift */,
+			);
+			path = NetworkTests;
+			sourceTree = "<group>";
+		};
 		CF886B972A40FDFD0027EEFA /* Colors */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +364,7 @@
 		CFB8E3B52A429A800051026D /* SharedTests */ = {
 			isa = PBXGroup;
 			children = (
+				CF5761262A42C465007721D2 /* WorkerTests */,
 				CFB8E3B62A429A900051026D /* ComponentsTests */,
 			);
 			path = SharedTests;
@@ -837,6 +856,7 @@
 				CFB8E35A2A4205970051026D /* ListItemRequestParamsModel.swift in Sources */,
 				CFBED3022A3ED3C700CAA054 /* KeysAcessor.swift in Sources */,
 				CF93BD3B2A3FCDD60060C410 /* SecurityApi.swift in Sources */,
+				CF5761292A42C4BE007721D2 /* NetworkErrorTests.swift in Sources */,
 				CF93BD1B2A3F72300060C410 /* GenericCell.swift in Sources */,
 				CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */,
 				CFBED2C52A3E924200CAA054 /* NavigationController.swift in Sources */,
