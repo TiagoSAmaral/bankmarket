@@ -76,6 +76,15 @@
 		CFB8E39B2A420CB50051026D /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3992A420CB50051026D /* LocalizedText.swift */; };
 		CFB8E3A32A420EE70051026D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3A62A420EE70051026D /* Localizable.strings */; };
 		CFB8E3A42A420EE70051026D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3A62A420EE70051026D /* Localizable.strings */; };
+		CFB8E3AA2A421F6F0051026D /* MockerContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3A92A421F6F0051026D /* MockerContentProvider.swift */; };
+		CFB8E3AB2A421F6F0051026D /* MockerContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3A92A421F6F0051026D /* MockerContentProvider.swift */; };
+		CFB8E3AD2A4239BA0051026D /* listItem.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3AC2A4239BA0051026D /* listItem.json */; };
+		CFB8E3AE2A4239BA0051026D /* listItem.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3AC2A4239BA0051026D /* listItem.json */; };
+		CFB8E3B02A4239FA0051026D /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3AF2A4239FA0051026D /* item.json */; };
+		CFB8E3B12A4239FA0051026D /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3AF2A4239FA0051026D /* item.json */; };
+		CFB8E3B32A423A200051026D /* metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3B22A423A200051026D /* metadata.json */; };
+		CFB8E3B42A423A200051026D /* metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3B22A423A200051026D /* metadata.json */; };
+		CFB8E3B82A429AB10051026D /* TableViewAutomaticPaginateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */; };
 		CFBB29812A3D308800DA0561 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29802A3D308800DA0561 /* Item.swift */; };
 		CFBB29832A3D30AE00DA0561 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29822A3D30AE00DA0561 /* Metadata.swift */; };
 		CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */; };
@@ -137,7 +146,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF24569923E4C55B00A1968D /* BaseProjectTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BaseProjectTarget-Info.plist"; sourceTree = "<group>"; };
+		CF24569923E4C55B00A1968D /* Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		CF2EC3DD2A3CC072003E06EC /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		CF6414DF23E4C1CF009C7A9E /* HeartOfStoneViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartOfStoneViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6414E923E4C210009C7A9E /* TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
@@ -160,6 +169,11 @@
 		CFB8E3992A420CB50051026D /* LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedText.swift; sourceTree = "<group>"; };
 		CFB8E3A52A420EE70051026D /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CFB8E3A72A420F280051026D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CFB8E3A92A421F6F0051026D /* MockerContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockerContentProvider.swift; sourceTree = "<group>"; };
+		CFB8E3AC2A4239BA0051026D /* listItem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listItem.json; sourceTree = "<group>"; };
+		CFB8E3AF2A4239FA0051026D /* item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = item.json; sourceTree = "<group>"; };
+		CFB8E3B22A423A200051026D /* metadata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = metadata.json; sourceTree = "<group>"; };
+		CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutomaticPaginateTests.swift; sourceTree = "<group>"; };
 		CFBB29802A3D308800DA0561 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CFBB29822A3D30AE00DA0561 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CFBB29842A3D30CA00DA0561 /* MetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataItem.swift; sourceTree = "<group>"; };
@@ -300,6 +314,33 @@
 				CFB8E3472A41FE430051026D /* AlertView.swift */,
 			);
 			path = AlertView;
+			sourceTree = "<group>";
+		};
+		CFB8E3A82A421F540051026D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8E3A92A421F6F0051026D /* MockerContentProvider.swift */,
+				CFB8E3AC2A4239BA0051026D /* listItem.json */,
+				CFB8E3AF2A4239FA0051026D /* item.json */,
+				CFB8E3B22A423A200051026D /* metadata.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CFB8E3B52A429A800051026D /* SharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8E3B62A429A900051026D /* ComponentsTests */,
+			);
+			path = SharedTests;
+			sourceTree = "<group>";
+		};
+		CFB8E3B62A429A900051026D /* ComponentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */,
+			);
+			path = ComponentsTests;
 			sourceTree = "<group>";
 		};
 		CFBB297F2A3D306900DA0561 /* Models */ = {
@@ -568,8 +609,10 @@
 		CFD3A6BD23DA30EF00EB6D4D /* test */ = {
 			isa = PBXGroup;
 			children = (
+				CFB8E3B52A429A800051026D /* SharedTests */,
+				CFB8E3A82A421F540051026D /* Mocks */,
 				CF6414E923E4C210009C7A9E /* TemplateTests.swift */,
-				CF24569923E4C55B00A1968D /* BaseProjectTarget-Info.plist */,
+				CF24569923E4C55B00A1968D /* Test-Info.plist */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -679,8 +722,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB8E3B12A4239FA0051026D /* item.json in Resources */,
 				CFB8E3A42A420EE70051026D /* Localizable.strings in Resources */,
 				CF886B9D2A4113E70027EEFA /* LHF Uncial Caps.ttf in Resources */,
+				CFB8E3B42A423A200051026D /* metadata.json in Resources */,
+				CFB8E3AE2A4239BA0051026D /* listItem.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,6 +736,9 @@
 			files = (
 				CF886B9C2A4113E70027EEFA /* LHF Uncial Caps.ttf in Resources */,
 				CFB8E3A32A420EE70051026D /* Localizable.strings in Resources */,
+				CFB8E3B02A4239FA0051026D /* item.json in Resources */,
+				CFB8E3AD2A4239BA0051026D /* listItem.json in Resources */,
+				CFB8E3B32A423A200051026D /* metadata.json in Resources */,
 				CFD3A6DC23DA462000EB6D4D /* Launch Screen.storyboard in Resources */,
 				CFD3A6BB23DA308A00EB6D4D /* Assets.xcassets in Resources */,
 			);
@@ -736,6 +785,7 @@
 				CF93BD252A3F72330060C410 /* NetworkError.swift in Sources */,
 				CF93BD2F2A3F72630060C410 /* HtmlAttributedString.swift in Sources */,
 				CF93BD3C2A3FCDD60060C410 /* KeychainAccess.swift in Sources */,
+				CFB8E3B82A429AB10051026D /* TableViewAutomaticPaginateTests.swift in Sources */,
 				CF93BD1F2A3F72300060C410 /* TableViewUpdateEvent.swift in Sources */,
 				CF93BD2D2A3F72470060C410 /* CardSelectable.swift in Sources */,
 				CFB8E3452A41FC030051026D /* LoadindingView.swift in Sources */,
@@ -760,6 +810,7 @@
 				CF93BD1B2A3F72300060C410 /* GenericCell.swift in Sources */,
 				CF6414EA23E4C210009C7A9E /* TemplateTests.swift in Sources */,
 				CFBED2C52A3E924200CAA054 /* NavigationController.swift in Sources */,
+				CFB8E3AB2A421F6F0051026D /* MockerContentProvider.swift in Sources */,
 				CF93BD202A3F72300060C410 /* Model.swift in Sources */,
 				CFBED2BC2A3E923900CAA054 /* DetailItemController.swift in Sources */,
 				CF93BD2B2A3F72470060C410 /* MosaicBaseView.swift in Sources */,
@@ -820,6 +871,7 @@
 				CFB8E33D2A41FBA20051026D /* LoadingManager.swift in Sources */,
 				CFBED2DE2A3EBB6C00CAA054 /* TableViewUpdateEvent.swift in Sources */,
 				CFBED2DA2A3EB90A00CAA054 /* NetworkWorker.swift in Sources */,
+				CFB8E3AA2A421F6F0051026D /* MockerContentProvider.swift in Sources */,
 				CFBED2EA2A3EBC9900CAA054 /* HtmlAttributedString.swift in Sources */,
 				CFBB29852A3D30CA00DA0561 /* MetadataItem.swift in Sources */,
 				CFBED2862A3E1A2900CAA054 /* KeysAcessor.swift in Sources */,
@@ -866,7 +918,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/source/test/BaseProjectTarget-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/source/test/Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -887,7 +939,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/source/test/BaseProjectTarget-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/source/test/Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
