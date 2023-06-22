@@ -25,10 +25,7 @@ final class CardListItemViewTests: XCTestCase {
         card.imageViewBackground.image = UIImage(named: "listItemBackground", in: Bundle(for: CardListItemViewTests.self), with: nil)
         card.titleLabel.font = FontPallet.mainFont
         card.descriptionLabel.font = FontPallet.mainFont?.withSize(16.0)
-        
-        card.titleLabel.textColor = .white
-        card.descriptionLabel.textColor = .white
-        
+            
         assertSnapshot(matching: canvasView, as: .image, record: isRecording)
     }
     

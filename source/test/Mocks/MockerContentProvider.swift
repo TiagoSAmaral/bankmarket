@@ -89,6 +89,21 @@ public final class MockerContentProvider: KeyAdvisor {
         return mocknetworkPurveyorCardList
     }
     
+    var mockSuccessToken: MockNetworkPurveyor {
+        let urlPath = URL(string: "https://oauth.battle.net/token")!
+        let data = token()
+        
+        let requestCardsWithSuccess = MockResponse(statusCode: .code200,
+                                                   httpVersion: .http1,
+                                                   data: data,
+                                                   headers: [:])
+        
+        let mocknetworkPurveyorCardList = MockNetworkPurveyor(urlRequest: try! URLRequest(url: urlPath, method: .post),
+                                                              response: requestCardsWithSuccess)
+        
+        return mocknetworkPurveyorCardList
+    }
+    
     
     func listItem<T: Decodable>(type: T.Type) -> T? {
         loadMockFrom(fileName: "listItem")
@@ -100,6 +115,10 @@ public final class MockerContentProvider: KeyAdvisor {
     
     func metadata<T: Decodable>(type: T.Type) -> T? {
         loadMockFrom(fileName: "metadata")
+    }
+    
+    func token() -> Data? {
+        loadData(fileName: "responseToken")
     }
     
     func loadDataListItem() -> Data? {

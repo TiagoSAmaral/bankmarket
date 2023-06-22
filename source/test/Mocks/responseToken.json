@@ -1,0 +1,6 @@
+{
+    "access_token": "fakeHashToken45612345",
+    "token_type": "bearer",
+    "expires_in": 86399,
+    "sub": "YYYYYYY"
+}

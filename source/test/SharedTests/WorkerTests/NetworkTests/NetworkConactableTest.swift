@@ -63,4 +63,28 @@ final class NetworkConactableTests: XCTestCase {
         
         wait(for: [expectation])
     }
+    
+    func testReuqestTokenSuccess() {
+        let urlPathBuilder = URLPathBuilder()
+        let urlPath = urlPathBuilder.makeUrlAuthorization()!
+        let params = ApiParams(urlPath: urlPath, token: .empty, method: .post, params: nil)
+        
+        let expectation = expectation(description: "RequestlistCards")
+        
+        
+        sut?.request(with: params, resultType:  ResponseAuthorizationBearer.self, handler: { response in
+            
+            switch response {
+            case .success(let token):
+                XCTAssertEqual(token.accessToken, "fakeHashToken45612345")
+            case .failure(let error):
+                XCTFail(error.message)
+            }
+            
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation])
+        
+    }
 }

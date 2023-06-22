@@ -27,13 +27,27 @@ final class URLProtocolMock: URLProtocol {
     
     override func startLoading() {
         
-        let foundRequest = Self.mockRequests.first { [unowned self] in
-            request.url?.absoluteString == $0.urlRequest.url?.absoluteString &&
-            request.httpMethod == $0.urlRequest.httpMethod &&
-            request.headers[Header.Keys.authorization.rawValue] == $0.response.headers[Header.Keys.authorization.rawValue] &&
-            (Self.shouldCheckQueryParameters ? request.url?.query == $0.urlRequest.url?.query: true)
+        var foundRequest: MockNetworkPurveyor?
+        
+        if request.httpMethod == "GET" {
+            foundRequest = Self.mockRequests.first { [unowned self] in
+                request.url?.absoluteString == $0.urlRequest.url?.absoluteString &&
+                request.httpMethod == $0.urlRequest.httpMethod &&
+                request.headers[Header.Keys.authorization.rawValue] == $0.response.headers[Header.Keys.authorization.rawValue] &&
+                (Self.shouldCheckQueryParameters ? request.url?.query == $0.urlRequest.url?.query: true)
+            }
+        
         }
-    
+        
+        if request.httpMethod == "POST" {
+            foundRequest = Self.mockRequests.first { [unowned self] in
+                request.url?.absoluteString == $0.urlRequest.url?.absoluteString &&
+                request.httpMethod == $0.urlRequest.httpMethod &&
+                (Self.shouldCheckQueryParameters ? request.url?.query == $0.urlRequest.url?.query: true)
+            }
+        
+        }
+        
         guard let mockPurveyor = foundRequest else {
             client?.urlProtocol(self, didFailWithError: MockNetworkPurveyorError.routeNotFound)
             return

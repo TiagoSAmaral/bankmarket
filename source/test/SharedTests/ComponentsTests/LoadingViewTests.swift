@@ -10,6 +10,7 @@ import SnapshotTesting
 import XCTest
 
 final class LoadingViewControllerTests: XCTestCase {
+    
     let isRecording = false
     
     func testNavigationLayout() {

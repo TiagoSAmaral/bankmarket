@@ -23,9 +23,6 @@ enum NetworkError: Error {
 
     static func makeError(with status: Int?, description: String? = nil) -> NetworkError {
         let messageNotDefinedError = LocalizedText.with(tagName: .networkErrorNotDefined)
-//        guard let status = status else {
-//            return .notDefined(text: messageNotDefinedError)
-//        }
         if let status = status {
             if status == -1 {
                 return .offline(text: description ?? LocalizedText.with(tagName: .networkOffline))

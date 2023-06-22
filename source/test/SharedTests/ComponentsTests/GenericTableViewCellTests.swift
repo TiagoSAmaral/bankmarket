@@ -33,7 +33,7 @@ final class GenericTableViewCellTests: XCTestCase {
         sut?.contentView.addSubviews([view])
         XCTAssertEqual(sut?.contentView.subviews.count, 1)
         
-        sut?.customPrepareForReuse()
+        sut?.prepareForReuse()
         XCTAssertEqual(sut?.contentView.subviews.count, 0)
     }
 }

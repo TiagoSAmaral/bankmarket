@@ -18,6 +18,8 @@ extension URLProtocolMock {
         URLProtocolMock.mockRequests.insert(mockProvider.mockFailureCardListPage)
         URLProtocolMock.mockRequests.insert(mockProvider.mockSuccessMetadata)
         URLProtocolMock.mockRequests.insert(mockProvider.mockFailureMetadata)
+        URLProtocolMock.mockRequests.insert(mockProvider.mockSuccessToken)
+        
     }
 
     class func makeSession() -> Session {
