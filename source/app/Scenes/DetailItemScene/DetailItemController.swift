@@ -47,14 +47,14 @@ final class DetailItemController: UIViewController,
     }
     
     func display(message: String?) {
-        stopLoading() { [weak self] in
+        stopLoading { [weak self] in
             self?.presentAlert(with: nil, and: message) {[weak self] _ in
                 self?.navigationController?.popViewController(animated: true)
             }
         }
     }
     
-//  MARK: - TableViewAutomaticPaginateDelegate methods
+    // MARK: - TableViewAutomaticPaginateDelegate methods
     func numberOfSections() -> Int {
         1
     }

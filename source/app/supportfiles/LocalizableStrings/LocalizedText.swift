@@ -28,6 +28,6 @@ final class LocalizedText {
     }
     
     static func with<T: AnyObject>(tagName: LocalizeTags, bundleClass: T.Type) -> String {
-        return NSLocalizedString(tagName.rawValue, bundle: Bundle(for: bundleClass.self), comment: "") // Bundle.main.localizedString(forKey: tagName.rawValue, value: nil, table: "Localizable-pt-BR")
+        return NSLocalizedString(tagName.rawValue, bundle: Bundle(for: bundleClass.self), comment: "")
     }
 }

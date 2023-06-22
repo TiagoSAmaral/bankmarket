@@ -22,7 +22,7 @@ enum DetailItemSceneFactory {
         viewMosaic.insertNew(view: listTableView)
         
         let workerNetwork = NetworkConactable()
-        let workerSecurity = Security()
+        let workerSecurity = Security(keychainAccess: KeychainAccess())
         workerSecurity.workerNetwork = NetworkConactable()
         workerSecurity.workerUrlBuilder = URLPathBuilder()
         workerSecurity.keyAdvisor = KeysAcessor()

@@ -31,7 +31,7 @@ final class ListItemController: UIViewController,
     }
     
     func display(message: String?) {
-        stopLoading() { [weak self] in
+        stopLoading { [weak self] in
             self?.presentAlert(with: nil, and: message, handler: nil)
         }
     }
@@ -56,7 +56,7 @@ final class ListItemController: UIViewController,
         }
     }
 
-//  MARK: TableViewAutomaticPaginateDelegate Methods
+    // MARK: TableViewAutomaticPaginateDelegate Methods
     func numberOfSections() -> Int {
         1
     }
@@ -73,7 +73,7 @@ final class ListItemController: UIViewController,
         interactor?.fetchNextPage()
     }
 
-    func getModel(at indexPath: IndexPath) -> Model?  {
+    func getModel(at indexPath: IndexPath) -> Model? {
         guard var item = items?[indexPath.row] as? Selectable else {
             return nil
         }

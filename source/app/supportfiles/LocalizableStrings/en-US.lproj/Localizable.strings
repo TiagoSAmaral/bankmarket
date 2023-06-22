@@ -6,7 +6,7 @@
   Copyright © 2023 developerios. All rights reserved.
 */
 
-"networkErrorNotDefined" = "Somethin is wrong, please try again. In case this error persist, contact the support.";
+"networkErrorNotDefined" = "Something is wrong, please try again. In case this error persist, contact the support.";
 "networkOffline" = "Check your internet connection.";
 "serverNotResponse" = "Contact the support.";
 "pullToRefreshText" = "Updating...";

@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        let security = Security()
+        let security = Security(keychainAccess: KeychainAccess())
         security.deleteToken()
     }
 }

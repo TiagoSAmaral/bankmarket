@@ -24,6 +24,11 @@ final class Security: SecurityWorker {
     private let clientSecretKey: String = "client_secret"
     private let clientCredentialsKey: String = "grant_type"
     private let keyTokenAccess: String = "keyTokenAccess"
+    private(set) var keychainAccess: KeyChainAccessor?
+    
+    init(keychainAccess: KeyChainAccessor?) {
+        self.keychainAccess = keychainAccess
+    }
     
     func getUserToken(handler: ((Result<String?, NetworkError>) -> Void)?) {
         
@@ -58,7 +63,7 @@ final class Security: SecurityWorker {
     
     func requestAuthorizationToken(apiParams: ApiParams, handler: ((Result<String?, NetworkError>) -> Void)?) {
         
-        workerNetwork?.requestMultipart(with: apiParams, resultType: ResponseAuthorizationBearer.self) { response in
+        workerNetwork?.requestMultipart(with: apiParams, resultType: ResponseAuthorizationBearer.self) { [weak self] response in
             
             switch response {
             case .success(let result):
@@ -68,10 +73,15 @@ final class Security: SecurityWorker {
                     return
                 }
                 
+                guard let keyTokenAccess = self?.keyTokenAccess else {
+                    handler?(.failure(NetworkError.makeError(with: 400, description: "keyTokenAccess Not valid")))
+                    return
+                }
+                
                 do {
-                    try KeychainAccess.addNew(secretWord: accessToken, keyValue: self.keyTokenAccess)
+                    try self?.keychainAccess?.addNew(secretWord: accessToken, keyValue: keyTokenAccess)
                     handler?(.success(accessToken))
-                } catch (let error) {
+                } catch {
                     handler?(.failure(NetworkError.badRequest(text: error.localizedDescription)))
                 }
             case .failure(let error):
@@ -81,10 +91,10 @@ final class Security: SecurityWorker {
     }
     
     func requestLocalToken() -> String? {
-        try? KeychainAccess.take(keyValue: self.keyTokenAccess)
+        try? keychainAccess?.take(keyValue: self.keyTokenAccess)
     }
     
     func deleteToken() {
-        try? KeychainAccess.remove(keyValue: self.keyTokenAccess)
+        try? keychainAccess?.remove(keyValue: self.keyTokenAccess)
     }
 }

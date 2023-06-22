@@ -9,9 +9,16 @@
 import Foundation
 import Security
 
-class KeychainAccess: NSObject {
+protocol KeyChainAccessor {
+    func addNew(secretWord: String, keyValue: String) throws
+    func renew(secretWord: String, keyValue: String) throws
+    func take(keyValue: String) throws -> String?
+    func remove(keyValue: String) throws
+}
+
+class KeychainAccess: NSObject, KeyChainAccessor {
     
-    static func addNew(secretWord: String, keyValue: String) throws {
+    func addNew(secretWord: String, keyValue: String) throws {
         
         let dataValue = Data(secretWord.utf8)
         
@@ -19,7 +26,7 @@ class KeychainAccess: NSObject {
             kSecAttrService as String: Bundle.main.bundleIdentifier as AnyObject,
             kSecAttrAccount as String: keyValue as AnyObject,
             kSecClass as String: kSecClassGenericPassword,
-            kSecValueData as String: dataValue as AnyObject
+            kSecValueData as String: dataValue as AnyObject,
         ]  as CFDictionary
         
         let result = SecItemAdd(query, nil)
@@ -33,14 +40,14 @@ class KeychainAccess: NSObject {
         }
     }
     
-    static func renew(secretWord: String, keyValue: String) throws {
+    func renew(secretWord: String, keyValue: String) throws {
         
         let dataValue = Data(secretWord.utf8)
         
         let query = [
             kSecAttrService as String: Bundle.main.bundleIdentifier as AnyObject,
             kSecAttrAccount as String: keyValue as AnyObject,
-            kSecClass as String: kSecClassGenericPassword
+            kSecClass as String: kSecClassGenericPassword,
         ] as CFDictionary
         
         let newValue = [
@@ -58,13 +65,13 @@ class KeychainAccess: NSObject {
         }
     }
     
-    static func take(keyValue: String) throws -> String? {
+    func take(keyValue: String) throws -> String? {
         let query = [
             kSecAttrService as String: Bundle.main.bundleIdentifier as AnyObject,
             kSecAttrAccount as String: keyValue as AnyObject,
             kSecClass as String: kSecClassGenericPassword,
             kSecMatchLimit as String: kSecMatchLimitOne,
-            kSecReturnData as String: kCFBooleanTrue
+            kSecReturnData as String: kCFBooleanTrue ?? "true",
         ] as CFDictionary
         
         var shadowValue: AnyObject?
@@ -85,12 +92,12 @@ class KeychainAccess: NSObject {
         return String(data: secretWord, encoding: .utf8)
     }
     
-    static func remove(keyValue: String) throws {
+    func remove(keyValue: String) throws {
         
         let query = [
             kSecAttrService as String: Bundle.main.bundleIdentifier as AnyObject,
             kSecAttrAccount as String: keyValue as AnyObject,
-            kSecClass as String: kSecClassGenericPassword
+            kSecClass as String: kSecClassGenericPassword,
         ] as CFDictionary
         
         let result = SecItemDelete(query)
@@ -99,7 +106,6 @@ class KeychainAccess: NSObject {
             throw KeychainAPIResult.notDefined(result)
         }
     }
-    
     
     enum KeychainAPIResult: Error {
         case invalid
