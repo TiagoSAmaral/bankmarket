@@ -6,6 +6,23 @@ O projeto consome a api da Blizzard, é necessário  registrar-se e criar um `Cl
 
 Para mais informações siga o link: [Blizzard Develop Access](https://develop.battle.net/access/clients/fd740fac011c405d8463225681bb6e86)
 
+## Preview
+
+### Modo Light e Dark aplicados: 
+<p float="left">
+<kbd><img src="./readmefiles/light-ptbr.png" width="149"/></kbd>
+<kbd><img src="./readmefiles/dark-ptbr.png" width="149"/></kbd>
+<p>
+
+---
+
+### Internacionalização aplicada em Português e Inglês:
+
+<p float="left">
+<kbd><img src="./readmefiles/pt-br.png" width="149"/></kbd>
+<kbd><img src="./readmefiles/en-us.png" width="149"/></kbd>
+<p>
+
 ## <b> <span style="color:red"> LEIA AQUI! </span> </b>
 Por questões de segurança as chaves da API NÃO ESTÃO no projeto. 
 Para excutar o projeto, será necessário criar uma classe ou struct que conforma com a interface `KeyAdvisor`, e através dela, passar as chaves pelas propriedades. 
@@ -26,7 +43,6 @@ struct KeysAcessor: KeyAdvisor {
     }
 }
 ```
-
 ---
 
 ## Preparando o Ambiente
@@ -37,6 +53,7 @@ Sobre o projeto: <br>
 - Xcode Version 11.3.1 (11C504) (ou superior)<br>
 - Suporte mínimo ao iOS 10<br>
 - Swift 5<br>
+- Cobertura de código: 42.49%
 
 Ferramentas de Gestão e Qualidade de Código<br>
 - Fastlane
