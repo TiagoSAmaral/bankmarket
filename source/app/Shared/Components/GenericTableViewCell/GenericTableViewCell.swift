@@ -21,8 +21,7 @@ class GenericTableViewCell: UITableViewCell, GenericCell {
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        defineClearBackground()
+        return nil
     }
     
     override func prepareForReuse() {

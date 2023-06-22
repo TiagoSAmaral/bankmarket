@@ -9,14 +9,13 @@
 import Foundation
 
 class URLPathBuilder: WorkerURLPathBuilder {
-    private var contentBaseUrl: URLComponents?
-    private var authorizationBaseUrl: URLComponents?
-    
-    private let contentBaseUrlString: String = "https://us.api.blizzard.com"
-    private let authBaseUrlString: String = "https://oauth.battle.net"
-    private let contentHeartOfStoneCards: String = "/hearthstone/cards"
-    private let contentHeartOfStoneMetadata: String = "/hearthstone/metadata"
-    private let authPathToken: String = "/token"
+    private(set) var contentBaseUrl: URLComponents?
+    private(set) var authorizationBaseUrl: URLComponents?
+    let contentBaseUrlString: String = "https://us.api.blizzard.com"
+    let authBaseUrlString: String = "https://oauth.battle.net"
+    let contentHeartOfStoneCards: String = "/hearthstone/cards"
+    let contentHeartOfStoneMetadata: String = "/hearthstone/metadata"
+    let authPathToken: String = "/token"
     
     init() {
         makeContentBaseUrl()

@@ -38,12 +38,12 @@ final class Security: SecurityWorker {
         }
         
         guard let keyAdvisor = keyAdvisor else {
-            handler?(.failure(NetworkError.makeError(with: 400, description: "KeyAdvisor not implemented.")))
+            handler?(.failure(NetworkError.makeError(with: 400, description: LocalizedText.with(tagName: .keyadvisorNotFound))))
             return
         }
         
         guard let urlPath = workerUrlBuilder?.makeUrlAuthorization() else {
-            handler?(.failure(NetworkError.makeError(with: 400, description: "Url to authorization not found.")))
+            handler?(.failure(NetworkError.makeError(with: 400, description: LocalizedText.with(tagName: .urlAuthorizationNotFound))))
             return
         }
        
@@ -55,7 +55,7 @@ final class Security: SecurityWorker {
         
         let apiParams = ApiParams(urlPath: urlPath,
                                   token: .empty,
-                                  method: .get,
+                                  method: .post,
                                   params: apiSecurityInfo)
         
         requestAuthorizationToken(apiParams: apiParams, handler: handler)
@@ -69,12 +69,12 @@ final class Security: SecurityWorker {
             case .success(let result):
                 
                 guard let accessToken = result.accessToken else {
-                    handler?(.failure(NetworkError.makeError(with: 400, description: "Url to authorization not found.")))
+                    handler?(.failure(NetworkError.makeError(with: 400, description: LocalizedText.with(tagName: .urlAuthorizationNotFound))))
                     return
                 }
                 
                 guard let keyTokenAccess = self?.keyTokenAccess else {
-                    handler?(.failure(NetworkError.makeError(with: 400, description: "keyTokenAccess Not valid")))
+                    handler?(.failure(NetworkError.makeError(with: 400, description: LocalizedText.with(tagName: .keyadvisorNotFound))))
                     return
                 }
                 

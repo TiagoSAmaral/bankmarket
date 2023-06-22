@@ -36,4 +36,9 @@ final class GenericTableViewCellTests: XCTestCase {
         sut?.prepareForReuse()
         XCTAssertEqual(sut?.contentView.subviews.count, 0)
     }
+    
+    func testInitCoder() {
+        let cell = GenericTableViewCell(coder: NSCoder())
+        XCTAssertNil(cell)
+    }
 }
