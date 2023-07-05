@@ -55,7 +55,8 @@ final class NetworkConactable: NetworkWorker {
             case .success(let data):
                 handler?(.success(data))
             case .failure(let error):
-                handler?(.failure(NetworkError.makeError(with: error.responseCode, description: error.errorDescription)))
+                handler?(.failure(NetworkError.makeError(with: response.response?.statusCode,
+                                                         description: error.errorDescription)))
             }
         }
     }
