@@ -9,6 +9,12 @@
 import UIKit
 import Kingfisher
 
+protocol CardListItemViewModel where Self: Model {
+    var cardTitle: String? { get }
+    var cardDescriptionText: String? { get }
+    var cardCropImageUrl: String? { get }
+}
+
 final class CardListItemView: CardSelectable {
     
     let cornerRadius: CGFloat = 8.0
@@ -64,13 +70,13 @@ final class CardListItemView: CardSelectable {
         populateViewElements()
         registerAction()
     }
-    
+
     func populateViewElements() {
-        let visibleModel = model as? Item
+        let visibleModel = model as? CardListItemViewModel
         
-        titleLabel.text = visibleModel?.name
-        descriptionLabel.text = visibleModel?.flavorText
-        if let imageUrl = visibleModel?.cropImage {
+        titleLabel.text = visibleModel?.cardTitle
+        descriptionLabel.text = visibleModel?.cardDescriptionText
+        if let imageUrl = visibleModel?.cardCropImageUrl {
             imageViewBackground.kf.setImage(with: URL(string: imageUrl))
         }
     }
