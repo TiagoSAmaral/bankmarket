@@ -56,7 +56,7 @@ final class CardDetailItemView: CardSelectable {
         vStackView.addArrangedSubview(makeLabel(with: "\(visibleModel.text?.htmlToString ?? .empty)"))
         vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .setText)): \(visibleModel.cardSet?.name ?? .empty)"))
         vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .rarityText)): \(visibleModel.rarity?.name ?? .empty)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .atackText)): \(visibleModel.attack ?? .zero)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .attackText)): \(visibleModel.attack ?? .zero)"))
         vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .costText)): \(visibleModel.manaCost ?? .zero)"))
         vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .healthText)): \(visibleModel.health ?? .zero)"))
         vStackView.addArrangedSubview(makeLabel(with: "\(visibleModel.flavorText?.htmlToString ?? .empty)"))
