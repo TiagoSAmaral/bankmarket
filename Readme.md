@@ -141,3 +141,11 @@ Ver mais no link: [Realm/jazzy](https://github.com/realm/jazzy)
 Ferramenta para exibir de forma mais amigável informações de cobertura de código do projeto.
 
 Ver mais no link: [Xcov](https://github.com/fastlane-community/xcov)
+
+--- 
+
+### Autor
+
+Tiago Amaral iOS Developer.
+<br>
+- [Linkedin](https://www.linkedin.com/in/tiagoamaralios/)

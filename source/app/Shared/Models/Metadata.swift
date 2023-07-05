@@ -1,6 +1,5 @@
 //
 //  Metadata.swift
-//  BaseProjectTarget
 //
 //  Created by Tiago Amaral on 16/06/23.
 //  Copyright © 2023 developerios. All rights reserved.

@@ -1,12 +1,11 @@
 //
-//  HSCard.swift
-//  BaseProjectTarget
+//  Item.swift
 //
 //  Created by Tiago Amaral on 16/06/23.
 //  Copyright © 2023 developerios. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct Item: Decodable, Visible, Selectable {
 
