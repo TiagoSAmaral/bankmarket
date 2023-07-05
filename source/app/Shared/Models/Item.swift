@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Item: Decodable, Visible, Selectable {
+struct Item: Decodable, Visible, Selectable, CardListItemViewModel, CardDetailItemViewModel {
 
     let identifier: Int?
     let slug: String?
@@ -47,5 +47,43 @@ struct Item: Decodable, Visible, Selectable {
         attack,
         manaCost,
         health
+    }
+    
+    // MARK: - CardListItemViewModel
+    var cardTitle: String? {
+        name
+    }
+    var cardDescriptionText: String? {
+        flavorText
+    }
+    var cardCropImageUrl: String? {
+        cropImage
+    }
+    
+    // MARK: - CardDetailItemViewModel
+    
+    var cardImageUrl: String? {
+        image
+    }
+    var cardFullText: String? {
+        text
+    }
+    var cardCardSetText: String? {
+        cardSet?.name
+    }
+    var cardRarityText: String? {
+        rarity?.name
+    }
+    var cardAttackNumber: Int? {
+        attack
+    }
+    var cardManaCostNumber: Int? {
+        manaCost
+    }
+    var cardHealthNumber: Int? {
+        health
+    }
+    var cardFlavorText: String? {
+        flavorText
     }
 }
