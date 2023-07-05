@@ -5,8 +5,6 @@
 //  Copyright © 2023 developerios. All rights reserved.
 //
 
-import Foundation
-
 struct Item: Decodable, Visible, Selectable, CardListItemViewModel, CardDetailItemViewModel {
 
     let identifier: Int?

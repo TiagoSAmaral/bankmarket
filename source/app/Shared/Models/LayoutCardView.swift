@@ -5,8 +5,6 @@
 //  Copyright © 2023 developerios. All rights reserved.
 //
 
-import Foundation
-
 enum CardLayoutView {
     case cardListItemView
     case cardDetailItemView

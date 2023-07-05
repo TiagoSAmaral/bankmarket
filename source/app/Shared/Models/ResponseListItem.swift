@@ -5,8 +5,6 @@
 //  Copyright © 2023 developerios. All rights reserved.
 //
 
-import Foundation
-
 final class ResponseList: Decodable {
     let cards: [Item]?
     let page: Int?

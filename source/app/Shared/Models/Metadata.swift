@@ -5,8 +5,6 @@
 //  Copyright © 2023 developerios. All rights reserved.
 //
 
-import Foundation
-
 struct Metadata: Decodable {
     
     let sets: [MetadataItem]?
