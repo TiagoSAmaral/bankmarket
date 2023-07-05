@@ -11,6 +11,7 @@ import Foundation
 protocol ListItemInteractorBusinessLogic {
     func fetchItems()
     func fetchNextPage()
+    func flushAndRequest()
 }
 
 final class ListItemInteractor: ListItemInteractorBusinessLogic {
@@ -107,5 +108,11 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
         
         let nextPageNumber = lastPage + 1
         return pageCount >= nextPageNumber ? nextPageNumber: nil
+    }
+    
+    func flushAndRequest() {
+        lastResponse = nil
+        items = nil
+        fetchItems()
     }
 }

@@ -66,7 +66,7 @@ final class ListItemController: UIViewController,
     }
     
     func pullToRefreshEvent() {
-        interactor?.fetchItems()
+        interactor?.flushAndRequest()
     }
     
     func nextPageEvent() {
