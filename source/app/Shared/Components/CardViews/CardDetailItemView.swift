@@ -9,6 +9,18 @@
 import UIKit
 import Kingfisher
 
+protocol CardDetailItemViewModel {
+    var cardTitle: String? { get }
+    var cardImageUrl: String? { get }
+    var cardFullText: String? { get } // text
+    var cardCardSetText: String? { get } // cardSet?.name
+    var cardRarityText: String? { get } // rarity?.name
+    var cardAttackNumber: Int? { get } // attack
+    var cardManaCostNumber: Int? { get } // manaCost
+    var cardHealthNumber: Int? { get } // health
+    var cardFlavorText: String? { get } // flavorText
+}
+
 final class CardDetailItemView: CardSelectable {
     
     lazy var vStackView: UIStackView = {
@@ -26,8 +38,8 @@ final class CardDetailItemView: CardSelectable {
     
     override func load(model: Model?) {
         self.model = model
-        let visibleModel = model as? Item
-        if let imagePath = visibleModel?.image, let urlPath = URL(string: imagePath) {
+        let visibleModel = model as? CardDetailItemViewModel
+        if let imagePath = visibleModel?.cardImageUrl, let urlPath = URL(string: imagePath) {
             imageView.kf.setImage(with: urlPath)
         }
         layoutVStackView()
@@ -42,24 +54,22 @@ final class CardDetailItemView: CardSelectable {
     }
     
     func layoutImageView() {
-
         vStackView.addArrangedSubview(imageView)
-//        imageView.height(510)
     }
     
     func defineTextDetailOfItem() {
 
-        guard let visibleModel = model as? Item else {
+        guard let visibleModel = model as? CardDetailItemViewModel else {
             return
         }
-        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .nameText)): \(visibleModel.name ?? .empty)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(visibleModel.text?.htmlToString ?? .empty)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .setText)): \(visibleModel.cardSet?.name ?? .empty)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .rarityText)): \(visibleModel.rarity?.name ?? .empty)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .attackText)): \(visibleModel.attack ?? .zero)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .costText)): \(visibleModel.manaCost ?? .zero)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .healthText)): \(visibleModel.health ?? .zero)"))
-        vStackView.addArrangedSubview(makeLabel(with: "\(visibleModel.flavorText?.htmlToString ?? .empty)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .nameText)): \(visibleModel.cardTitle ?? .empty)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(visibleModel.cardFullText?.htmlToString ?? .empty)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .setText)): \(visibleModel.cardCardSetText ?? .empty)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .rarityText)): \(visibleModel.cardRarityText ?? .empty)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .attackText)): \(visibleModel.cardAttackNumber ?? .zero)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .costText)): \(visibleModel.cardManaCostNumber ?? .zero)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(LocalizedText.with(tagName: .healthText)): \(visibleModel.cardHealthNumber ?? .zero)"))
+        vStackView.addArrangedSubview(makeLabel(with: "\(visibleModel.cardFlavorText?.htmlToString ?? .empty)"))
     }
     
     func makeLabel(with text: String) -> UIView {
