@@ -19,12 +19,12 @@ final class LocalizedText {
             case nameText
             case setText
             case rarityText
-            case atackText
+            case attackText
             case costText
             case healthText
-        
             case keyadvisorNotFound
             case urlAuthorizationNotFound
+            case lastPage
         }
     static func with(tagName: LocalizeTags) -> String {
         return NSLocalizedString(tagName.rawValue, bundle: Bundle(for: LocalizedText.self), comment: "")

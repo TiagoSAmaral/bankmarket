@@ -16,8 +16,9 @@
 "nameText" = "Nome";
 "setText" = "Conjunto";
 "rarityText" = "Raridade";
-"atackText" = "Ataque";
+"attackText" = "Ataque";
 "costText" = "Mana";
 "healthText" = "Saúde";
 "keyadvisorNotFound" = "Token não encontrado.";
 "urlAuthorizationNotFound" = "Url para autorização não encontrado.";
+"lastPage" = "Chegou ao fim.";
