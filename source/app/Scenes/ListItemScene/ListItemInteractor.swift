@@ -69,7 +69,12 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
     
     func requestItems(with token: String?, page: Int?) {
         
-        if let urlPath = workerApiPathBuilder?.makeUrlCards(with: nextPage(), locale: currentLocale), let token = token {
+        guard let nextPage = nextPage() else {
+            presenter?.message(text: LocalizedText.with(tagName: .lastPage))
+            return
+        }
+        
+        if let urlPath = workerApiPathBuilder?.makeUrlCards(with: nextPage, locale: currentLocale), let token = token {
 
             let apiParams = ApiParams(urlPath: urlPath, token: token, method: .get, params: nil)
             
@@ -92,11 +97,15 @@ final class ListItemInteractor: ListItemInteractorBusinessLogic {
         }
     }
     
-    func nextPage() -> Int {
+    func nextPage() -> Int? {
+        
         guard let lastResponse = lastResponse,
-              let lastPage = lastResponse.page else {
+              let lastPage = lastResponse.page,
+              let pageCount = lastResponse.pageCount else {
             return 1
         }
-        return lastPage + 1
+        
+        let nextPageNumber = lastPage + 1
+        return pageCount >= nextPageNumber ? nextPageNumber: nil
     }
 }

@@ -10,4 +10,5 @@ import Foundation
 final class ResponseList: Decodable {
     let cards: [Item]?
     let page: Int?
+    let pageCount: Int?
 }
