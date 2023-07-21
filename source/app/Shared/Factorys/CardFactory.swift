@@ -13,10 +13,10 @@ final class CardConstructor: CardFactory {
         }
         
         switch item.layoutView {
-        case .cardListItemView:
-            return CardConstructor.make(with: item, classType: CardListItemView.self)
-        case .cardDetailItemView:
-            return CardConstructor.make(with: item, classType: CardDetailItemView.self)
+//        case .cardListItemView:
+//            return CardConstructor.make(with: item, classType: CardListItemView.self)
+//        case .cardDetailItemView:
+//            return CardConstructor.make(with: item, classType: CardDetailItemView.self)
         default:
             return nil
         }

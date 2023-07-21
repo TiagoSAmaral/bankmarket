@@ -14,13 +14,13 @@ protocol ListDisplayLogic: AnyObject where Self: UIViewController {
 
 final class ListItemController: UIViewController,
                                 ListDisplayLogic,
-                                TableViewAutomaticPaginateDelegate,
+                                ListDataSource,
                                 LoadingManagers,
                                 AlertPresetable {
     
-    var interactor: ListItemInteractorBusinessLogic?
+    var presenter: IListPresenter?
     var router: ListItemRoutingLogic?
-    var listView: TableViewUpdateEvent?
+    var listView: ListView?
     var items: [Model]?
     
     func display(viewModel: [Model]?) {
@@ -43,7 +43,7 @@ final class ListItemController: UIViewController,
     func fetchFirstPage() {
         if items == nil {
             startLoading()
-            interactor?.fetchItems()
+            presenter?.fetchItems()
             (navigationController as? NavigationControllerDecorable)?.defineNavigationBarTitleViewWith(imageName: "navigationBarLogo")
         }
     }
@@ -65,11 +65,11 @@ final class ListItemController: UIViewController,
     }
     
     func pullToRefreshEvent() {
-        interactor?.flushAndRequest()
+//        presenter?.flushAndRequest()
     }
     
     func nextPageEvent() {
-        interactor?.fetchNextPage()
+//        presenter?.fetchNextPage()
     }
 
     func getModel(at indexPath: IndexPath) -> Model? {

@@ -12,10 +12,8 @@ enum DetailItemSceneFactory {
     static func makeScene(with data: Model?) -> UIViewController? {
         let controller = DetailItemController()
         let presenter = DetailItemPresenter()
-        let interactor = DetailItemInteractor()
         let viewMosaic = MosaicBaseView()
-        let listTableView = TableViewAutomaticPaginate(controller: controller)
-        interactor.selectedItem = data
+        let listTableView = ListCollectionFactory.createVerticalList(with: presenter) // TableViewAutomaticPaginate(controller: controller)
         
         listTableView.cardFactory = CardConstructor()
         viewMosaic.insertNew(view: listTableView)
@@ -24,12 +22,7 @@ enum DetailItemSceneFactory {
         let workerApiPathBuilder = URLPathBuilder()
         
         presenter.controller = controller
-        
-        interactor.presenter = presenter
-        interactor.workerNetwork = workerNetwork
-        interactor.workerApiPathBuilder = workerApiPathBuilder
-        
-        controller.interactor = interactor
+
         controller.listView = listTableView
         controller.view = viewMosaic.baseView
         

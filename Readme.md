@@ -1,6 +1,6 @@
 # Bankmarket
 
-Simples aplicação que lista de conteudo e permite vizualizar alguns detalhes ao selecionar algum item.
+Simples aplicação que lista conteúdo e permite vizualizar alguns detalhes ao selecionar algum item.
 
 ## Preview
 

@@ -5,25 +5,43 @@
 //  Copyright © 2023 developerios. All rights reserved.
 //
 
-protocol DetailItemPresentationLogic {
+import Foundation
+
+protocol IDetailItemPresentation {
+    func fetchItem()
     func presentItem(with item: Model?)
     func message(text: String?)
 }
 
-final class DetailItemPresenter: DetailItemPresentationLogic {
+final class DetailItemPresenter: IDetailItemPresentation, ListDataSource {
     
     weak var controller: DetailDisplayLogic?
+    
+    func fetchItem() {}
     
     func presentItem(with item: Model?) {
         guard var item = item as? Visible else {
             controller?.display(message: LocalizedText.with(tagName: .networkErrorNotDefined))
             return
         }
-        item.layoutView = .cardDetailItemView
+//        item.layoutView = .cardDetailItemView
         controller?.display(viewModel: item)
     }
 
     func message(text: String?) {
         controller?.display(message: text)
+    }
+    
+    // MARK: -
+    func numberOfSections() -> Int {
+        .zero
+    }
+    
+    func numberOfRow(at section: Int) -> Int {
+        .zero
+    }
+    
+    func getModel(at indexPath: IndexPath) -> Model? {
+        nil
     }
 }

@@ -12,7 +12,7 @@ class LoadingViewController: UIViewController {
     
     lazy var activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
-        indicator.style = .large
+//        indicator.style = .large
         indicator.color = .white
         indicator.startAnimating()
         indicator.autoresizingMask = [

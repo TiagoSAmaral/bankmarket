@@ -14,12 +14,12 @@ protocol DetailDisplayLogic: AnyObject where Self: UIViewController {
 
 final class DetailItemController: UIViewController,
                                   DetailDisplayLogic,
-                                  TableViewAutomaticPaginateDelegate,
+                                  ListDataSource,
                                   LoadingManagers,
                                   AlertPresetable {
 
-    var interactor: DetailItemInteractorBusinessLogic?
-    var listView: TableViewUpdateEvent?
+    var presenter: IDetailItemPresentation?
+    var listView: ListEvent?
     var item: Model?
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,7 +35,7 @@ final class DetailItemController: UIViewController,
     func fetchItem() {
         if item == nil {
             startLoading()
-            interactor?.fetchItem()
+            presenter?.fetchItem()
         }
     }
     

@@ -6,6 +6,5 @@
 //
 
 protocol Visible where Self: Model {
-    
     var layoutView: CardLayoutView? { get set }
 }

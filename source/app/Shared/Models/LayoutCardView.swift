@@ -6,6 +6,8 @@
 //
 
 enum CardLayoutView {
-    case cardListItemView
-    case cardDetailItemView
+    case cardListView
+    case cardBannerListView // Allow horizontal scroll content.∫
+    case cardImageView
+    case cardProductView
 }
