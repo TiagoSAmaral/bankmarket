@@ -18,6 +18,5 @@
 "attackText" = "Attack";
 "costText" = "Mana";
 "healthText" = "Health";
-"keyadvisorNotFound" = "Token not implemented.";
 "urlAuthorizationNotFound" = "Url to authorization not found.";
 "lastPage" = "This is the end";

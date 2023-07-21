@@ -10,7 +10,6 @@ import Alamofire
 
 struct ApiParams {
     let urlPath: URL
-    let token: String
     let method: Alamofire.HTTPMethod
     let params: [[String: String]]?
 }
@@ -30,7 +29,6 @@ final class NetworkConactable: NetworkWorker {
         
         let dataRequest = afSession?.request(data.urlPath,
                    method: data.method,
-                   headers: [HTTPHeader.authorization(bearerToken: data.token)],
                    requestModifier: { $0.timeoutInterval = 15; $0.cachePolicy = .reloadRevalidatingCacheData })
         
         resolve(request: dataRequest, resultType: resultType.self, handler: handler)
@@ -74,13 +72,5 @@ final class NetworkConactable: NetworkWorker {
         }
         
         return multipartForm
-    }
-}
-
-struct ResponseAuthorizationBearer: Decodable {
-    let accessToken: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case accessToken = "access_token"
     }
 }

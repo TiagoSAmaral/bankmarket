@@ -8,22 +8,10 @@
 
 import Foundation
 
-public final class MockerContentProvider: KeyAdvisor {
-    var publicKeyApi: String {
-        // Provider value to test
-        //        .empty
-        "p1"
-    }
-    
-    var privateKeyApi: String {
-        // Provider value to test
-        //        .empty
-        "s2"
-    }
-    
+public final class MockerContentProvider {
     var mockSuccessCardListPage: MockNetworkPurveyor {
         
-        let urlPath = URL(string: "https://us.api.blizzard.com/hearthstone/cards?page=1&locale=en_US")!
+        let urlPath = URL(string: "https://baseurl.com/items?page=1&locale=en_US")!
         let data = loadDataListItem()
         let headers = [
             Header.Keys.contentType.rawValue: Header.Values.applicationJson.rawValue,
@@ -42,7 +30,7 @@ public final class MockerContentProvider: KeyAdvisor {
     }
     
     var mockFailureCardListPage: MockNetworkPurveyor {
-        let urlPath = URL(string: "https://us.api.blizzard.com/hearthstone/cards?page=2&locale=en_US")!
+        let urlPath = URL(string: "https://baseurl.com/items?page=2&locale=en_US")!
         let headers = [
             Header.Keys.contentType.rawValue: Header.Values.applicationJson.rawValue
         ]
@@ -57,7 +45,7 @@ public final class MockerContentProvider: KeyAdvisor {
     }
     
     var mockSuccessMetadata: MockNetworkPurveyor {
-        let urlPath = URL(string: "https://us.api.blizzard.com/hearthstone/metadata?locale=en_US")!
+        let urlPath = URL(string: "https://baseurl.com/metadata?locale=en_US")!
         let headers = [
             Header.Keys.contentType.rawValue: Header.Values.applicationJson.rawValue,
             Header.Keys.authorization.rawValue: "CONTENT VALID AUTH"
@@ -75,7 +63,7 @@ public final class MockerContentProvider: KeyAdvisor {
     }
     
     var mockFailureMetadata: MockNetworkPurveyor {
-        let urlPath = URL(string: "https://us.api.blizzard.com/hearthstone/metadata?locale=en_US")!
+        let urlPath = URL(string: "https://baseurl.com/metadata?locale=en_US")!
         let headers = [
             Header.Keys.contentType.rawValue: Header.Values.applicationJson.rawValue
         ]
@@ -90,7 +78,7 @@ public final class MockerContentProvider: KeyAdvisor {
     }
     
     var mockSuccessToken: MockNetworkPurveyor {
-        let urlPath = URL(string: "https://oauth.battle.net/token")!
+        let urlPath = URL(string: "https://oauth.baseurl.com/token")!
         let data = token()
         
         let requestCardsWithSuccess = MockResponse(statusCode: .code200,
@@ -153,23 +141,3 @@ public final class MockerContentProvider: KeyAdvisor {
         }
     }
 }
-
-
-// Request list cards - GEt
-// https://us.api.blizzard.com/hearthstone/cards?page=1&locale=en_US
-// headers: [ Authorization: Bearer XXX]
-
-// Request Metadata - GET
-// https://us.api.blizzard.com/hearthstone/metadata?locale=en_US
-// headers: [ Authorization: Bearer XXX]
-
-// Request Token - POST (Multipart)
-// https://oauth.battle.net/token
-// headers: [Content-Type: multipart/form-data]
-// Multipart: [
-//      client_id: III,
-//      client_secret: SSS,
-//      grant_type: client_credentials
-// ]
-
-

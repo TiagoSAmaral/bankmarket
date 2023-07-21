@@ -21,7 +21,6 @@ final class LocalizedText {
             case attackText
             case costText
             case healthText
-            case keyadvisorNotFound
             case urlAuthorizationNotFound
             case lastPage
         }
