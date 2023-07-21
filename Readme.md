@@ -1,4 +1,4 @@
-# Heart of Stones Viewer
+# Bankmarket
 
 Simples aplicação que lista de conteudo e permite vizualizar alguns detalhes ao selecionar algum item.
 
