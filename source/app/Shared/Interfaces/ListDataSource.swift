@@ -8,15 +8,9 @@
 
 import Foundation
 
-protocol TableViewAutomaticPaginateDelegate: AnyObject {
+protocol ListDataSource: AnyObject {
     func numberOfSections() -> Int
     func numberOfRow(at section: Int) -> Int
-    func pullToRefreshEvent()
-    func nextPageEvent()
     func getModel(at indexPath: IndexPath) -> Model?
 }
 
-extension TableViewAutomaticPaginateDelegate {
-    func pullToRefreshEvent() {}
-    func nextPageEvent() {}
-}
