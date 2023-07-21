@@ -1,6 +1,5 @@
 //
 //  LocalizedStringsStatic.swift
-//  BaseProjectTarget
 //
 //  Created on 23/01/20.
 //

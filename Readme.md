@@ -1,10 +1,6 @@
 # Heart of Stones Viewer
 
-Simples aplicação que lista cartas do jogo Heart Of Stone e permite vizualizar alguns detalhes ao seleciona-la.
-
-O projeto consome a api da Blizzard, é necessário  registrar-se e criar um `Client app` para gerar o `ClientID` e o `ClientSecret`.
-
-Para mais informações siga o link: [Blizzard Develop Access](https://develop.battle.net/access/clients/fd740fac011c405d8463225681bb6e86)
+Simples aplicação que lista de conteudo e permite vizualizar alguns detalhes ao selecionar algum item.
 
 ## Preview
 
@@ -23,43 +19,22 @@ Para mais informações siga o link: [Blizzard Develop Access](https://develop.b
 <kbd><img src="./readmefiles/en-us.png" width="149"/></kbd>
 <p>
 
-## <b> <span style="color:red"> LEIA AQUI! </span> </b>
-Por questões de segurança as chaves da API NÃO ESTÃO no projeto. 
-Para excutar o projeto, será necessário criar uma classe ou struct que conforma com a interface `KeyAdvisor`, e através dela, passar as chaves pelas propriedades. 
-
-O arquivo está sendo ignorado pelo .gitignore, e criado um novo no caminho: <br>
-
-`source/app/supportfiles/secret/KeysAcessor.swift`
-
-A implementação concreta que usei no projeto, pode ser copiada abaixo: 
-
-``` swift 
-struct KeysAcessor: KeyAdvisor {
-    var publicKeyApi: String {
-        "publicApiKey aqui!"
-    }
-    var privateKeyApi: String {
-        "privateApiKey aqui!"
-    }
-}
-```
----
-
 ## Preparando o Ambiente
 
 Para instalar e utilizar os recursos deste projeto, siga os passos abaixo.
 
 Sobre o projeto: <br>
-- Xcode Version 11.3.1 (11C504) (ou superior)<br>
+- Xcode Version 14.3 (14E222b) (ou superior)<br>
 - Suporte mínimo ao iOS 10<br>
 - Swift 5<br>
-- Cobertura de código: 42.49%
+- Cobertura de código: 0%
 
 Ferramentas de Gestão e Qualidade de Código<br>
 - Fastlane
 - Xcov
 - Jazzy
 - Swiftlint
+- Swift Snapshot Testing
 
 Gerenciador de Dependências<br>
 - Swift Package Manager
@@ -134,13 +109,15 @@ Ver mais no link: [Fastlane](https://fastlane.tools)
 
 Ferramenta para documentação de código
 
-Ver mais no link: [Realm/jazzy](https://github.com/realm/jazzy)
-
 ### [Xcov](https://github.com/fastlane-community/xcov)
 
 Ferramenta para exibir de forma mais amigável informações de cobertura de código do projeto.
 
-Ver mais no link: [Xcov](https://github.com/fastlane-community/xcov)
+### [Swift Snapshot Testing](https://github.com/pointfreeco/swift-snapshot-testing)
+
+Usado para registrar imagens de telas/componentes e detectar possiveis alteacoes de layout.
+
+Por questões de padronizaão, foi adotado o `iPhone 14 Pro (16.4)` para criar/testar os componentes e telas. No Fastfile (arquivo do fastlane), foi definido esse device.
 
 --- 
 

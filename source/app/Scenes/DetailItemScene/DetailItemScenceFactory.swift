@@ -1,6 +1,5 @@
 //
 //  ListItemSceneFactory.swift
-//  BaseProjectTarget
 //
 //  Created by Tiago Amaral on 18/06/23.
 //  Copyright © 2023 developerios. All rights reserved.
@@ -22,18 +21,12 @@ enum DetailItemSceneFactory {
         viewMosaic.insertNew(view: listTableView)
         
         let workerNetwork = NetworkConactable()
-        let workerSecurity = Security(keychainAccess: KeychainAccess())
-        workerSecurity.workerNetwork = NetworkConactable()
-        workerSecurity.workerUrlBuilder = URLPathBuilder()
-        workerSecurity.keyAdvisor = KeysAcessor()
-        
         let workerApiPathBuilder = URLPathBuilder()
         
         presenter.controller = controller
         
         interactor.presenter = presenter
         interactor.workerNetwork = workerNetwork
-        interactor.workerSecurity = workerSecurity
         interactor.workerApiPathBuilder = workerApiPathBuilder
         
         controller.interactor = interactor

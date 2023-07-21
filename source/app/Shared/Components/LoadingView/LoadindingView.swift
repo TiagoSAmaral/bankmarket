@@ -1,6 +1,6 @@
 //
 //  LoadindingView.swift
-//  hearthstonecardviewer
+//  bankmarket
 //
 //  Created by Tiago Amaral on 20/06/23.
 //  Copyright © 2023 developerios. All rights reserved.

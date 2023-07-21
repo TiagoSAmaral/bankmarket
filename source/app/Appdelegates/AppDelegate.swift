@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  hearthstonecardviewer
+//  bankmarket
 //
 //  Created on 23/01/20.
 //  Copyright © 2020. All rights reserved.
@@ -18,10 +18,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window = UIWindow(frame: UIScreen.main.bounds)
         SceneStarter.makeScene(into: window)
         return true
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        let security = Security(keychainAccess: KeychainAccess())
-        security.deleteToken()
     }
 }

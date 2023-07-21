@@ -9,15 +9,13 @@ struct Item: Decodable, Visible, Selectable, CardListItemViewModel, CardDetailIt
 
     let identifier: Int?
     let slug: String?
-
     let image: String?
     let cropImage: String?
     let name: String?
     let flavorText: String?
-    let text: String?   // property text conatins HTML tags. Must be handled with NSAttributedString
-    let cardSetId: Int? // set pertencente
-    let cardTypeId: Int? // type
-                         // Como associar a facção
+    let text: String?
+    let cardSetId: Int?
+    let cardTypeId: Int?
     let rarityId: Int?
     let attack: Int?
     let manaCost: Int?
@@ -26,10 +24,7 @@ struct Item: Decodable, Visible, Selectable, CardListItemViewModel, CardDetailIt
     var cardSet: MetadataItem?
     var cardType: MetadataItem?
     var rarity: MetadataItem?
-    
-    var layoutView: CardLayoutView?
-    var actionOnTap: ((Model?) -> Void)?
-    
+        
     enum CodingKeys: String, CodingKey {
         case identifier = "id"
         
@@ -47,6 +42,12 @@ struct Item: Decodable, Visible, Selectable, CardListItemViewModel, CardDetailIt
         health
     }
     
+    // MARK: - Visible
+    var layoutView: CardLayoutView?
+    
+    // MARK: - Selectable
+    var actionOnTap: ((Model?) -> Void)?
+
     // MARK: - CardListItemViewModel
     var cardTitle: String? {
         name

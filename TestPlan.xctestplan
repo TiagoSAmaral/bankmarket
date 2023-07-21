@@ -12,9 +12,9 @@
     "codeCoverage" : {
       "targets" : [
         {
-          "containerPath" : "container:hearthstonecardviewer.xcodeproj",
+          "containerPath" : "container:bankmarket.xcodeproj",
           "identifier" : "CF9601AD23DA2A1E00916EF1",
-          "name" : "BaseProjectTarget"
+          "name" : "bankmarket"
         }
       ]
     },
@@ -29,9 +29,9 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:hearthstonecardviewer.xcodeproj",
+        "containerPath" : "container:bankmarket.xcodeproj",
         "identifier" : "CF6414DE23E4C1CF009C7A9E",
-        "name" : "HeartOfStoneViewerTests"
+        "name" : "bankmarketTests"
       }
     }
   ],

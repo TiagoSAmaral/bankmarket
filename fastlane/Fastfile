@@ -35,9 +35,8 @@ platform :ios do
     clear_derived_data
     clear_xcov_report
     run_tests(scheme: "unit-tests", devices: ["iPhone 14 Pro (16.4)"])
-    # https://docs.fastlane.tools/actions/xcov/
     xcov(
-          project: "hearthstonecardviewer.xcodeproj",
+          project: "bankmarket.xcodeproj",
           scheme: "unit-tests",
           output_directory: "code-coverage-report",
           ignore_file_path: "./.xcovignore"

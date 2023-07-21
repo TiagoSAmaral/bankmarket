@@ -1,6 +1,6 @@
 //
 //  ColorAssets.swift
-//  HeartOfStoneViewerTarget
+//  bankmarketTarget
 //
 //  Created by Tiago Amaral on 19/06/23.
 //  Copyright © 2023 developerios. All rights reserved.

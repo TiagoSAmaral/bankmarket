@@ -1,6 +1,5 @@
 //
 //  ListInteractor.swift
-//  BaseProjectTarget
 //
 //  Created by Tiago Amaral on 17/06/23.
 //  Copyright © 2023 developerios. All rights reserved.
@@ -15,7 +14,6 @@ protocol DetailItemInteractorBusinessLogic {
 final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
     
     var workerNetwork: NetworkWorker?
-    var workerSecurity: SecurityWorker?
     var workerApiPathBuilder: WorkerURLPathBuilder?
     var currentLocale: String = LocalizedText.with(tagName: .localizationApi)
     var selectedItem: Model?
@@ -23,54 +21,9 @@ final class DetailItemInteractor: DetailItemInteractorBusinessLogic {
     var metadata: Metadata?
     
     func fetchItem() {
-        
-        let requestGroup =  DispatchGroup()
-        var authToken: String?
-        
-        requestGroup.enter()
-        
-        workerSecurity?.getUserToken(handler: { [weak self] result in
-            switch result {
-            case .success(let token):
-                authToken = token
-            case .failure(let error):
-                self?.presenter?.message(text: error.message)
-            }
-            
-            requestGroup.leave()
-        })
-        
-        requestGroup.notify(queue: DispatchQueue.main) { [weak self] in
-            self?.requestMetadata(with: authToken)
-        }
     }
     
     func requestMetadata(with token: String?) {
-        
-        guard let token = token else {
-            presenter?.message(text: LocalizedText.with(tagName: .tokenIsRequired))
-            return
-        }
-        
-        guard let urlPath = workerApiPathBuilder?.makeUrlMetadata(with: currentLocale) else {
-            presenter?.message(text: LocalizedText.with(tagName: .networkErrorNotDefined))
-            return
-        }
-        
-        let apiParams = ApiParams(urlPath: urlPath, token: token, method: .get, params: nil)
-        workerNetwork?.request(with: apiParams, resultType: Metadata.self) { [weak self] result in
-            switch result {
-            case .success(let metadata):
-                self?.metadata = metadata
-            case .failure(let error):
-                self?.presenter?.message(text: error.message)
-            }
-            
-            DispatchQueue.main.async { [weak self] in
-                self?.bindMetadata()
-                self?.presenter?.presentItem(with: self?.selectedItem)
-            }
-        }
     }
     
     func bindMetadata() {
