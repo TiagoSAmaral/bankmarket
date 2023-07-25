@@ -51,7 +51,7 @@ final class CardTitleView: UIView, CardStaticVisible {
         if words.count > 1, let secondWord = words.last {
             let secondWordWord = fullTextAttributedMutable.mutableString.range(of: secondWord)
             fullTextAttributedMutable.addAttribute(.foregroundColor,
-                                                   value: ColorAssets.description ?? UIColor.lightGray,
+                                                   value: ColorAssets.descriptionColor ?? UIColor.lightGray,
                                                    range: secondWordWord)
         }
         
