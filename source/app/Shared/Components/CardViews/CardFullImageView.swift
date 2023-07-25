@@ -56,7 +56,7 @@ final class CardFullImageView: CardSelectable {
         addSubviews([imageView])
         imageView.leadingToSuperview()
         imageView.trailingToSuperview()
-        imageView.height(heightValue ?? .zero)
+        imageView.height(heightValue)
         imageView.centerY(of: self)
     }
     

@@ -67,4 +67,3 @@ class CollectionList: UICollectionView, UICollectionViewDataSource, UICollection
         return cell
     }
 }
-

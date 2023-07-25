@@ -56,7 +56,7 @@ final class CardTitleView: UIView, CardStaticVisible {
         }
         
         fullTextAttributedMutable.addAttribute(.font,
-                                               value: FontPallet.mainFontBold16,
+                                               value: FontPallet.mainFontBold16 ?? .boldSystemFont(ofSize: 16),
                                                range: rangeFullText)
         
         titleView.attributedText = fullTextAttributedMutable

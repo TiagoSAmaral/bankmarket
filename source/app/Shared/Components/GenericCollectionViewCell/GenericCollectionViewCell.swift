@@ -29,4 +29,3 @@ class GenericCollectionViewCell: UICollectionViewCell, GenericCell {
         customPrepareForReuse()
     }
 }
-

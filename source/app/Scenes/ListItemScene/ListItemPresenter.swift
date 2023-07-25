@@ -53,7 +53,7 @@ final class ListItemPresenter: ListPresentable, ListDataSource, ActionProvider {
     }
     
     func getModel(at indexPath: IndexPath) -> Model? {
-        guard var item = response?[indexPath.row] else {
+        guard let item = response?[indexPath.row] else {
             return nil
         }
         return item

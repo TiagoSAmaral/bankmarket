@@ -29,7 +29,7 @@ struct ListItemLayoutAdapter: ListItemLayoutAdaptable {
             products.append(spotlightSection)
         }
         
-        if let cashItem = item.cash, var cashDigioSection = mapSection(with: [cashItem], baseView: .cashDigioScrollableView, itemView: .cashDigioCardView, with: actionProvider) {
+        if let cashItem = item.cash, let cashDigioSection = mapSection(with: [cashItem], baseView: .cashDigioScrollableView, itemView: .cashDigioCardView, with: actionProvider) {
             if let productSectionTitle = mapSection(with: cashItem.title) {
                 products.append(productSectionTitle)
             }

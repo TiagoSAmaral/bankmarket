@@ -55,11 +55,11 @@ final class CardDumpDetailView: UIView, CardStaticVisible {
               let stringValue = viewModel.description else {
             return
         }
-        if var attributedText = stringValue.htmlToAttributedString {
+        if let attributedText = stringValue.htmlToAttributedString {
             let rangeFullText = attributedText.mutableString.range(of: attributedText.string)
             
             attributedText.addAttribute(.foregroundColor,
-                                        value: ColorAssets.descriptionColor,
+                                        value: ColorAssets.descriptionColor ?? .lightGray,
                                                    range: rangeFullText)
             attributedText.addAttribute(.font,
                                         value: FontPallet.descriptionFont,
