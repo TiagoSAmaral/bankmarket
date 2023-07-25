@@ -37,5 +37,4 @@ final class ListItemController: UIViewController,
             self?.presentAlert(with: nil, and: message, handler: nil)
         }
     }
-    
 }
