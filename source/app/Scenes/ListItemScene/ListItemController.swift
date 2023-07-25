@@ -8,24 +8,27 @@
 import UIKit
 
 protocol ListDisplayLogic: AnyObject where Self: UIViewController {
-    func display(viewModel: [Model]?)
     func display(message: String?)
+    func startLoading()
+    func stopLoading(onFinish: (() -> Void)?)
+    func reload()
 }
 
 final class ListItemController: UIViewController,
                                 ListDisplayLogic,
-                                ListDataSource,
                                 LoadingManagers,
                                 AlertPresetable {
     
-    var presenter: IListPresenter?
-    var router: ListItemRoutingLogic?
+    var presenter: ListPresentable?
     var listView: ListView?
-    var items: [Model]?
     
-    func display(viewModel: [Model]?) {
-        stopLoading(onFinish: nil)
-        items = viewModel
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        presenter?.fetchItems()
+    }
+
+    func reload() {
         listView?.reloadView()
     }
     
@@ -35,48 +38,4 @@ final class ListItemController: UIViewController,
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        fetchFirstPage()
-    }
-    
-    func fetchFirstPage() {
-        if items == nil {
-            startLoading()
-            presenter?.fetchItems()
-            (navigationController as? NavigationControllerDecorable)?.defineNavigationBarTitleViewWith(imageName: "navigationBarLogo")
-        }
-    }
-    
-    lazy var goToDetail: ((Model?) -> Void)? = { [weak self] item in
-        if var item = item as? Selectable {
-            item.actionOnTap = nil
-            self?.router?.goToDetail(with: item)
-        }
-    }
-
-    // MARK: TableViewAutomaticPaginateDelegate Methods
-    func numberOfSections() -> Int {
-        1
-    }
-    
-    func numberOfRow(at section: Int) -> Int {
-        items?.count ?? .zero
-    }
-    
-    func pullToRefreshEvent() {
-//        presenter?.flushAndRequest()
-    }
-    
-    func nextPageEvent() {
-//        presenter?.fetchNextPage()
-    }
-
-    func getModel(at indexPath: IndexPath) -> Model? {
-        guard var item = items?[indexPath.row] as? Selectable else {
-            return nil
-        }
-        item.actionOnTap = goToDetail
-        return item
-    }
 }
