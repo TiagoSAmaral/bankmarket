@@ -10,4 +10,11 @@ import UIKit
 
 protocol ListView: UIScrollView, ListEvent {
     var cardFactory: CardFactory? { get set }
+    func activePaginateCenter()
+    func disablePaginateCenter()
+}
+
+extension ListView {
+    func activePaginateCenter() {}
+    func disablePaginateCenter() {}
 }

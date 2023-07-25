@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CardVisible where Self: UIView {
-    func load(model: Model?)
+    func defineLayout(with cellContentView: UIView?)
 }
 
 extension CardVisible {
@@ -18,7 +18,14 @@ extension CardVisible {
             return
         }
         cellContentView.addSubviews([self])
-        
         edgeToSuperView()
     }
+}
+
+protocol CardStaticVisible where Self: CardVisible {
+    func load(model: Model?)
+}
+
+protocol CardScrollableVisible where Self: CardVisible {
+    func load(listDataSource: ListDataSource?, cardFactory: CardFactory)
 }
