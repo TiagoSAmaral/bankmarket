@@ -32,7 +32,6 @@ struct ListContructor {
         let list = CollectionList(frame: .zero, collectionViewLayout: config)
         list.disablePaginateCenter()
         list.listDataSource = delegate
-        list.backgroundColor = .white
         list.showsHorizontalScrollIndicator = false
         return list
     }
