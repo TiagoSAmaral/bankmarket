@@ -18,6 +18,7 @@ final class ListItemPresenter: ListPresentable, ListDataSource, ActionProvider {
     var urlComposer: WorkerURLPathBuilder?
     var response: [ListItemViewModelVisible]?
     var router: ListRoutable?
+    var listItemAdapter: ListItemLayoutAdaptable?
     
     lazy var actionTap: ((Model?) -> Void)? = { [weak self] item in
         self?.router?.goToDetail(with: item)
@@ -31,11 +32,11 @@ final class ListItemPresenter: ListPresentable, ListDataSource, ActionProvider {
         network?.request(with: params, resultType: ListResponse.self, handler: { [weak self] response in
             switch response {
             case .success(let items):
-
-                let adapter = ListItemLayoutAdapter()
-                self?.response = adapter.mapByPropertySetViewLayout(item: items, with: self)
-                self?.controller?.reload()
-                print("Finish")
+                DispatchQueue.main.async { [weak self] in
+                    self?.response = self?.listItemAdapter?.mapByPropertySetViewLayout(item: items, with: self)
+                    self?.controller?.reload()
+                    print("Finish")
+                }
             case .failure(let error):
                 self?.controller?.display(message: error.message)
             }
