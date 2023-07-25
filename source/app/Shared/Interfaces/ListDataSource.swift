@@ -13,4 +13,3 @@ protocol ListDataSource: AnyObject {
     func numberOfRow(at section: Int) -> Int
     func getModel(at indexPath: IndexPath) -> Model?
 }
-
