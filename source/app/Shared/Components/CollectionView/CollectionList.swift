@@ -27,6 +27,7 @@ class CollectionList: UICollectionView, UICollectionViewDataSource, UICollection
     func setupCollection() {
         dataSource = self
         delegate = self
+        backgroundColor = .clear
     }
 
     func registerTemplateCell() {
