@@ -11,7 +11,7 @@ protocol ListPresentable {
     func fetchItems()
 }
 
-final class ListItemPresenter: ListPresentable, ListDataSource {
+final class ListItemPresenter: ListPresentable, ListDataSource, ActionProvider {
     
     weak var controller: ListDisplayLogic?
     var network: NetworkWorker?
@@ -19,7 +19,7 @@ final class ListItemPresenter: ListPresentable, ListDataSource {
     var response: [ListItemViewModelVisible]?
     var router: ListRoutable?
     
-    lazy var onTap: ((Model?) -> Void)? = { [weak self] item in
+    lazy var actionTap: ((Model?) -> Void)? = { [weak self] item in
         self?.router?.goToDetail(with: item)
     }
     
@@ -33,7 +33,7 @@ final class ListItemPresenter: ListPresentable, ListDataSource {
             case .success(let items):
 
                 let adapter = ListItemLayoutAdapter()
-                self?.response = adapter.mapByPropertySetViewLayout(item: items)
+                self?.response = adapter.mapByPropertySetViewLayout(item: items, with: self)
                 self?.controller?.reload()
                 print("Finish")
             case .failure(let error):
@@ -43,7 +43,6 @@ final class ListItemPresenter: ListPresentable, ListDataSource {
     }
 
     // MARK: - ListDataSource
-    
     func numberOfSections() -> Int {
         response?.count ?? .zero
     }
