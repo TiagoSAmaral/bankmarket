@@ -14,7 +14,7 @@ struct Item: Decodable, Visible, ListItemViewModelMap {
     var description: String?
     
     enum CodingKeys: String, CodingKey {
-        case title, bannerURL, description, imageURL
+        case title, bannerURL, description, imageURL, name
     }
     
     init() {
@@ -28,6 +28,10 @@ struct Item: Decodable, Visible, ListItemViewModelMap {
         
         if self.bannerURL == nil {
             self.bannerURL = try container.decodeIfPresent(String.self, forKey: .imageURL)
+        }
+        
+        if self.title == nil {
+            self.title = try container.decodeIfPresent(String.self, forKey: .name)
         }
     }
     
