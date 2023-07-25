@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ListItemViewModelMap: CardFullImageViewModel where Self: Visible {
+protocol ListItemViewModelMap: CardFullImageViewModel, Selectable where Self: Visible {
     var title: String? { get }
     var bannerURL: String? { get }
     var description: String? { get }

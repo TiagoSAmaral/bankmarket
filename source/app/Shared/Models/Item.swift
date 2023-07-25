@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Item: Decodable, Visible, Selectable, ListItemViewModelMap {
+struct Item: Decodable, Visible, ListItemViewModelMap {
 
     var title: String?
     var bannerURL: String?
