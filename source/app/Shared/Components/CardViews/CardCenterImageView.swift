@@ -34,6 +34,7 @@ final class CardCenterImageView: CardSelectable {
     }()
     
     override func load(model: Model?) {
+        self.model = model
         loadImage(model: model)
         makeImageViewLayout(model: model)
         makeShadowViewLayout(model: model)
