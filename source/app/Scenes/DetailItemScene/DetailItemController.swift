@@ -20,7 +20,6 @@ final class DetailItemController: UIViewController,
 
     var presenter: DetailPresentable?
     var listView: ListEvent?
-    var item: Model?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -43,9 +42,7 @@ final class DetailItemController: UIViewController,
     
     func display(message: String?) {
         stopLoading { [weak self] in
-            self?.presentAlert(with: nil, and: message) {[weak self] _ in
-                self?.navigationController?.popViewController(animated: true)
-            }
+            self?.presentAlert(with: nil, and: message, handler: nil)
         }
     }
 }

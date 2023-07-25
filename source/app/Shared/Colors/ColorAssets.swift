@@ -11,5 +11,5 @@ import UIKit
 struct ColorAssets {
     static let titleColor = UIColor(named: "title")
     static let cardBackgroundColor = UIColor(named: "background")
-    static let description = UIColor(named: "description")
+    static let descriptionColor = UIColor(named: "description")
 }

@@ -19,9 +19,13 @@ enum DetailItemSceneFactory {
         viewMosaic.insertNew(view: listView)
                 
         presenter.controller = controller
+        presenter.detailItemAdapter = DetailItemAdapter()
 
+        controller.presenter = presenter
         controller.listView = listView
         controller.view = viewMosaic.baseView
+        
+        presenter.presentItem(with: data)
         
         return controller
     }

@@ -15,17 +15,14 @@ protocol DetailPresentable {
 final class DetailItemPresenter: DetailPresentable, ListDataSource {
     
     weak var controller: DetailDisplay?
+    var detailItemAdapter: DetailItemAdaptable?
     var items: [Model]?
-    
-    func fetchItem() {}
     
     func presentItem(with item: Model?) {
         guard let item = item else {
-//            controller?.dismiss(animated: true)
             return
         }
-        items = [item]
-        controller?.reloadView()
+        items = detailItemAdapter?.mapByPropertySetViewLayout(item: item)  // [item]
     }
 
     func message(text: String?) {
@@ -34,14 +31,18 @@ final class DetailItemPresenter: DetailPresentable, ListDataSource {
     
     // MARK: -
     func numberOfSections() -> Int {
-        .zero
+        items != nil ? 1: .zero
     }
     
     func numberOfRow(at section: Int) -> Int {
-        .zero
+        items?.count ?? .zero
     }
     
     func getModel(at indexPath: IndexPath) -> Model? {
-        nil
+        guard let item = items?[indexPath.row] else {
+            return nil
+        }
+        
+        return item
     }
 }

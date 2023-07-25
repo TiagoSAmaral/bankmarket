@@ -30,13 +30,19 @@ enum CardMapSizeLayout {
             return 120.0
         case .titleCardView:
             return 44.0
+        case .dumpDetailCardView:
+            return 120
         }
     }
     
     private static func getWidth(to layoutView: CardLayoutView) -> CGFloat {
         let screenWidth = UIScreen.main.bounds.width - 20.0
         switch layoutView {
-        case .bannerScrollableView, .cashDigioScrollableView, .productScrollableView, .titleCardView:
+        case .bannerScrollableView,
+             .cashDigioScrollableView,
+             .productScrollableView,
+             .titleCardView,
+             .dumpDetailCardView:
             return screenWidth
         case .bannerCardView, .cashDigioCardView:
             return 315.0
