@@ -7,5 +7,5 @@
 //
 
 protocol CardFactory {
-    func makeCard(from item: Visible?) -> CardVisible?
+    func makeCard(from item: Model?, orWith models: [Model]?) -> CardVisible?
 }
