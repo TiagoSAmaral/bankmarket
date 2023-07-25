@@ -9,7 +9,7 @@
 import UIKit
 
 enum FontPallet {
-    static let mainLight16 = UIFont(name: "HirukoProAlternate-Light", size: 16)
+    static let mainLight16 = UIFont.boldSystemFont(ofSize: 12)
     static let mainFontBold16 = UIFont(name: "HirukoProAlternate-Bold", size: 16)
-//    static let mainFont = UIFont.boldSystemFont(ofSize: 16)
+    static let descriptionFont = UIFont.systemFont(ofSize: 16)
 }
