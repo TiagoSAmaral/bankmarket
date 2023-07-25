@@ -4,14 +4,6 @@ Simples aplicação que lista conteúdo e permite vizualizar alguns detalhes ao 
 
 ## Preview
 
-### Modo Light e Dark aplicados: 
-<p float="left">
-<kbd><img src="./readmefiles/light-ptbr.png" width="149"/></kbd>
-<kbd><img src="./readmefiles/dark-ptbr.png" width="149"/></kbd>
-<p>
-
----
-
 ### Internacionalização aplicada em Português e Inglês, junto com modo Dark e Light:
 
 <p float="left">
@@ -25,7 +17,7 @@ Para instalar e utilizar os recursos deste projeto, siga os passos abaixo.
 
 Sobre o projeto: <br>
 - Xcode Version 14.3 (14E222b) (ou superior)<br>
-- Suporte mínimo ao iOS 10<br>
+- Suporte mínimo ao iOS 12<br>
 - Swift 5<br>
 - Cobertura de código: 0%
 
