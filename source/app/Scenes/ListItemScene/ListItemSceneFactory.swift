@@ -14,21 +14,22 @@ enum ListItemSceneFactory {
         let presenter = ListItemPresenter()
         let router = ListItemRouter()
         let viewMosaic = MosaicBaseView()
-        let listTableView = ListCollectionFactory.createVerticalList(with: presenter) // TableViewAutomaticPaginate(controller: controller,
-                               //                        isPullToRefreshEnable: true)
-        listTableView.cardFactory = CardConstructor()
-        viewMosaic.insertNew(view: listTableView)
-        
+        let listView = ListContructor().createVerticalList(with: presenter)
+
+        listView.cardFactory = CardConstructor()
+        viewMosaic.insertNew(view: listView)
+
         presenter.urlComposer = URLPathBuilder()
         presenter.network = NetworkConactable()
+
         presenter.controller = controller
+        presenter.router = router
         router.controller = controller
 
         controller.presenter = presenter
-        controller.router = router
-        controller.listView = listTableView
+        controller.listView = listView
         controller.view = viewMosaic.baseView
-        
+
         return controller
     }
 }
