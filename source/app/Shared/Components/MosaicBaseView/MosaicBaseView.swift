@@ -18,6 +18,7 @@ class MosaicBaseView {
     lazy var vStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
+        stackView.backgroundColor = .clear
         return stackView
     }()
     
