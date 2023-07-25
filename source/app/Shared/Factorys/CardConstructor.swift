@@ -49,6 +49,9 @@ final class CardConstructor: CardFactory {
         case .titleCardView:
             return CardConstructor.make(with: item, classType: CardTitleView.self)
 
+        case .dumpDetailCardView:
+            return CardConstructor.make(with: item, classType: CardDumpDetailView.self)
+        
         default:
             return nil
         }
