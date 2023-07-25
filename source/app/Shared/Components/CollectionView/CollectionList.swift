@@ -8,11 +8,10 @@
 
 import UIKit
 
-class CollectionList: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate, ListView {
+class CollectionList: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate, ListView, UICollectionViewDelegateFlowLayout {
     
     weak var listDataSource: ListDataSource?
     var cardFactory: CardFactory?
-    var heightView: CGFloat = 0.0
     var paginateToCenter = false
 
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -27,40 +26,22 @@ class CollectionList: UICollectionView, UICollectionViewDataSource, UICollection
 
     func setupCollection() {
         dataSource = self
+        delegate = self
     }
 
     func registerTemplateCell() {
         register(GenericCollectionViewCell.self, forCellWithReuseIdentifier: GenericCollectionViewCell.classIdentifier)
     }
-
-    func activePaginateCenter() {
-        paginateToCenter = true
-        delegate = self
-    }
-
-    func disablePaginateCenter() {
-        paginateToCenter = false
-        delegate = nil
-    }
-
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        centerCardPaginated()
-    }
-
-    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        centerCardPaginated()
-    }
-
-    func centerCardPaginated() {
-        guard paginateToCenter else {
-            return
+    
+    // MARK: - UICollectionViewDelegateFlowLayout
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        guard let model = listDataSource?.getModel(at: indexPath) as? Visible,
+              let height = model.height,
+              let width = model.width else {
+            return .zero
         }
-        var currentCellOffset = contentOffset
-        currentCellOffset.x += frame.size.width / 2
-        guard let indexPath = indexPathForItem(at: currentCellOffset) else {
-            return
-        }
-        scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+       return CGSize(width: width, height: height)
     }
     
     // MARK: - List
@@ -78,7 +59,10 @@ class CollectionList: UICollectionView, UICollectionViewDataSource, UICollection
               let model = listDataSource?.getModel(at: indexPath) else {
             return UICollectionViewCell(frame: .zero)
         }
-//        view.makeLayout(in: cell.contentView)
+        
+        let card = cardFactory?.makeCard(from: model, orWith: (model as? ListItemViewModelVisible)?.items)
+        
+        card?.defineLayout(with: cell)
         return cell
     }
 }
