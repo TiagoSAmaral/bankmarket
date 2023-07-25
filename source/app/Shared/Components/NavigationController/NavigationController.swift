@@ -7,11 +7,7 @@
 
 import UIKit
 
-protocol NavigationControllerDecorable {
-    func defineNavigationBarTitleViewWith(imageName: String)
-}
-
-class NavigationController: UINavigationController, NavigationControllerDecorable, LoadingPresentable {
+class NavigationController: UINavigationController, LoadingPresentable {
     
     var loadingController: LoadingViewController?
     
@@ -38,21 +34,5 @@ class NavigationController: UINavigationController, NavigationControllerDecorabl
     func defineApperance() {
         navigationBar.isTranslucent = false
         fixBartintColoriOS15()
-        defineBackbuttonApperance()
-    }
-    
-    func defineBackbuttonApperance() {
-        navigationBar.barTintColor = ColorAssets.cardBackgroundColor
-    }
-    
-    func defineNavigationBarTitleViewWith(imageName: String) {
-        if self.navigationItem.titleView == nil,
-           let image = UIImage(named: imageName) {
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 320, height: 44))
-            imageView.contentMode = .scaleAspectFit
-            imageView.image = image
-            viewControllers.first?.navigationItem.titleView = imageView
-            navigationBar.setTitleVerticalPositionAdjustment(-5, for: UIBarMetrics.default)
-        }
     }
 }
