@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol ListItemRoutingLogic {
-    func goToDetail(with data: Model)
+protocol ListRoutable {
+    func goToDetail(with data: Model?)
 }
 
-final class ListItemRouter: NSObject, ListItemRoutingLogic {
+final class ListItemRouter: NSObject, ListRoutable {
     
     weak var controller: UIViewController?
     
@@ -19,7 +19,7 @@ final class ListItemRouter: NSObject, ListItemRoutingLogic {
         return controller?.navigationController
     }
     
-    func goToDetail(with data: Model) {
+    func goToDetail(with data: Model?) {
         if let controller = DetailItemSceneFactory.makeScene(with: data) {
             navigationController?.pushViewController(controller, animated: true)
         }
