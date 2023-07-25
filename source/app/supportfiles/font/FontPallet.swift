@@ -9,5 +9,7 @@
 import UIKit
 
 enum FontPallet {
-    static let mainFont = UIFont(name: "LHF Uncial Caps", size: 16)
+    static let mainLight16 = UIFont(name: "HirukoProAlternate-Light", size: 16)
+    static let mainFontBold16 = UIFont(name: "HirukoProAlternate-Bold", size: 16)
+//    static let mainFont = UIFont.boldSystemFont(ofSize: 16)
 }

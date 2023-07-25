@@ -22,7 +22,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>LHF Uncial Caps.ttf</string>
+		<string>HirukoProAlternate-Bold.otf</string>
+		<string>HirukoProAlternate-Light.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
