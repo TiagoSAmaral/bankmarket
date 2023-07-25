@@ -21,3 +21,4 @@
 "healthText" = "Saúde";
 "urlAuthorizationNotFound" = "Url para autorização não encontrado.";
 "lastPage" = "Chegou ao fim.";
+"helloPresentation" = "Olá, ";

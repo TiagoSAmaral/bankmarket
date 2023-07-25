@@ -20,3 +20,4 @@
 "healthText" = "Health";
 "urlAuthorizationNotFound" = "Url to authorization not found.";
 "lastPage" = "This is the end";
+"helloPresentation" = "Hello, ";
