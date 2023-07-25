@@ -13,4 +13,5 @@ enum CardLayoutView {
     case productScrollableView
     case productCardView
     case titleCardView
+    case dumpDetailCardView
 }
