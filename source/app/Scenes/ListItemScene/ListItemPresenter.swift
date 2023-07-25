@@ -7,65 +7,55 @@
 
 import Foundation
 
-protocol IListPresenter {
+protocol ListPresentable {
     func fetchItems()
-    func presentList(with items: [Model]?)
-    func message(text: String?)
 }
 
-final class ListItemPresenter: IListPresenter, ListDataSource {
-
+final class ListItemPresenter: ListPresentable, ListDataSource {
+    
     weak var controller: ListDisplayLogic?
     var network: NetworkWorker?
     var urlComposer: WorkerURLPathBuilder?
-    var response: ListResponse?
+    var response: [ListItemViewModelVisible]?
+    var router: ListRoutable?
+    
+    lazy var onTap: ((Model?) -> Void)? = { [weak self] item in
+        self?.router?.goToDetail(with: item)
+    }
     
     func fetchItems() {
-        guard let urlPath = urlComposer?.makeMainListUrl() else {
+        guard let urlPath = urlComposer?.makeMainListUrl(), response == nil else {
             return
         }
         let params = ApiParams(urlPath: urlPath, method: .get, params: nil)
         network?.request(with: params, resultType: ListResponse.self, handler: { [weak self] response in
             switch response {
             case .success(let items):
-                self?.response = items
+
+                let adapter = ListItemLayoutAdapter()
+                self?.response = adapter.mapByPropertySetViewLayout(item: items)
+                self?.controller?.reload()
+                print("Finish")
             case .failure(let error):
                 self?.controller?.display(message: error.message)
             }
         })
     }
-    
-    func presentList(with items: [Model]?) {
-        
-        controller?.display(viewModel: parseToListItemModelVisible(from: items))
-    }
-    
-    func parseToListItemModelVisible(from items: [Model]?) -> [Model]? {
-        
-        guard var items = items as? [Visible] else {
-            return nil
-        }
-        for index in items.indices {
-//            items[index].layoutView = .cardListItemView
-        }
-        return items
-    }
-    
-    func message(text: String?) {
-        controller?.display(message: text)
-    }
-    
-    // MARK: -
+
+    // MARK: - ListDataSource
     
     func numberOfSections() -> Int {
-        .zero
+        response?.count ?? .zero
     }
     
     func numberOfRow(at section: Int) -> Int {
-        .zero
+        response?.count ?? .zero
     }
     
     func getModel(at indexPath: IndexPath) -> Model? {
-        nil
+        guard var item = response?[indexPath.row] else {
+            return nil
+        }
+        return item
     }
 }
