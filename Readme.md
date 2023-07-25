@@ -12,11 +12,11 @@ Simples aplicação que lista conteúdo e permite vizualizar alguns detalhes ao 
 
 ---
 
-### Internacionalização aplicada em Português e Inglês:
+### Internacionalização aplicada em Português e Inglês, junto com modo Dark e Light:
 
 <p float="left">
-<kbd><img src="./readmefiles/pt-br.png" width="149"/></kbd>
-<kbd><img src="./readmefiles/en-us.png" width="149"/></kbd>
+<kbd><img src="./readmefiles/dark-mode-en.png" width="149"/></kbd>
+<kbd><img src="./readmefiles/light-mode-pt.png" width="149"/></kbd>
 <p>
 
 ## Preparando o Ambiente
