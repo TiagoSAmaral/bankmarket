@@ -126,6 +126,12 @@
 		CFD23DC42A7018AE002DE71B /* HirukoProAlternate-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CFD23DC22A7018AE002DE71B /* HirukoProAlternate-Bold.otf */; };
 		CFD23DC62A7031E3002DE71B /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DC52A7031E3002DE71B /* DropShadow.swift */; };
 		CFD23DC72A7031E3002DE71B /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DC52A7031E3002DE71B /* DropShadow.swift */; };
+		CFD23DCA2A7041CB002DE71B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DC92A7041CB002DE71B /* ProfileView.swift */; };
+		CFD23DCB2A7041CB002DE71B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DC92A7041CB002DE71B /* ProfileView.swift */; };
+		CFD23DCD2A704E3D002DE71B /* CardDumpDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DCC2A704E3D002DE71B /* CardDumpDetail.swift */; };
+		CFD23DCE2A704E3D002DE71B /* CardDumpDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DCC2A704E3D002DE71B /* CardDumpDetail.swift */; };
+		CFD23DD02A7051AF002DE71B /* DetailItemLayoutAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DCF2A7051AF002DE71B /* DetailItemLayoutAdapter.swift */; };
+		CFD23DD12A7051AF002DE71B /* DetailItemLayoutAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DCF2A7051AF002DE71B /* DetailItemLayoutAdapter.swift */; };
 		CFD3A6B723DA308A00EB6D4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3A6AC23DA308900EB6D4D /* AppDelegate.swift */; };
 		CFD3A6BB23DA308A00EB6D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A6B423DA308A00EB6D4D /* Assets.xcassets */; };
 		CFD3A6DC23DA462000EB6D4D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A6DB23DA462000EB6D4D /* Launch Screen.storyboard */; };
@@ -220,6 +226,9 @@
 		CFD23DBF2A7015EE002DE71B /* HirukoProAlternate-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HirukoProAlternate-Light.otf"; sourceTree = "<group>"; };
 		CFD23DC22A7018AE002DE71B /* HirukoProAlternate-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HirukoProAlternate-Bold.otf"; sourceTree = "<group>"; };
 		CFD23DC52A7031E3002DE71B /* DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		CFD23DC92A7041CB002DE71B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CFD23DCC2A704E3D002DE71B /* CardDumpDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDumpDetail.swift; sourceTree = "<group>"; };
+		CFD23DCF2A7051AF002DE71B /* DetailItemLayoutAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemLayoutAdapter.swift; sourceTree = "<group>"; };
 		CFD3A6AC23DA308900EB6D4D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFD3A6B223DA308A00EB6D4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFD3A6B423DA308A00EB6D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -379,6 +388,7 @@
 		CFBB297F2A3D306900DA0561 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CFD23DB52A6C1C54002DE71B /* ListItemViewModelMap.swift */,
 				CFBB29802A3D308800DA0561 /* Item.swift */,
 				CFBED2F62A3EC1C000CAA054 /* LayoutCardView.swift */,
 			);
@@ -436,7 +446,6 @@
 				CFBED2902A3E90BC00CAA054 /* ListItemPresenter.swift */,
 				CFBED2942A3E90D900CAA054 /* ListItemRouter.swift */,
 				CFBED2CE2A3EAFA200CAA054 /* ListItemSceneFactory.swift */,
-				CFD23DB52A6C1C54002DE71B /* ListItemViewModelMap.swift */,
 				CFD23DB72A6C1CBF002DE71B /* ListItemlayoutAdapter.swift */,
 			);
 			path = ListItemScene;
@@ -448,6 +457,7 @@
 				CFBED2AE2A3E923300CAA054 /* DetailItemController.swift */,
 				CFBED2AD2A3E923300CAA054 /* DetailItemPresenter.swift */,
 				CF886BA12A414DDD0027EEFA /* DetailItemScenceFactory.swift */,
+				CFD23DCF2A7051AF002DE71B /* DetailItemLayoutAdapter.swift */,
 			);
 			path = DetailItemScene;
 			sourceTree = "<group>";
@@ -455,6 +465,7 @@
 		CFBED2992A3E911000CAA054 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CFD23DC82A7041B3002DE71B /* ProvileView */,
 				CFD23DA42A6AC594002DE71B /* GenericCollectionViewCell */,
 				CFD23DA12A6AC4A8002DE71B /* CollectionView */,
 				CFB8E3462A41FE390051026D /* AlertView */,
@@ -483,6 +494,7 @@
 				CFD23DB92A6EEB1C002DE71B /* CardScrollerView.swift */,
 				CFD23DBB2A6F6C1D002DE71B /* CardCenterImageView.swift */,
 				CFD23DBD2A6F70BD002DE71B /* CardTitleView.swift */,
+				CFD23DCC2A704E3D002DE71B /* CardDumpDetail.swift */,
 			);
 			path = CardViews;
 			sourceTree = "<group>";
@@ -572,6 +584,14 @@
 				CFD23DA52A6AC5AA002DE71B /* GenericCollectionViewCell.swift */,
 			);
 			path = GenericCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CFD23DC82A7041B3002DE71B /* ProvileView */ = {
+			isa = PBXGroup;
+			children = (
+				CFD23DC92A7041CB002DE71B /* ProfileView.swift */,
+			);
+			path = ProvileView;
 			sourceTree = "<group>";
 		};
 		CFD3A6A323DA302E00EB6D4D /* source */ = {
@@ -844,6 +864,7 @@
 				CF93BD2E2A3F725C0060C410 /* ClassIdentifier.swift in Sources */,
 				CFB8E3C62A42BEE20051026D /* CardDetailItemViewTests.swift in Sources */,
 				CFB8E3412A41FBB70051026D /* LoadingPresentable.swift in Sources */,
+				CFD23DCB2A7041CB002DE71B /* ProfileView.swift in Sources */,
 				CF886BA62A41526A0027EEFA /* ListDataSource.swift in Sources */,
 				CFB8E3BE2A42B2AC0051026D /* GenericTableViewCellTests.swift in Sources */,
 				CFB8E3512A42057E0051026D /* CardConstructor.swift in Sources */,
@@ -852,8 +873,10 @@
 				CFB8E3592A4205970051026D /* ListItemPresenter.swift in Sources */,
 				CFB8E3492A41FE430051026D /* AlertView.swift in Sources */,
 				CFB8E34F2A42055E0051026D /* WorkerURLPathBuilder.swift in Sources */,
+				CFD23DD12A7051AF002DE71B /* DetailItemLayoutAdapter.swift in Sources */,
 				CF5761292A42C4BE007721D2 /* NetworkErrorTests.swift in Sources */,
 				CFF859FF2A448C0D005C5EA8 /* CardFactoryTests.swift in Sources */,
+				CFD23DCE2A704E3D002DE71B /* CardDumpDetail.swift in Sources */,
 				CF93BD1B2A3F72300060C410 /* GenericCell.swift in Sources */,
 				CFBED2C52A3E924200CAA054 /* NavigationController.swift in Sources */,
 				CFB8E3AB2A421F6F0051026D /* MockerContentProvider.swift in Sources */,
@@ -886,7 +909,9 @@
 				CFBED2D72A3EB7C000CAA054 /* NetworkConactable.swift in Sources */,
 				CFBED2F22A3EBD7300CAA054 /* GenericCell.swift in Sources */,
 				CFBED2B32A3E923400CAA054 /* DetailItemPresenter.swift in Sources */,
+				CFD23DCA2A7041CB002DE71B /* ProfileView.swift in Sources */,
 				CF93BD382A3FBE4E0060C410 /* WorkerURLPathBuilder.swift in Sources */,
+				CFD23DD02A7051AF002DE71B /* DetailItemLayoutAdapter.swift in Sources */,
 				CFD23DB62A6C1C54002DE71B /* ListItemViewModelMap.swift in Sources */,
 				CFBED2E12A3EBBA100CAA054 /* CardConstructor.swift in Sources */,
 				CF93BD362A3FBE370060C410 /* UrlPathBuilder.swift in Sources */,
@@ -903,6 +928,7 @@
 				CFBB29812A3D308800DA0561 /* Item.swift in Sources */,
 				CFB8E3482A41FE430051026D /* AlertView.swift in Sources */,
 				CFD23D9F2A69F8EE002DE71B /* CardFactory.swift in Sources */,
+				CFD23DCD2A704E3D002DE71B /* CardDumpDetail.swift in Sources */,
 				CFBED2F52A3EBE4200CAA054 /* MosaicBaseView.swift in Sources */,
 				CFD3A6B723DA308A00EB6D4D /* AppDelegate.swift in Sources */,
 				CFBED2A62A3E91ED00CAA054 /* Model.swift in Sources */,
