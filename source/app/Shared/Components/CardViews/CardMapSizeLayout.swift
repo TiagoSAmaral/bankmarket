@@ -20,8 +20,10 @@ enum CardMapSizeLayout {
     
     private static func getHeight(to layoutView: CardLayoutView) -> CGFloat {
         switch layoutView {
-        case .bannerScrollableView, .bannerCardView:
-            return 150.5
+        case .bannerScrollableView:
+            return 160.0
+        case .bannerCardView:
+            return 140.0
         case .cashDigioScrollableView, .cashDigioCardView:
             return 90.0
         case .productScrollableView, .productCardView:
