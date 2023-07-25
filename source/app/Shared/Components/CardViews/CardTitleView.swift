@@ -41,7 +41,7 @@ final class CardTitleView: UIView, CardStaticVisible {
         
         // first word
         if let firstWord = words.first {
-            let rangeFirstWord = fullTextAttributedMutable.mutableString.range(of: firstWord) // NSRangeFromString(firstWord)
+            let rangeFirstWord = fullTextAttributedMutable.mutableString.range(of: firstWord)
             fullTextAttributedMutable.addAttribute(.foregroundColor,
                                                    value: ColorAssets.titleColor ?? UIColor.blue,
                                                    range: rangeFirstWord)
