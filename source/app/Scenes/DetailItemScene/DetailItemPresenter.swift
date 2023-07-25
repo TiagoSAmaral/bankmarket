@@ -7,25 +7,25 @@
 
 import Foundation
 
-protocol IDetailItemPresentation {
-    func fetchItem()
+protocol DetailPresentable {
     func presentItem(with item: Model?)
     func message(text: String?)
 }
 
-final class DetailItemPresenter: IDetailItemPresentation, ListDataSource {
+final class DetailItemPresenter: DetailPresentable, ListDataSource {
     
-    weak var controller: DetailDisplayLogic?
+    weak var controller: DetailDisplay?
+    var items: [Model]?
     
     func fetchItem() {}
     
     func presentItem(with item: Model?) {
-        guard var item = item as? Visible else {
-            controller?.display(message: LocalizedText.with(tagName: .networkErrorNotDefined))
+        guard let item = item else {
+//            controller?.dismiss(animated: true)
             return
         }
-//        item.layoutView = .cardDetailItemView
-        controller?.display(viewModel: item)
+        items = [item]
+        controller?.reloadView()
     }
 
     func message(text: String?) {
