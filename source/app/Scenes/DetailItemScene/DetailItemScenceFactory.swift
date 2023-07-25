@@ -13,17 +13,17 @@ enum DetailItemSceneFactory {
         let controller = DetailItemController()
         let presenter = DetailItemPresenter()
         let viewMosaic = MosaicBaseView()
-        let listTableView = ListCollectionFactory.createVerticalList(with: presenter) // TableViewAutomaticPaginate(controller: controller)
+        let listView = ListContructor().createVerticalList(with: presenter) // TableViewAutomaticPaginate(controller: controller)
         
-        listTableView.cardFactory = CardConstructor()
-        viewMosaic.insertNew(view: listTableView)
+        listView.cardFactory = CardConstructor()
+        viewMosaic.insertNew(view: listView)
         
         let workerNetwork = NetworkConactable()
         let workerApiPathBuilder = URLPathBuilder()
         
         presenter.controller = controller
 
-        controller.listView = listTableView
+        controller.listView = listView
         controller.view = viewMosaic.baseView
         
         return controller
