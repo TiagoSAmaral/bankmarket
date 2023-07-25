@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CardSelectable: UIView, CardVisible {
+class CardSelectable: UIView, CardStaticVisible {
     
     var action: ((Model?) -> Void)?
     var model: Model? {
