@@ -7,41 +7,37 @@
 
 import UIKit
 
-protocol DetailDisplayLogic: AnyObject where Self: UIViewController {
-    func display(viewModel: Model?)
+protocol DetailDisplay: AnyObject where Self: UIViewController {
+    func dismiss()
+    func reloadView()
     func display(message: String?)
 }
 
 final class DetailItemController: UIViewController,
-                                  DetailDisplayLogic,
-                                  ListDataSource,
+                                  DetailDisplay,
                                   LoadingManagers,
                                   AlertPresetable {
 
-    var presenter: IDetailItemPresentation?
+    var presenter: DetailPresentable?
     var listView: ListEvent?
     var item: Model?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.tintColor = ColorAssets.titleColor
+        navigationController?.navigationBar.topItem?.backButtonTitle = " "
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        fetchItem()
+        reloadView()
     }
     
-    func fetchItem() {
-        if item == nil {
-            startLoading()
-            presenter?.fetchItem()
-        }
+    func dismiss() {
+        navigationController?.dismiss(animated: true)
     }
     
-    func display(viewModel: Model?) {
-        stopLoading(onFinish: nil)
-        item = viewModel
+    func reloadView() {
         listView?.reloadView()
     }
     
@@ -51,18 +47,5 @@ final class DetailItemController: UIViewController,
                 self?.navigationController?.popViewController(animated: true)
             }
         }
-    }
-    
-    // MARK: - TableViewAutomaticPaginateDelegate methods
-    func numberOfSections() -> Int {
-        1
-    }
-    
-    func numberOfRow(at section: Int) -> Int {
-        item == nil ? .zero: 1
-    }
-    
-    func getModel(at indexPath: IndexPath) -> Model? {
-        item
     }
 }
