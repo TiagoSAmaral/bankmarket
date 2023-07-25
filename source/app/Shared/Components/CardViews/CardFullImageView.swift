@@ -21,7 +21,6 @@ final class CardFullImageView: CardSelectable {
     lazy var shadowView: UIView = {
         let shadowView = UIView()
         shadowView.layer.cornerRadius = conerRadius
-        shadowView.backgroundColor = .white
         return shadowView
     }()
 
@@ -34,6 +33,7 @@ final class CardFullImageView: CardSelectable {
     }()
     
     override func load(model: Model?) {
+        self.model = model
         loadImage(model: model)
         makeImageViewLayout(model: model)
         makeShadowViewLayout(model: model)
