@@ -19,7 +19,7 @@ Sobre o projeto: <br>
 - Xcode Version 14.3 (14E222b) (ou superior)<br>
 - Suporte mínimo ao iOS 12<br>
 - Swift 5<br>
-- Cobertura de código: 0%
+- Cobertura de código: 13.65%
 
 Ferramentas de Gestão e Qualidade de Código<br>
 - Fastlane

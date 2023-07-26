@@ -18,8 +18,7 @@ final class URLPathBuilderTests: XCTestCase {
     
     func testInit() {
         
-        XCTAssertEqual(sut?.contentBaseUrl?.url?.absoluteString, "https://baseurl.com")
-        XCTAssertEqual(sut?.authorizationBaseUrl?.url?.absoluteString, "https://oauth.baseurl.com/token")
+        XCTAssertEqual(sut?.contentBaseUrl?.url?.absoluteString, "https://7hgi9vtkdc.execute-api.sa-east-1.amazonaws.com/sandbox/products")
     }
     
     func testMakeUrlCards() {

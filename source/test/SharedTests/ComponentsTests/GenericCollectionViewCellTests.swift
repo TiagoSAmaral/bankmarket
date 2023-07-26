@@ -8,12 +8,14 @@
 
 import XCTest
 
-final class GenericTableViewCellTests: XCTestCase {
+final class GenericCollectionViewCellTests: XCTestCase {
 
-    var sut: GenericTableViewCell?
+    var sut: GenericCollectionViewCell?
     
     override func setUp() {
-        sut = GenericTableViewCell(style: .default, reuseIdentifier: .empty)
+        sut = GenericCollectionViewCell(frame: .zero)
+        
+//        GenericCollectionViewCell(style: .default, reuseIdentifier: .empty)
     }
     
     func testInit() {
@@ -38,7 +40,7 @@ final class GenericTableViewCellTests: XCTestCase {
     }
     
     func testInitCoder() {
-        let cell = GenericTableViewCell(coder: NSCoder())
+        let cell = GenericCollectionViewCell(coder: NSCoder())
         XCTAssertNil(cell)
     }
 }

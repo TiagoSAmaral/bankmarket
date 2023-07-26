@@ -15,6 +15,22 @@
 		CF886BA32A414DDD0027EEFA /* DetailItemScenceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886BA12A414DDD0027EEFA /* DetailItemScenceFactory.swift */; };
 		CF886BA52A41526A0027EEFA /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886BA42A41526A0027EEFA /* ListDataSource.swift */; };
 		CF886BA62A41526A0027EEFA /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886BA42A41526A0027EEFA /* ListDataSource.swift */; };
+		CF8E2B342A718EF000DBEFC9 /* ListItemlayoutAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DB72A6C1CBF002DE71B /* ListItemlayoutAdapter.swift */; };
+		CF8E2B352A718EF000DBEFC9 /* ListItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED28C2A3E90A800CAA054 /* ListItemController.swift */; };
+		CF8E2B362A718EF000DBEFC9 /* ListItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2942A3E90D900CAA054 /* ListItemRouter.swift */; };
+		CF8E2B372A718EF000DBEFC9 /* ListItemSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2CE2A3EAFA200CAA054 /* ListItemSceneFactory.swift */; };
+		CF8E2B382A718EF000DBEFC9 /* ListItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2902A3E90BC00CAA054 /* ListItemPresenter.swift */; };
+		CF8E2B392A718F0000DBEFC9 /* ListItemViewModelMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DB52A6C1C54002DE71B /* ListItemViewModelMap.swift */; };
+		CF8E2B3A2A718F0E00DBEFC9 /* ListEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DA92A6AD74C002DE71B /* ListEvent.swift */; };
+		CF8E2B3B2A718F4D00DBEFC9 /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DA52A6AC5AA002DE71B /* GenericCollectionViewCell.swift */; };
+		CF8E2B3C2A718F8200DBEFC9 /* CardFullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DAD2A6B61C3002DE71B /* CardFullImageView.swift */; };
+		CF8E2B3D2A718FCC00DBEFC9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DAB2A6AD763002DE71B /* ListView.swift */; };
+		CF8E2B3E2A718FDC00DBEFC9 /* ListContructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DA72A6AC800002DE71B /* ListContructor.swift */; };
+		CF8E2B3F2A718FE700DBEFC9 /* CardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DBD2A6F70BD002DE71B /* CardTitleView.swift */; };
+		CF8E2B402A718FF000DBEFC9 /* CardMapSizeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DAF2A6B6998002DE71B /* CardMapSizeLayout.swift */; };
+		CF8E2B412A718FF000DBEFC9 /* CardScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DB92A6EEB1C002DE71B /* CardScrollerView.swift */; };
+		CF8E2B422A718FF000DBEFC9 /* CardCenterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DBB2A6F6C1D002DE71B /* CardCenterImageView.swift */; };
+		CF8E2B432A718FF700DBEFC9 /* CollectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD23DA22A6AC576002DE71B /* CollectionList.swift */; };
 		CF93BD092A3F6E9E0060C410 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD082A3F6E9E0060C410 /* SnapshotTesting */; };
 		CF93BD0C2A3F71E80060C410 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD0B2A3F71E80060C410 /* Kingfisher */; };
 		CF93BD0F2A3F720A0060C410 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CF93BD0E2A3F720A0060C410 /* Alamofire */; };
@@ -58,10 +74,6 @@
 		CFB8E3512A42057E0051026D /* CardConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2E02A3EBBA100CAA054 /* CardConstructor.swift */; };
 		CFB8E3532A4205870051026D /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93BD3D2A3FF7830060C410 /* Empty.swift */; };
 		CFB8E3542A4205930051026D /* ColorAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B982A40FE080027EEFA /* ColorAssets.swift */; };
-		CFB8E3572A4205970051026D /* ListItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED28C2A3E90A800CAA054 /* ListItemController.swift */; };
-		CFB8E3592A4205970051026D /* ListItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2902A3E90BC00CAA054 /* ListItemPresenter.swift */; };
-		CFB8E35B2A4205970051026D /* ListItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2942A3E90D900CAA054 /* ListItemRouter.swift */; };
-		CFB8E35C2A4205970051026D /* ListItemSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBED2CE2A3EAFA200CAA054 /* ListItemSceneFactory.swift */; };
 		CFB8E39A2A420CB50051026D /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3992A420CB50051026D /* LocalizedText.swift */; };
 		CFB8E39B2A420CB50051026D /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3992A420CB50051026D /* LocalizedText.swift */; };
 		CFB8E3A32A420EE70051026D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3A62A420EE70051026D /* Localizable.strings */; };
@@ -73,7 +85,7 @@
 		CFB8E3B82A429AB10051026D /* TableViewAutomaticPaginateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */; };
 		CFB8E3BA2A42AE9D0051026D /* NavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */; };
 		CFB8E3BC2A42B13A0051026D /* MosaicBaseViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */; };
-		CFB8E3BE2A42B2AC0051026D /* GenericTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */; };
+		CFB8E3BE2A42B2AC0051026D /* GenericCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BD2A42B2AC0051026D /* GenericCollectionViewCellTests.swift */; };
 		CFB8E3C02A42B5ED0051026D /* CardListItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */; };
 		CFB8E3C12A42B9660051026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD3A6B423DA308A00EB6D4D /* Assets.xcassets */; };
 		CFB8E3C42A42BB330051026D /* assertTests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB8E3C22A42BB330051026D /* assertTests.xcassets */; };
@@ -181,7 +193,7 @@
 		CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutomaticPaginateTests.swift; sourceTree = "<group>"; };
 		CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTests.swift; sourceTree = "<group>"; };
 		CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicBaseViewTests.swift; sourceTree = "<group>"; };
-		CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCellTests.swift; sourceTree = "<group>"; };
+		CFB8E3BD2A42B2AC0051026D /* GenericCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCellTests.swift; sourceTree = "<group>"; };
 		CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListItemViewTests.swift; sourceTree = "<group>"; };
 		CFB8E3C22A42BB330051026D /* assertTests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assertTests.xcassets; sourceTree = "<group>"; };
 		CFB8E3C52A42BEE20051026D /* CardDetailItemViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailItemViewTests.swift; sourceTree = "<group>"; };
@@ -377,7 +389,7 @@
 				CFB8E3B72A429AB10051026D /* TableViewAutomaticPaginateTests.swift */,
 				CFB8E3B92A42AE9D0051026D /* NavigationControllerTests.swift */,
 				CFB8E3BB2A42B13A0051026D /* MosaicBaseViewTests.swift */,
-				CFB8E3BD2A42B2AC0051026D /* GenericTableViewCellTests.swift */,
+				CFB8E3BD2A42B2AC0051026D /* GenericCollectionViewCellTests.swift */,
 				CFB8E3BF2A42B5ED0051026D /* CardListItemViewTests.swift */,
 				CFB8E3C52A42BEE20051026D /* CardDetailItemViewTests.swift */,
 				CFB8E3C72A42C1500051026D /* LoadingViewTests.swift */,
@@ -836,22 +848,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8E2B3C2A718F8200DBEFC9 /* CardFullImageView.swift in Sources */,
 				CFB8E39B2A420CB50051026D /* LocalizedText.swift in Sources */,
 				CFB8E3BA2A42AE9D0051026D /* NavigationControllerTests.swift in Sources */,
 				CFB8E3C02A42B5ED0051026D /* CardListItemViewTests.swift in Sources */,
 				CFB8E33E2A41FBA20051026D /* LoadingManager.swift in Sources */,
+				CF8E2B3F2A718FE700DBEFC9 /* CardTitleView.swift in Sources */,
+				CF8E2B362A718EF000DBEFC9 /* ListItemRouter.swift in Sources */,
 				CFD23DA02A69F8EE002DE71B /* CardFactory.swift in Sources */,
 				CF93BD1C2A3F72300060C410 /* CardVisible.swift in Sources */,
-				CFB8E3572A4205970051026D /* ListItemController.swift in Sources */,
+				CF8E2B382A718EF000DBEFC9 /* ListItemPresenter.swift in Sources */,
 				CFB8E34C2A41FE840051026D /* AlertPresentable.swift in Sources */,
+				CF8E2B422A718FF000DBEFC9 /* CardCenterImageView.swift in Sources */,
 				CF93BD262A3F72370060C410 /* LayoutCardView.swift in Sources */,
+				CF8E2B352A718EF000DBEFC9 /* ListItemController.swift in Sources */,
 				CF93BD242A3F72330060C410 /* NetworkConactable.swift in Sources */,
 				CFB8E34E2A4205590051026D /* Item.swift in Sources */,
 				CF93BD1D2A3F72300060C410 /* Visible.swift in Sources */,
+				CF8E2B3E2A718FDC00DBEFC9 /* ListContructor.swift in Sources */,
 				CF93BD252A3F72330060C410 /* NetworkError.swift in Sources */,
 				CFF85A022A448F11005C5EA8 /* URLPathBuilderTests.swift in Sources */,
 				CF93BD2F2A3F72630060C410 /* HtmlAttributedString.swift in Sources */,
 				CFB8E3BC2A42B13A0051026D /* MosaicBaseViewTests.swift in Sources */,
+				CF8E2B3B2A718F4D00DBEFC9 /* GenericCollectionViewCell.swift in Sources */,
 				CF93CD632A43FC2400D06D2D /* URLProtocolMock.swift in Sources */,
 				CFB8E3B82A429AB10051026D /* TableViewAutomaticPaginateTests.swift in Sources */,
 				CF93CD672A440F0D00D06D2D /* URLProtocolExtension.swift in Sources */,
@@ -859,18 +878,19 @@
 				CFB8E3452A41FC030051026D /* LoadindingView.swift in Sources */,
 				CFB8E3532A4205870051026D /* Empty.swift in Sources */,
 				CF886BA02A4117880027EEFA /* FontPallet.swift in Sources */,
-				CFB8E35B2A4205970051026D /* ListItemRouter.swift in Sources */,
 				CFB8E3C82A42C1500051026D /* LoadingViewTests.swift in Sources */,
 				CF93BD2E2A3F725C0060C410 /* ClassIdentifier.swift in Sources */,
 				CFB8E3C62A42BEE20051026D /* CardDetailItemViewTests.swift in Sources */,
 				CFB8E3412A41FBB70051026D /* LoadingPresentable.swift in Sources */,
 				CFD23DCB2A7041CB002DE71B /* ProfileView.swift in Sources */,
 				CF886BA62A41526A0027EEFA /* ListDataSource.swift in Sources */,
-				CFB8E3BE2A42B2AC0051026D /* GenericTableViewCellTests.swift in Sources */,
+				CF8E2B372A718EF000DBEFC9 /* ListItemSceneFactory.swift in Sources */,
+				CF8E2B342A718EF000DBEFC9 /* ListItemlayoutAdapter.swift in Sources */,
+				CFB8E3BE2A42B2AC0051026D /* GenericCollectionViewCellTests.swift in Sources */,
+				CF8E2B412A718FF000DBEFC9 /* CardScrollerView.swift in Sources */,
 				CFB8E3512A42057E0051026D /* CardConstructor.swift in Sources */,
 				CF93BD302A3F72650060C410 /* Constraints.swift in Sources */,
 				CF93CD652A440DBF00D06D2D /* NetworkConactableTest.swift in Sources */,
-				CFB8E3592A4205970051026D /* ListItemPresenter.swift in Sources */,
 				CFB8E3492A41FE430051026D /* AlertView.swift in Sources */,
 				CFB8E34F2A42055E0051026D /* WorkerURLPathBuilder.swift in Sources */,
 				CFD23DD12A7051AF002DE71B /* DetailItemLayoutAdapter.swift in Sources */,
@@ -880,17 +900,21 @@
 				CF93BD1B2A3F72300060C410 /* GenericCell.swift in Sources */,
 				CFBED2C52A3E924200CAA054 /* NavigationController.swift in Sources */,
 				CFB8E3AB2A421F6F0051026D /* MockerContentProvider.swift in Sources */,
+				CF8E2B3D2A718FCC00DBEFC9 /* ListView.swift in Sources */,
 				CF93BD202A3F72300060C410 /* Model.swift in Sources */,
 				CFBED2BC2A3E923900CAA054 /* DetailItemController.swift in Sources */,
+				CF8E2B432A718FF700DBEFC9 /* CollectionList.swift in Sources */,
 				CF93BD2B2A3F72470060C410 /* MosaicBaseView.swift in Sources */,
 				CFB8E3502A42057A0051026D /* UrlPathBuilder.swift in Sources */,
+				CF8E2B392A718F0000DBEFC9 /* ListItemViewModelMap.swift in Sources */,
 				CF886BA32A414DDD0027EEFA /* DetailItemScenceFactory.swift in Sources */,
 				CF93BD212A3F72300060C410 /* NetworkWorker.swift in Sources */,
 				CFBED2B82A3E923900CAA054 /* DetailItemPresenter.swift in Sources */,
 				CFD23DC72A7031E3002DE71B /* DropShadow.swift in Sources */,
-				CFB8E35C2A4205970051026D /* ListItemSceneFactory.swift in Sources */,
 				CFB8E3542A4205930051026D /* ColorAssets.swift in Sources */,
+				CF8E2B3A2A718F0E00DBEFC9 /* ListEvent.swift in Sources */,
 				CF93BD222A3F72300060C410 /* Selectable.swift in Sources */,
+				CF8E2B402A718FF000DBEFC9 /* CardMapSizeLayout.swift in Sources */,
 				CFB8E34D2A4205520051026D /* SceneStarter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

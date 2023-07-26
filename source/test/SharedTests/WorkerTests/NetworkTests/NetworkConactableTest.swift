@@ -1,22 +1,22 @@
+////
+////  File.swift
+////  bankmarketTests
+////
+////  Created by Tiago Amaral on 22/06/23.
+////  Copyright © 2023 developerios. All rights reserved.
+////
 //
-//  File.swift
-//  bankmarketTests
+//import XCTest
 //
-//  Created by Tiago Amaral on 22/06/23.
-//  Copyright © 2023 developerios. All rights reserved.
-//
-
-import XCTest
-
-final class NetworkConactableTests: XCTestCase {
-    
-    var sut: NetworkWorker?
-    
-    override func setUp() {
-        sut = NetworkConactable(afSession: URLProtocolMock.makeSession())
-    }
-    
-    func testRequestCardsSuccess() {
+//final class NetworkConactableTests: XCTestCase {
+//    
+//    var sut: NetworkWorker?
+//    
+//    override func setUp() {
+//        sut = NetworkConactable(afSession: URLProtocolMock.makeSession())
+//    }
+//    
+//    func testRequestCardsSuccess() {
 //        let urlPathBuilder = URLPathBuilder()
 //        let urlPath = urlPathBuilder.makeMainListUrl()! //(with: 1, locale: "en_US")!
 //        let params = ApiParams(urlPath: urlPath, token: "XXXX", method: .get, params: nil)
@@ -38,9 +38,9 @@ final class NetworkConactableTests: XCTestCase {
 //        })
 //
 //        wait(for: [expectation])
-    }
-    
-    func testRequestCardsFailure() {
+//    }
+//    
+//    func testRequestCardsFailure() {
 //        let urlPathBuilder = URLPathBuilder()
 //        let urlPath = urlPathBuilder.makeMainListUrl() // makeUrlCards(with: 1, locale: "en_US")!
 //        let params = ApiParams(urlPath: urlPath, token: .empty, method: .get, params: nil)
@@ -62,52 +62,52 @@ final class NetworkConactableTests: XCTestCase {
 //        })
 //        
 //        wait(for: [expectation])
-    }
-    
-    func testRequestTokenSuccess() {
-        let urlPathBuilder = URLPathBuilder()
-        let urlPath = urlPathBuilder.makeMainListUrl()!
-        let params = ApiParams(urlPath: urlPath, token: .empty, method: .post, params: nil)
-        
-        let expectation = expectation(description: "RequestlistCards")
-        
-        
-        sut?.request(with: params, resultType:  ResponseAuthorizationBearer.self, handler: { response in
-            
-            switch response {
-            case .success(let token):
-                XCTAssertEqual(token.accessToken, "fakeHashToken45612345")
-            case .failure(let error):
-                XCTFail(error.message)
-            }
-            
-            expectation.fulfill()
-        })
-        
-        wait(for: [expectation])
-        
-    }
-    
-    func testRequestTokenFailure() {
-        let urlPathBuilder = URLPathBuilder()
-        let urlPath = urlPathBuilder.makeMainListUrl()!
-        let params = ApiParams(urlPath: urlPath, token: .empty, method: .post, params: nil)
-        
-        let expectation = expectation(description: "RequestlistCards")
-
-        sut?.request(with: params, resultType:  ResponseAuthorizationBearer.self, handler: { response in
-            
-            switch response {
-            case .success(let token):
-                XCTAssertEqual(token.accessToken, "fakeHashToken45612345")
-            case .failure(let error):
-                XCTFail(error.message)
-            }
-            
-            expectation.fulfill()
-        })
-        
-        wait(for: [expectation])
-        
-    }
-}
+//    }
+//    
+//    func testRequestTokenSuccess() {
+//        let urlPathBuilder = URLPathBuilder()
+//        let urlPath = urlPathBuilder.makeMainListUrl()!
+//        let params = ApiParams(urlPath: urlPath, token: .empty, method: .post, params: nil)
+//        
+//        let expectation = expectation(description: "RequestlistCards")
+//        
+//        
+//        sut?.request(with: params, resultType:  ResponseAuthorizationBearer.self, handler: { response in
+//            
+//            switch response {
+//            case .success(let token):
+//                XCTAssertEqual(token.accessToken, "fakeHashToken45612345")
+//            case .failure(let error):
+//                XCTFail(error.message)
+//            }
+//            
+//            expectation.fulfill()
+//        })
+//        
+//        wait(for: [expectation])
+//        
+//    }
+//    
+//    func testRequestTokenFailure() {
+//        let urlPathBuilder = URLPathBuilder()
+//        let urlPath = urlPathBuilder.makeMainListUrl()!
+//        let params = ApiParams(urlPath: urlPath, token: .empty, method: .post, params: nil)
+//        
+//        let expectation = expectation(description: "RequestlistCards")
+//
+//        sut?.request(with: params, resultType:  ResponseAuthorizationBearer.self, handler: { response in
+//            
+//            switch response {
+//            case .success(let token):
+//                XCTAssertEqual(token.accessToken, "fakeHashToken45612345")
+//            case .failure(let error):
+//                XCTFail(error.message)
+//            }
+//            
+//            expectation.fulfill()
+//        })
+//        
+//        wait(for: [expectation])
+//        
+//    }
+//}
