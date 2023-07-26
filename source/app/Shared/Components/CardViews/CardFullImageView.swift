@@ -15,12 +15,13 @@ protocol CardFullImageViewModel {
 
 final class CardFullImageView: CardSelectable {
 
-    let scaleFactorDropShadoSize: CGFloat = 1.0
+    let scaleFactorDropShadoSize: CGFloat = 1.3
     let conerRadius: CGFloat = 16.0
     
     lazy var shadowView: UIView = {
         let shadowView = UIView()
         shadowView.layer.cornerRadius = conerRadius
+        shadowView.backgroundColor = .white
         return shadowView
     }()
 
@@ -65,11 +66,12 @@ final class CardFullImageView: CardSelectable {
         guard let viewModel = model as? Visible else {
             return
         }
-
+        let height = viewModel.height ?? .zero
+        let width = viewModel.width ?? .zero
         addSubviews([shadowView])
 
         bringSubviewToFront(imageView)
-        shadowView.height(viewModel.height ?? .zero).width(viewModel.width ?? .zero)
+        shadowView.height(height).width(width)
         shadowView.centerX(of: self)
         shadowView.centerY(of: self)
         shadowView.dropShadow()
