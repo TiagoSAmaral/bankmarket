@@ -31,18 +31,24 @@ final class ListItemPresenter: ListPresentable, ListDataSource, ActionProvider {
         let params = ApiParams(urlPath: urlPath, method: .get, params: nil)
         network?.request(with: params, resultType: ListResponse.self, handler: { [weak self] response in
             switch response {
-            case .success(let items):
-                DispatchQueue.main.async { [weak self] in
-                    self?.response = self?.listItemAdapter?.mapByPropertySetViewLayout(item: items, with: self)
-                    self?.controller?.reload()
-                    print("Finish")
-                }
+            case .success(let result):
+                self?.showRequest(result)
             case .failure(let error):
                 self?.controller?.display(message: error.message)
             }
         })
     }
 
+    func showRequest(_ result: ListResponse?) {
+        DispatchQueue.main.async { [weak self] in
+            guard let result = result else {
+                return
+            }
+            self?.response = self?.listItemAdapter?.mapByPropertySetViewLayout(item: result, with: self)
+            self?.controller?.reload()
+        }
+    }
+    
     // MARK: - ListDataSource
     func numberOfSections() -> Int {
         response?.count ?? .zero
